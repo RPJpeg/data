@@ -1,0 +1,17 @@
+sets.exported={
+    main="Marin Staff",
+    sub="Mephitis Grip",
+    range="Eminent Flute",
+    head={ name="Artsieq Hat", augments={'Mag. Acc.+18','Mag. Evasion+7','Magic dmg. taken -2',}},
+    body="Ischemia Chasu.",
+    hands={ name="Bihu Cuffs", augments={'Enh. "Adventurer's Dirge" effect',}},
+    legs={ name="Artsieq Hose", augments={'MP+22','Mag. Acc.+16','MND+5',}},
+    feet="Bokwus boots",
+    neck="Aoidos' Matinee",
+    waist="Aswang Sash",
+    left_ear="Lifestorm Earring",
+    right_ear="Psystorm Earring",
+    left_ring="Perception Ring",
+    right_ring="Balrahn's Ring",
+    back={ name="Rhapsode's Cape", augments={'HP+24','Mag. Acc.+3','Enmity-5',}},
+}

@@ -1,0 +1,17 @@
+sets.exported={
+    main="Legato Dagger",
+    sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','Mag. Acc.+5','"Cure" spellcasting time -7%',}},
+    range="Terpander",
+    head="Aoidos' Calot +2",
+    body="Ischemia Chasu.",
+    hands="Serpentes Cuffs",
+    legs="Assiduity Pants",
+    feet="Fili Cothurnes",
+    neck="Twilight Torque",
+    waist="Fucho-no-Obi",
+    left_ear="Loquac. Earring",
+    right_ear="Aoidos' Earring",
+    left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+    right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+}
