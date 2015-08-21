@@ -116,6 +116,7 @@ function init_gear_sets()
     sets.precast.FC.BardSong = {
       main="Marin Staff",
       sub="Mephitis Grip",
+      range="Eminent Flute",
       head="Aoidos' Calot +2",
       body={ name="Telchine Chas.", augments={'"Fast Cast"+2','"Regen" potency+2',}},
       hands={ name="Gendewitha Gages", augments={'Phys. dmg. taken -2%','Song spellcasting time -3%',}},
@@ -183,6 +184,7 @@ function init_gear_sets()
     sets.midcast.SongEffect = {
       main="Legato Dagger",
       sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','Mag. Acc.+5','"Cure" spellcasting time -7%',}},
+      range="Eminent Flute",
       head="Aoidos' Calot +2",
       body="Aoidos' Hngrln. +2",
       hands="Ad. Mnchtte. +2",
