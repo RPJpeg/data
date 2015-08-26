@@ -120,8 +120,8 @@ function init_gear_sets()
     --------------------------------------
 
     -- Precast sets to enhance JAs
-    sets.precast.JA['Collaborator'] = {head="Raider's Bonnet +2"}
-    sets.precast.JA['Accomplice'] = {head="Raider's Bonnet +2"}
+    sets.precast.JA['Collaborator'] = {head="Skulker's Bonnet"}
+    sets.precast.JA['Accomplice'] = {head="Skulker's Bonnet"}
     sets.precast.JA['Flee'] = {feet="Pillager's Poulaines"}
     sets.precast.JA['Hide'] = {body="Assassin's Vest"}
     sets.precast.JA['Conspirator'] = {body = "Raider's Vest +2"}
@@ -337,7 +337,7 @@ function init_gear_sets()
       main="Vanir Knife",
       sub="Jugo Kukri",
       ammo="Honed Tathlum",
-      head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
+      head="Skulker's Bonnet",
       body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
