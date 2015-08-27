@@ -117,7 +117,7 @@ function init_gear_sets()
       main="Marin Staff",
       sub="Mephitis Grip",
       range="Eminent Flute",
-      head="Aoidos' Calot +2",
+      head="Fili Calot",
       body={ name="Telchine Chas.", augments={'"Fast Cast"+2','"Regen" potency+2',}},
       hands={ name="Gendewitha Gages", augments={'Phys. dmg. taken -2%','Song spellcasting time -3%',}},
       legs={ name="Artsieq Hose", augments={'MP+22','Mag. Acc.+16','MND+5',}},
@@ -164,13 +164,13 @@ function init_gear_sets()
     -- Gear to enhance certain classes of songs.  No instruments added here since Gjallarhorn is being used.
     sets.midcast.Ballad = {legs="Aoidos' Rhing. +2"}
     sets.midcast.Lullaby = {}
-    sets.midcast.Madrigal = {head="Aoidos' Calot +2"}
+    sets.midcast.Madrigal = {head="Fili Calot"}
     sets.midcast.March = {hands="Aoidos' Manchettes +2"}
     sets.midcast.Minuet = {body="Aoidos' Hongreline +2"}
     sets.midcast.Minne = {}
     sets.midcast.Paeon = {}
     sets.midcast.Carol = {
-      head="Aoidos' Calot +2",
+      head="Fili Calot",
       body="Aoidos' Hongreline +2",hands="Aoidos' Manchettes +2",
       legs="Aoidos' Rhing. +2",feet="Fili Cothurnes"
     }
@@ -185,7 +185,7 @@ function init_gear_sets()
       main="Legato Dagger",
       sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','Mag. Acc.+5','"Cure" spellcasting time -7%',}},
       range="Eminent Flute",
-      head="Aoidos' Calot +2",
+      head="Fili Calot",
       body="Aoidos' Hngrln. +2",
       hands="Ad. Mnchtte. +2",
       legs="Aoidos' Rhing. +2",
@@ -257,7 +257,7 @@ function init_gear_sets()
       main="Legato Dagger",
       sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','Mag. Acc.+5','"Cure" spellcasting time -7%',}},
       range="Terpander",
-      head="Aoidos' Calot +2",
+      head="Fili Calot",
       body="Ischemia Chasu.",
       hands="Serpentes Cuffs",
       legs="Assiduity Pants",
@@ -515,7 +515,7 @@ function calculate_duration(spellName, spellMap)
 
     if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet" then mult = mult + 0.1 end
     if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet +1" then mult = mult + 0.1 end
-    if spellMap == 'Madrigal' and player.equipment.head == "Aoidos' Calot +2" then mult = mult + 0.1 end
+    if spellMap == 'Madrigal' and player.equipment.head == "Fili Calot" then mult = mult + 0.1 end
     if spellMap == 'Minuet' and player.equipment.body == "Aoidos' Hngrln. +2" then mult = mult + 0.1 end
     if spellMap == 'March' and player.equipment.hands == 'Ad. Mnchtte. +2' then mult = mult + 0.1 end
     if spellMap == 'Ballad' and player.equipment.legs == "Aoidos' Rhing. +2" then mult = mult + 0.1 end
