@@ -140,7 +140,7 @@ function init_gear_sets()
       body="Orison Bliaud +2",
       hands="Orison Mitts +2",
       legs="Orsn. Pantaln. +2",
-      feet="Orsn. Duckbills +2",
+      feet="Genewitha Galoshes",
     }
 
     sets.midcast.StatusRemoval = {
