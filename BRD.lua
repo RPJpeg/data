@@ -165,13 +165,13 @@ function init_gear_sets()
     sets.midcast.Ballad = {legs="Aoidos' Rhing. +2"}
     sets.midcast.Lullaby = {}
     sets.midcast.Madrigal = {head="Fili Calot"}
-    sets.midcast.March = {hands="Aoidos' Manchettes +2"}
+    sets.midcast.March = {hands="Fili Manchettes"}
     sets.midcast.Minuet = {body="Aoidos' Hongreline +2"}
     sets.midcast.Minne = {}
     sets.midcast.Paeon = {}
     sets.midcast.Carol = {
       head="Fili Calot",
-      body="Aoidos' Hongreline +2",hands="Aoidos' Manchettes +2",
+      body="Aoidos' Hongreline +2",hands="Fili Manchettes",
       legs="Aoidos' Rhing. +2",feet="Fili Cothurnes"
     }
     sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes"}
@@ -187,7 +187,7 @@ function init_gear_sets()
       range="Eminent Flute",
       head="Fili Calot",
       body="Aoidos' Hngrln. +2",
-      hands="Ad. Mnchtte. +2",
+      hands="Fili Manchettes",
       legs="Aoidos' Rhing. +2",
       feet="Fili Cothurnes",
       neck="Aoidos' Matinee",
@@ -206,7 +206,7 @@ function init_gear_sets()
       range="Eminent Flute",
       head={ name="Artsieq Hat", augments={'Mag. Acc.+18','Mag. Evasion+7','Magic dmg. taken -2',}},
       body="Ischemia Chasu.",
-      hands="Bihu Cuffs",
+      hands="Fili Manchettes",
       legs={ name="Artsieq Hose", augments={'MP+22','Mag. Acc.+16','MND+5',}},
       feet="Bokwus boots",
       neck="Aoidos' Matinee",
@@ -517,7 +517,7 @@ function calculate_duration(spellName, spellMap)
     if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet +1" then mult = mult + 0.1 end
     if spellMap == 'Madrigal' and player.equipment.head == "Fili Calot" then mult = mult + 0.1 end
     if spellMap == 'Minuet' and player.equipment.body == "Aoidos' Hngrln. +2" then mult = mult + 0.1 end
-    if spellMap == 'March' and player.equipment.hands == 'Ad. Mnchtte. +2' then mult = mult + 0.1 end
+    if spellMap == 'March' and player.equipment.hands == 'Fili Manchettes' then mult = mult + 0.1 end
     if spellMap == 'Ballad' and player.equipment.legs == "Aoidos' Rhing. +2" then mult = mult + 0.1 end
     if spellName == "Sentinel's Scherzo" and player.equipment.feet == "Aoidos' Cothrn. +2" then mult = mult + 0.1 end
 

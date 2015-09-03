@@ -155,7 +155,7 @@ function init_gear_sets()
       back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +10','Mag. Acc.+3','Enh. Mag. eff. dur. +14',}},
     }
 
-    sets.midcast.Refresh = {legs="Estoqueur's Fuseau +2"}
+    sets.midcast.Refresh = {legs="Lethargy Fuseau"}
 
     sets.midcast.Stoneskin = {
       main="Pukulatmuj",
@@ -169,7 +169,7 @@ function init_gear_sets()
       ammo="Kalboron Stone",
       head={ name="Artsieq Hat", augments={'Mag. Acc.+18','Mag. Evasion+7','Magic dmg. taken -2',}},
       body="Ischemia Chasu.",
-      hands="Estq. Ganthrt. +2",
+      hands="Lethargy Gantherots",
       legs={ name="Artsieq Hose", augments={'MP+22','Mag. Acc.+16','MND+5',}},
       feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
       neck="Imbodla Necklace",
@@ -263,12 +263,12 @@ function init_gear_sets()
     sets.buff.ComposureOther = {
       head="Estoqueur's Chappel +2",
       body="Estoqueur's Sayon +2",
-      hands="Estoqueur's Gantherots +2",
-      legs="Estoqueur's Fuseau +2",
+      hands="Lethargy Gantherots",
+      legs="Lethargy Fuseau",
       feet="Lethargy Houseaux"
       }
 
-    sets.buff.Saboteur = {hands="Estoqueur's Gantherots +2"}
+    sets.buff.Saboteur = {hands="Lethargy Gantherots"}
 
 
     -- Sets to return to when not performing an action.
@@ -302,7 +302,7 @@ function init_gear_sets()
       ammo="Kalboron Stone",
       head={ name="Vitivation Chapeau", augments={'Enhances "Dia III" effect','Enhances "Slow II" effect',}},
       body="Ischemia Chasu.",
-      hands="Serpentes Cuffs",
+      hands="Lethargy Gantherots",
       legs={ name="Artsieq Hose", augments={'MP+22','Mag. Acc.+16','MND+5',}},
       feet="Leth. Houseaux",
       neck="Imbodla Necklace",

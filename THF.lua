@@ -82,7 +82,7 @@ function init_gear_sets()
     sets.buff['Sneak Attack'] = {
       head="Pillager's Bonnet",
       body="Pillager's Vest",
-      hands="Raid. Armlets +2",
+      hands="Skulker's Armlets",
       legs={ name="Taeon Tights", augments={'"Triple Atk."+2','Crit. hit damage +2%',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
       neck="Asperity Necklace",
