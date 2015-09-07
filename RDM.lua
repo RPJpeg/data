@@ -170,7 +170,7 @@ function init_gear_sets()
       head={ name="Artsieq Hat", augments={'Mag. Acc.+18','Mag. Evasion+7','Magic dmg. taken -2',}},
       body="Ischemia Chasu.",
       hands="Lethargy Gantherots",
-      legs={ name="Artsieq Hose", augments={'MP+22','Mag. Acc.+16','MND+5',}},
+      legs="Vanya slops",
       feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
       neck="Imbodla Necklace",
       waist="Aswang Sash",
