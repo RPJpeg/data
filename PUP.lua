@@ -17,7 +17,7 @@ function job_setup()
     petWeaponskills = S{"Slapstick", "Knockout", "Magic Mortar",
         "Chimera Ripper", "String Clipper",  "Cannibal Blade", "Bone Crusher", "String Shredder",
         "Arcuballista", "Daze", "Armor Piercer", "Armor Shatterer"}
-    
+
     -- Map automaton heads to combat roles
     petModes = {
         ['Harlequin Head'] = 'Melee',
@@ -30,7 +30,7 @@ function job_setup()
 
     -- Subset of modes that use magic
     magicPetModes = S{'Nuke','Heal','Magic'}
-    
+
     -- Var to track the current pet mode.
     state.PetMode = M{['description']='Pet Mode', 'None', 'Melee', 'Ranged', 'Tank', 'Magic', 'Heal', 'Nuke'}
 end
@@ -63,18 +63,28 @@ end
 
 -- Define sets used by this job file.
 function init_gear_sets()
-    
+
     -- Precast Sets
 
     -- Fast cast sets for spells
-    sets.precast.FC = {head="Haruspex Hat",ear2="Loquacious Earring",hands="Thaumas Gloves"}
+    sets.precast.FC = {
+      head={ name="Anwig Salade", augments={'"Fast Cast"+3','"Blood Pact" ability delay -3','INT+2','"Fast Cast"+2',}},
+      body={ name="Mirke Wardecors", augments={'"Fast Cast"+5','Mag. Acc.+4',}},
+      hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
+      legs={ name="Pitre Churidars", augments={'Enhances "Ventriloquy" effect',}},
+      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
+      waist="Twilight Belt",
+      left_ear="Loquac. Earring",
+      left_ring="Prolix Ring",
+      back="Swith Cape",
+    }
 
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads"})
 
-    
+
     -- Precast sets to enhance JAs
-    sets.precast.JA['Tactical Switch'] = {feet="Cirque Scarpe +2"}
-    
+    sets.precast.JA['Tactical Switch'] = {feet="Cirque Scarpe +1"}
+
     sets.precast.JA['Repair'] = {feet="Foire Babouches"}
 
     sets.precast.JA.Maneuver = {neck="Buffoon's Collar",body="Cirque Farsetto +2",hands="Foire Dastanas",back="Dispersal Mantle"}
@@ -83,96 +93,105 @@ function init_gear_sets()
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
-        head="Whirlpool Mask",ear1="Roundel Earring",
-        body="Otronif Harness +1",hands="Otronif Gloves",ring1="Spiral Ring",
-        back="Iximulew Cape",legs="Nahtirah Trousers",feet="Thurandaut Boots +1"}
-        
+      head="Whirlpool Mask",
+      ear1="Roundel Earring",
+    }
+
     -- Don't need any special gear for Healing Waltz.
     sets.precast.Waltz['Healing Waltz'] = {}
 
-       
+
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-        head="Whirlpool Mask",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Manibozho Jerkin",hands="Otronif Gloves",ring1="Rajas Ring",ring2="Epona's Ring",
-        back="Dispersal Mantle",waist="Windbuffet Belt",legs="Manibozho Brais",feet="Manibozho Boots"}
+      head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
+      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
+      hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
+      legs={ name="Taeon Tights", augments={'"Triple Atk."+2','Crit. hit damage +2%',}},
+      feet={ name="Taeon Boots", augments={'Attack+6','Weapon skill damage +3%',}},
+      neck="Rancor Collar",
+      waist="Fotia Belt",
+      left_ear="Steelflash Earring",
+      right_ear="Bladeborn Earring",
+      left_ring="Rajas Ring",
+      right_ring="Epona's Ring",
+      back={ name="Dispersal Mantle", augments={'STR+2','Pet: TP Bonus+140','"Martial Arts"+13',}},
+    }
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS['Stringing Pummel'] = set_combine(sets.precast.WS, {neck="Rancor Collar",ear1="Brutal Earring",ear2="Moonshade Earring",
-        ring1="Spiral Ring",waist="Soil Belt"})
-    sets.precast.WS['Stringing Pummel'].Mod = set_combine(sets.precast.WS['Stringing Pummel'], {legs="Nahtirah Trousers"})
+    sets.precast.WS['Stringing Pummel'] = sets.precast.WS
+    sets.precast.WS['Stringing Pummel'] = sets.precast.WS
+    sets.precast.WS['Victory Smite'] = sets.precast.WS
+    sets.precast.WS['Shijin Spiral'] = sets.precast.WS
 
-    sets.precast.WS['Victory Smite'] = set_combine(sets.precast.WS, {neck="Rancor Collar",ear1="Brutal Earring",ear2="Moonshade Earring",
-        waist="Thunder Belt"})
 
-    sets.precast.WS['Shijin Spiral'] = set_combine(sets.precast.WS, {neck="Light Gorget",waist="Light Belt"})
-
-    
     -- Midcast Sets
 
-    sets.midcast.FastRecast = {
-        head="Haruspex Hat",ear2="Loquacious Earring",
-        body="Otronif Harness +1",hands="Regimen Mittens",
-        legs="Manibozho Brais",feet="Otronif Boots +1"}
-        
+    sets.midcast.FastRecast = sets.precast.FC
+
 
     -- Midcast sets for pet actions
     sets.midcast.Pet.Cure = {legs="Foire Churidars"}
 
     sets.midcast.Pet['Elemental Magic'] = {feet="Pitre Babouches"}
 
-    sets.midcast.Pet.WeaponSkill = {head="Cirque Cappello +2", hands="Cirque Guanti +2", legs="Cirque Pantaloni +2"}
+    sets.midcast.Pet.WeaponSkill = {head="Cirque Cappello +1", hands="Cirque Guanti +2", legs="Cirque Pantaloni +2"}
 
-    
+
     -- Sets to return to when not performing an action.
-    
+
     -- Resting sets
-    sets.resting = {head="Pitre Taj",neck="Wiglen Gorget",
-        ring1="Sheltered Ring",ring2="Paguroidea Ring"}
-    
+    sets.resting = sets.idle
+
 
     -- Idle sets
 
-    sets.idle = {range="Divinator",
-        head="Pitre Taj",neck="Wiglen Gorget",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Foire Tobe",hands="Regimen Mittens",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-        back="Shadow Mantle",waist="Hurch'lan Sash",legs="Foire Churidars",feet="Hermes' Sandals"}
+    sets.idle = {
+      head={ name="Pitre Taj", augments={'Enhances "Optimization" effect',}},
+      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
+      hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
+      legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
+      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
+      neck="Twilight Torque",
+      waist="Fucho-no-Obi",
+      left_ear="Steelflash Earring",
+      right_ear="Bladeborn Earring",
+      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+    }
 
-    sets.idle.Town = set_combine(sets.idle, {main="Tinhaspa"})
+    sets.idle.Town = sets.idle
 
     -- Set for idle while pet is out (eg: pet regen gear)
     sets.idle.Pet = sets.idle
 
     -- Idle sets to wear while pet is engaged
     sets.idle.Pet.Engaged = {
-        head="Foire Taj",neck="Wiglen Gorget",ear1="Bladeborn Earring",ear2="Cirque Earring",
-        body="Foire Tobe",hands="Regimen Mittens",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-        back="Dispersal Mantle",waist="Hurch'lan Sash",legs="Foire Churidars",feet="Foire Babouches"}
+      head={ name="Pitre Taj", augments={'Enhances "Optimization" effect',}},
+      body={ name="Pitre Tobe", augments={'Enhances "Overdrive" effect',}},
+      hands={ name="Pitre Dastanas", augments={'Enhances "Fine-Tuning" effect',}},
+      legs="Cirq. Pantaloni +2",
+      feet="Foire Babouches",
+      neck="Twilight Torque",
+      waist="Shaolin Belt",
+      back="Contriver's Cape",
+    }
 
-    sets.idle.Pet.Engaged.Ranged = set_combine(sets.idle.Pet.Engaged, {hands="Cirque Guanti +2",legs="Cirque Pantaloni +2"})
+    sets.idle.Pet.Engaged.Ranged = sets.idle.Pet.Engaged
 
-    sets.idle.Pet.Engaged.Nuke = set_combine(sets.idle.Pet.Engaged, {legs="Cirque Pantaloni +2",feet="Cirque Scarpe +2"})
+    sets.idle.Pet.Engaged.Nuke = sets.idle.Pet.Engaged
 
-    sets.idle.Pet.Engaged.Magic = set_combine(sets.idle.Pet.Engaged, {legs="Cirque Pantaloni +2",feet="Cirque Scarpe +2"})
+    sets.idle.Pet.Engaged.Magic = sets.idle.Pet.Engaged
 
 
     -- Defense sets
 
-    sets.defense.Evasion = {
-        head="Whirlpool Mask",neck="Twilight Torque",
-        body="Otronif Harness +1",hands="Otronif Gloves",ring1="Defending Ring",ring2="Beeline Ring",
-        back="Ik Cape",waist="Hurch'lan Sash",legs="Nahtirah Trousers",feet="Otronif Boots +1"}
+    sets.defense.Evasion = {}
 
-    sets.defense.PDT = {
-        head="Whirlpool Mask",neck="Twilight Torque",
-        body="Otronif Harness +1",hands="Otronif Gloves",ring1="Defending Ring",ring2=gear.DarkRing.physical,
-        back="Shadow Mantle",waist="Hurch'lan Sash",legs="Nahtirah Trousers",feet="Otronif Boots +1"}
+    sets.defense.PDT = {}
 
-    sets.defense.MDT = {
-        head="Whirlpool Mask",neck="Twilight Torque",
-        body="Otronif Harness +1",hands="Otronif Gloves",ring1="Defending Ring",ring2="Shadow Ring",
-        back="Tuilha Cape",waist="Hurch'lan Sash",legs="Nahtirah Trousers",feet="Otronif Boots +1"}
+    sets.defense.MDT = {}
 
     sets.Kiting = {feet="Hermes' Sandals"}
 
@@ -182,24 +201,52 @@ function init_gear_sets()
     -- sets if more refined versions aren't defined.
     -- If you create a set with both offense and defense modes, the offense mode should be first.
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
-    
+
     -- Normal melee group
     sets.engaged = {
-        head="Whirlpool Mask",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Qaaxo Harness",hands="Otronif Gloves",ring1="Rajas Ring",ring2="Epona's Ring",
-        back="Dispersal Mantle",waist="Windbuffet Belt",legs="Manibozho Brais",feet="Otronif Boots +1"}
+      head={ name="Otronif Mask", augments={'Phys. dmg. taken -1%','Attack+4',}},
+      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
+      hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
+      legs="Cirq. Pantaloni +2",
+      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
+      neck="Asperity Necklace",
+      waist="Cetl Belt",
+      left_ear="Steelflash Earring",
+      right_ear="Bladeborn Earring",
+      left_ring="Rajas Ring",
+      right_ring="Epona's Ring",
+      back={ name="Dispersal Mantle", augments={'STR+2','Pet: TP Bonus+140','"Martial Arts"+13',}},
+    }
+
     sets.engaged.Acc = {
-        head="Whirlpool Mask",neck="Ej Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Qaaxo Harness",hands="Otronif Gloves",ring1="Rajas Ring",ring2="Epona's Ring",
-        back="Dispersal Mantle",waist="Hurch'lan Sash",legs="Manibozho Brais",feet="Otronif Boots +1"}
-    sets.engaged.DT = {
-        head="Whirlpool Mask",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Otronif Harness +1",hands="Regimen Mittens",ring1="Defending Ring",ring2="Epona's Ring",
-        back="Iximulew Cape",waist="Windbuffet Belt",legs="Manibozho Brais",feet="Otronif Boots +1"}
-    sets.engaged.Acc.DT = {
-        head="Whirlpool Mask",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Otronif Harness +1",hands="Regimen Mittens",ring1="Defending Ring",ring2="Beeline Ring",
-        back="Iximulew Cape",waist="Hurch'lan Sash",legs="Manibozho Brais",feet="Otronif Boots +1"}
+      head="Whirlpool Mask",
+      body={ name="Pitre Tobe", augments={'Enhances "Overdrive" effect',}},
+      hands={ name="Otronif Gloves", augments={'Phys. dmg. taken -3%','"Mag.Def.Bns."+2',}},
+      legs={ name="Pitre Churidars", augments={'Enhances "Ventriloquy" effect',}},
+      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
+      neck="Subtlety Spec.",
+      waist="Cetl Belt",
+      left_ear="Steelflash Earring",
+      right_ear="Bladeborn Earring",
+      left_ring="Rajas Ring",
+      right_ring="Epona's Ring",
+      back={ name="Dispersal Mantle", augments={'STR+2','Pet: TP Bonus+140','"Martial Arts"+13',}},
+    }
+    sets.engaged.Fodder = {
+      head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
+      body="Thaumas Coat",
+      hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
+      legs="Cirq. Pantaloni +2",
+      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
+      neck="Asperity Necklace",
+      waist="Shaolin Belt",
+      left_ear="Steelflash Earring",
+      right_ear="Bladeborn Earring",
+      left_ring="Rajas Ring",
+      right_ring="Epona's Ring",
+      back={ name="Dispersal Mantle", augments={'STR+2','Pet: TP Bonus+140','"Martial Arts"+13',}},
+    }
+
 end
 
 
@@ -315,11 +362,11 @@ end
 function display_pet_status()
     if pet.isvalid then
         local petInfoString = pet.name..' ['..pet.head..']: '..tostring(pet.status)..'  TP='..tostring(pet.tp)..'  HP%='..tostring(pet.hpp)
-        
+
         if magicPetModes:contains(state.PetMode.value) then
             petInfoString = petInfoString..'  MP%='..tostring(pet.mpp)
         end
-        
+
         add_to_chat(122,petInfoString)
     end
 end
@@ -328,14 +375,12 @@ end
 function select_default_macro_book()
     -- Default macro set/book
     if player.sub_job == 'DNC' then
-        set_macro_page(2, 9)
+        set_macro_page(1, 12)
     elseif player.sub_job == 'NIN' then
-        set_macro_page(3, 9)
+        set_macro_page(1, 12)
     elseif player.sub_job == 'THF' then
-        set_macro_page(4, 9)
+        set_macro_page(1, 12)
     else
-        set_macro_page(1, 9)
+        set_macro_page(1, 12)
     end
 end
-
-

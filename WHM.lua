@@ -102,7 +102,7 @@ function init_gear_sets()
       main="Ababinili +1",
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
-      head={ name="Gende. Caubeen", augments={'Phys. dmg. taken -1%','Song spellcasting time -3%',}},
+      head={ name="Vanya Hood", augments={'Phys. dmg. taken -1%','Song spellcasting time -3%',}},
       body="Orison Bliaud +2",
       hands={ name="Bokwus Gloves", augments={'Mag. Acc.+11','MND+8','INT+6',}},
       legs="Orsn. Pantaln. +2",
@@ -121,7 +121,7 @@ function init_gear_sets()
     sets.midcast.Curaga = set_combine(sets.midcast.CureSolace, {})
 
     sets.midcast.CureMelee = {
-      head={ name="Gende. Caubeen", augments={'Phys. dmg. taken -1%','Song spellcasting time -3%',}},
+      head={ name="Vanya Hood", augments={'Phys. dmg. taken -1%','Song spellcasting time -3%',}},
       body="Orison Bliaud +2",
       hands={ name="Bokwus Gloves", augments={'Mag. Acc.+11','MND+8','INT+6',}},
       legs="Orsn. Pantaln. +2",
@@ -333,7 +333,7 @@ function init_gear_sets()
 
     -- Basic set for if no TP weapon is defined.
     sets.engaged = {
-      head={ name="Gende. Caubeen", augments={'Phys. dmg. taken -1%','Song spellcasting time -3%',}},
+      head={ name="Vanya Hood", augments={'Phys. dmg. taken -1%','Song spellcasting time -3%',}},
       body="Ischemia Chasu.",
       hands={ name="Gendewitha Gages", augments={'Phys. dmg. taken -2%','Song spellcasting time -3%',}},
       legs={ name="Telchine Braconi", augments={'Mag. Evasion+13','"Cure" spellcasting time -6%','"Regen" potency+1',}},
