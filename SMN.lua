@@ -235,7 +235,7 @@ function init_gear_sets()
       hands={ name="Hagondes Cuffs", augments={'Phys. dmg. taken -4%','Pet: "Mag.Atk.Bns."+21',}},
       legs={ name="Artsieq Hose", augments={'MP+22','Mag. Acc.+16','MND+5',}},
       feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
-      neck="Stoicheion Medal",
+      neck="Eddy Necklace",
       waist="Aswang Sash",
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",

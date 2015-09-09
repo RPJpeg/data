@@ -99,7 +99,7 @@ function init_gear_sets()
 
 
     sets.precast.WS['Aeolian Edge'] = {
-        head="Wayfarer Circlet",neck="Stoicheion Medal",ear1="Friomisi Earring",ear2="Moonshade Earring",
+        head="Wayfarer Circlet",ear1="Friomisi Earring",ear2="Moonshade Earring",
         body="Wayfarer Robe",hands="Wayfarer Cuffs",ring1="Acumen Ring",ring2="Demon's Ring",
         back="Toro Cape",waist="Thunder Belt",legs="Shneddick Tights +1",feet="Daihanshi Habaki"}
 
@@ -116,7 +116,7 @@ function init_gear_sets()
     sets.midcast.Utsusemi = set_combine(sets.midcast.SelfNinjutsu, {feet="Iga Kyahan +2"})
 
     sets.midcast.ElementalNinjutsu = {
-        head="Hachiya Hatsuburi",neck="Stoicheion Medal",ear1="Friomisi Earring",ear2="Hecate's Earring",
+        head="Hachiya Hatsuburi",ear1="Friomisi Earring",ear2="Hecate's Earring",
         body="Hachiya Chainmail +1",hands="Iga Tekko +2",ring1="Icesoul Ring",ring2="Acumen Ring",
         back="Toro Cape",waist=gear.ElementalObi,legs="Nahtirah Trousers",feet="Hachiya Kyahan"}
 
@@ -124,7 +124,7 @@ function init_gear_sets()
         back="Yokaze Mantle"})
 
     sets.midcast.NinjutsuDebuff = {
-        head="Hachiya Hatsuburi",neck="Stoicheion Medal",ear1="Lifestorm Earring",ear2="Psystorm Earring",
+        head="Hachiya Hatsuburi",ear1="Lifestorm Earring",ear2="Psystorm Earring",
         hands="Mochizuki Tekko",ring2="Sangoma Ring",
         back="Yokaze Mantle",feet="Hachiya Kyahan"}
 
