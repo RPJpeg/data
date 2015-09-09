@@ -261,7 +261,7 @@ function init_gear_sets()
     }
 
     sets.buff.ComposureOther = {
-      head="Estoqueur's Chappel +2",
+      head="Lethargy Chappel",
       body="Estoqueur's Sayon +2",
       hands="Lethargy Gantherots",
       legs="Lethargy Fuseau",
