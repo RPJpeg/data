@@ -76,7 +76,7 @@ function init_gear_sets()
       hands={ name="Hagondes Cuffs", augments={'Phys. dmg. taken -4%','Pet: "Mag.Atk.Bns."+21',}},
       legs={ name="Artsieq Hose", augments={'MP+22','Mag. Acc.+16','MND+5',}},
       feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
-      neck="Stoicheion Medal",
+      neck="Voltsurge Torque",
       waist="Witful Belt",
       left_ear="Loquac. Earring",
       right_ear="Gifted Earring",
@@ -87,7 +87,7 @@ function init_gear_sets()
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 
-    sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {neck="Stoicheion Medal"})
+    sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {})
 
     sets.precast.FC.Cure = set_combine(sets.precast.FC, {})
 
@@ -112,7 +112,7 @@ function init_gear_sets()
       hands={ name="Hagondes Cuffs", augments={'Phys. dmg. taken -4%','Pet: "Mag.Atk.Bns."+21',}},
       legs={ name="Artsieq Hose", augments={'MP+22','Mag. Acc.+16','MND+5',}},
       feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
-      neck="Stoicheion Medal",
+      neck="Voltsurge Torque",
       waist="Witful Belt",
       left_ear="Loquac. Earring",
       right_ear="Gifted Earring",
@@ -183,7 +183,7 @@ function init_gear_sets()
       hands={ name="Hagondes Cuffs", augments={'Phys. dmg. taken -4%','Pet: "Mag.Atk.Bns."+21',}},
       legs={ name="Artsieq Hose", augments={'MP+22','Mag. Acc.+16','MND+5',}},
       feet="Goetia Sabots +2",
-      neck="Imbodla Necklace",
+      neck="Voltsurge Torque",
       waist="Aswang Sash",
       left_ear="Lifestorm Earring",
       right_ear="Psystorm Earring",
@@ -201,7 +201,7 @@ function init_gear_sets()
       hands={ name="Hagondes Cuffs", augments={'Phys. dmg. taken -4%','Pet: "Mag.Atk.Bns."+21',}},
       legs={ name="Artsieq Hose", augments={'MP+22','Mag. Acc.+16','MND+5',}},
       feet="Goetia Sabots +2",
-      neck="Imbodla Necklace",
+      neck="Voltsurge Torque",
       waist="Fucho-no-Obi",
       left_ear="Lifestorm Earring",
       right_ear="Psystorm Earring",
@@ -221,7 +221,7 @@ function init_gear_sets()
       hands={ name="Hagondes Cuffs", augments={'Phys. dmg. taken -4%','Pet: "Mag.Atk.Bns."+21',}},
       legs={ name="Artsieq Hose", augments={'MP+22','Mag. Acc.+16','MND+5',}},
       feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
-      neck="Stoicheion Medal",
+      neck="Voltsurge Torque",
       waist="Witful Belt",
       left_ear="Loquac. Earring",
       right_ear="Gifted Earring",
