@@ -75,7 +75,7 @@ function init_gear_sets()
     -- Special sets (required by rules)
     --------------------------------------
 
-    sets.TreasureHunter = {hands="Plunderer's Armlets +1", feet="Skulker's Poulaines"}
+    sets.TreasureHunter = {hands="Plunderer's Armlets +1", feet="Skulker's Poulaines +1"}
     sets.ExtraRegen = {}
     sets.Kiting = {feet="Pillager's Poulaines"}
 
@@ -126,7 +126,7 @@ function init_gear_sets()
     sets.precast.JA['Hide'] = {body="Assassin's Vest"}
     sets.precast.JA['Conspirator'] = {body = "Raider's Vest +2"}
     sets.precast.JA['Steal'] = {hands="Pillager's Armlets",legs="Pillager's Culottes",feet="Pillager's Poulaines"}
-    sets.precast.JA['Despoil'] = {legs="Raider's Culottes +2",feet="Skulker's Poulaines"}
+    sets.precast.JA['Despoil'] = {legs="Raider's Culottes +2",feet="Skulker's Poulaines +1"}
     sets.precast.JA['Perfect Dodge'] = {hands="Plunderer's Armlets +1"}
     sets.precast.JA['Feint'] = {} -- {legs="Assassin's Culottes +2"}
 
