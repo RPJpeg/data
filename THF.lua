@@ -392,7 +392,7 @@ function init_gear_sets()
       hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
       legs={ name="Taeon Tights", augments={'"Triple Atk."+2','Crit. hit damage +2%',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
-      neck="Asperity Necklace",
+      neck="Subtlety Spectacles",
       waist="Cetl Belt",
       left_ear="Dudgeon Earring",
       right_ear="Heartseeker Earring",
