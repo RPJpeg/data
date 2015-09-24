@@ -238,7 +238,7 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'] = {
       main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
       sub="Zuuxowu Grip",
-      ammo="Witchstone",
+      ammo="Dosis Tathlum",
       head={ name="Hagondes Hat", augments={'Phys. dmg. taken -3%','"Mag.Atk.Bns."+26',}},
       body="Spaekona's Coat +1",
       hands="Yaoyotl Gloves",
@@ -258,7 +258,7 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'].HighTierNuke = {
       main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
       sub="Zuuxowu Grip",
-      ammo="Witchstone",
+      ammo="Dosis Tathlum",
       head={ name="Hagondes Hat", augments={'Phys. dmg. taken -3%','"Mag.Atk.Bns."+26',}},
       body={ name="Bokwus Robe", augments={'"Mag.Atk.Bns."+13','INT+10','MND+10',}},
       hands="Yaoyotl Gloves",
@@ -287,7 +287,7 @@ function init_gear_sets()
     sets.resting = {
       main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
       sub="Zuuxowu Grip",
-      ammo="Witchstone",
+      ammo="Dosis Tathlum",
       head={ name="Wivre Hairpin", augments={'"Refresh"+1','Earth resistance+6','Water resistance+6',}},
       body="Ischemia Chasu.",
       hands="Serpentes Cuffs",
@@ -309,7 +309,7 @@ function init_gear_sets()
     sets.idle = {
       main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
       sub="Zuuxowu Grip",
-      ammo="Witchstone",
+      ammo="Dosis Tathlum",
       head={ name="Wivre Hairpin", augments={'"Refresh"+1','Earth resistance+6','Water resistance+6',}},
       body="Ischemia Chasu.",
       hands="Serpentes Cuffs",
@@ -335,7 +335,7 @@ function init_gear_sets()
     sets.idle.Town = {
       main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
       sub="Zuuxowu Grip",
-      ammo="Witchstone",
+      ammo="Dosis Tathlum",
       head={ name="Hagondes Hat", augments={'Phys. dmg. taken -3%','"Mag.Atk.Bns."+26',}},
       body="Spaekona's Coat +1",
       hands="Serpentes Cuffs",

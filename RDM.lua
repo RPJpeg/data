@@ -190,7 +190,7 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'] = {
       main="Marin Staff",
       sub="Zuuxowu Grip",
-      ammo="Witchstone",
+      ammo="Dosis Tathlum",
       head={ name="Hagondes Hat", augments={'Phys. dmg. taken -3%','"Mag.Atk.Bns."+26',}},
       body={ name="Bokwus Robe", augments={'"Mag.Atk.Bns."+13','INT+10','MND+10',}},
       hands="Yaoyotl Gloves",

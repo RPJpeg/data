@@ -68,7 +68,7 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-      head={ name="Vanya Hood", augments={'----------------',}},
+      head="Vanya Hood",
       body="Ischemia Chasu.",
       hands="Yaoyotl Gloves",
       legs="Assiduity Pants",
@@ -122,10 +122,10 @@ function init_gear_sets()
       main="Tefnut Wand",
       sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','Mag. Acc.+5','"Cure" spellcasting time -7%',}},
       ammo="Kalboron Stone",
-      head={ name="Vanya Hood", augments={'----------------',}},
+      head="Vanya Hood",
       body="Ischemia Chasu.",
       hands={ name="Bokwus Gloves", augments={'Mag. Acc.+11','MND+9','INT+7',}},
-      legs={ name="Vanya Slops", augments={'MND+5','System: 2 ID: 126 Val: 4','System: 2 ID: 177 Val: 2',}},
+      legs="Vanya Slops",
       feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
       neck="Imbodla Necklace",
       waist="Witful Belt",
@@ -153,7 +153,7 @@ function init_gear_sets()
       head={ name="Artsieq Hat", augments={'Mag. Acc.+18','Mag. Evasion+7','Magic dmg. taken -2',}},
       body="Ischemia Chasu.",
       hands={ name="Hagondes Cuffs", augments={'Phys. dmg. taken -4%','Pet: "Mag.Atk.Bns."+21',}},
-      legs={ name="Vanya Slops", augments={'MND+5','System: 2 ID: 126 Val: 4','System: 2 ID: 177 Val: 2',}},
+      legs="Vanya Slops",
       feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
       neck="Imbodla Necklace",
       waist="Aswang Sash",
@@ -167,7 +167,7 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'] = {
       main="Marin Staff",
       sub="Zuuxowu Grip",
-      ammo="Witchstone",
+      ammo="Dosis Tathlum",
       head={ name="Hagondes Hat", augments={'Phys. dmg. taken -3%','"Mag.Atk.Bns."+26',}},
       body={ name="Bokwus Robe", augments={'"Mag.Atk.Bns."+13','INT+10','MND+10',}},
       hands="Yaoyotl Gloves",
@@ -191,7 +191,7 @@ function init_gear_sets()
       head={ name="Artsieq Hat", augments={'Mag. Acc.+18','Mag. Evasion+7','Magic dmg. taken -2',}},
       body="Geomancy Tunic",
       hands={ name="Hagondes Cuffs", augments={'Phys. dmg. taken -4%','Pet: "Mag.Atk.Bns."+21',}},
-      legs={ name="Vanya Slops", augments={'MND+5','System: 2 ID: 126 Val: 4','System: 2 ID: 177 Val: 2',}},
+      legs="Vanya Slops",
       feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
       neck="Voltsurge Torque",
       waist="Aswang Sash",
@@ -325,7 +325,7 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {
-      head={ name="Vanya Hood", augments={'----------------',}},
+      head="Vanya Hood",
       body="Ischemia Chasu.",
       hands="Yaoyotl Gloves",
       legs="Assiduity Pants",
