@@ -50,7 +50,7 @@ function init_gear_sets()
       head={ name="Artsieq Hat", augments={'Mag. Acc.+18','Mag. Evasion+7','Magic dmg. taken -2',}},
       body={ name="Helios Jacket", augments={'Pet: Crit.hit rate +3','Summoning magic skill +1',}},
       hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
-      legs="Geomancy Pants",
+      legs="Geomancy Pants +1",
       feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
       neck="Voltsurge Torque",
       waist="Witful Belt",
