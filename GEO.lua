@@ -48,7 +48,7 @@ function init_gear_sets()
     sets.precast.FC = {
       main="Marin Staff",
       head={ name="Artsieq Hat", augments={'Mag. Acc.+18','Mag. Evasion+7','Magic dmg. taken -2',}},
-      body={ name="Helios Jacket", augments={'Pet: Crit.hit rate +3','Summoning magic skill +1',}},
+      body="Helios Jacket",
       hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
       legs="Geomancy Pants +1",
       feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
@@ -113,6 +113,7 @@ function init_gear_sets()
     sets.midcast.Geomancy = {range="Filiae Bell"}
     sets.midcast.Geomancy.Indi = {
       range="Filiae Bell",
+      head="Azimuth Hood",
       body={ name="Bagua Tunic", augments={'Enhances "Bolster" effect',}},
       hands="Geomancy Mitaines",
       legs={ name="Bagua Pants", augments={'Enhances "Mending Halation" effect',}},
@@ -206,7 +207,7 @@ function init_gear_sets()
       main="Apamajas II"
     })
 
-    sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {head="Bagua Galero",waist="Fucho-no-Obi"})
+    sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {head="Bagua Galero",body="Helios Jacket",waist="Fucho-no-Obi"})
 
     sets.midcast.Aspir = sets.midcast.Drain
 
@@ -233,7 +234,7 @@ function init_gear_sets()
       sub="Zuuxowu Grip",
       range="Filiae Bell",
       head={ name="Wivre Hairpin", augments={'"Refresh"+1','Earth resistance+6','Water resistance+6',}},
-      body="Ischemia Chasu.",
+      body="Azimuth Coat",
       hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
       legs="Assiduity Pants",
       feet="Geomancy Sandals",
@@ -253,8 +254,8 @@ function init_gear_sets()
       main="Marin Staff",
       sub="Zuuxowu Grip",
       range="Filiae Bell",
-      head={ name="Wivre Hairpin", augments={'"Refresh"+1','Earth resistance+6','Water resistance+6',}},
-      body="Ischemia Chasu.",
+      head="Wivre Hairpin",
+      body="Azimuth Coat",
       hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
       legs="Assiduity Pants",
       feet="Geomancy Sandals",
@@ -271,6 +272,8 @@ function init_gear_sets()
 
     -- .Pet sets are for when Luopan is present.
     sets.idle.Pet = set_combine(sets.idle, {
+      head="Azimuth Hood",
+      body="Bagua Tunic",
       hands="Geomancy Mitaines",
       feet="Bagua Sandals",
     })
@@ -287,8 +290,8 @@ function init_gear_sets()
       main="Marin Staff",
       sub="Zuuxowu Grip",
       range="Filiae Bell",
-      head={ name="Bagua Galero", augments={'Enhances "Primeval Zeal" effect',}},
-      body={ name="Bagua Tunic", augments={'Enhances "Bolster" effect',}},
+      head="Azimuth Hood",
+      body="Azimuth Coat",
       hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
       legs="Assiduity Pants",
       feet="Geomancy Sandals",
