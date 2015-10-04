@@ -1,0 +1,17 @@
+sets.exported={
+    main="Vanir Knife",
+    sub="Jugo Kukri",
+    ammo="Honed Tathlum",
+    head="Skulker's Bonnet",
+    body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
+    hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
+    legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
+    feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
+    neck="Asperity Necklace",
+    waist="Fotia Belt",
+    left_ear="Dudgeon Earring",
+    right_ear="Heartseeker Earring",
+    left_ring="Rajas Ring",
+    right_ring="Epona's Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+}

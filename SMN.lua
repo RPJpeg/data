@@ -179,7 +179,7 @@ function init_gear_sets()
 
     sets.precast.FC = {
       head={ name="Helios Band", augments={'Pet: Mag. Acc.+5','"Blood Pact" ability delay -5',}},
-      body={ name="Helios Jacket", augments={'Pet: Crit.hit rate +3','Summoning magic skill +1',}},
+      body="Helios Jacket",
       hands={ name="Helios Gloves", augments={'Pet: "Mag.Atk.Bns."+26','Pet: "Dbl. Atk."+5','Summoning magic skill +5',}},
       legs={ name="Artsieq Hose", augments={'MP+22','Mag. Acc.+16','MND+5',}},
       feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
@@ -229,7 +229,7 @@ function init_gear_sets()
     sets.midcast.Stoneskin = {waist="Siegel Sash"}
 
     sets.midcast['Elemental Magic'] = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
+      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+15','"Refresh"+1','INT+8',}},
       sub="Mephitis Grip",
       head={ name="Helios Band", augments={'Pet: Mag. Acc.+5','"Blood Pact" ability delay -5',}},
       body="Ischemia Chasu.",
@@ -246,7 +246,7 @@ function init_gear_sets()
     }
 
     sets.midcast['Dark Magic'] = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
+      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+15','"Refresh"+1','INT+8',}},
       sub="Mephitis Grip",
       head={ name="Artsieq Hat", augments={'Mag. Acc.+18','Mag. Evasion+7','Magic dmg. taken -2',}},
       body="Ischemia Chasu.",
@@ -266,7 +266,7 @@ function init_gear_sets()
     -- Avatar pact sets.  All pacts are Ability type.
 
     sets.midcast.Pet.BloodPactWard = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
+      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+15','"Refresh"+1','INT+8',}},
       sub="Vox Grip",
       ammo="Eminent Sachet",
       head="Convoker's Horn",
@@ -284,7 +284,7 @@ function init_gear_sets()
     }
 
     sets.midcast.Pet.DebuffBloodPactWard = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
+      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+15','"Refresh"+1','INT+8',}},
       sub="Vox Grip",
       ammo="Eminent Sachet",
       head="Convoker's Horn",
@@ -304,7 +304,7 @@ function init_gear_sets()
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
 
     sets.midcast.Pet.PhysicalBloodPactRage = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
+      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+15','"Refresh"+1','INT+8',}},
       sub="Vox Grip",
       ammo="Eminent Sachet",
       head="Convoker's Horn",
@@ -324,7 +324,7 @@ function init_gear_sets()
     sets.midcast.Pet.PhysicalBloodPactRage.Acc = sets.midcast.Pet.PhysicalBloodPactRage
 
     sets.midcast.Pet.MagicalBloodPactRage = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
+      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+15','"Refresh"+1','INT+8',}},
       sub="Vox Grip",
       ammo="Eminent Sachet",
       head="Convoker's Horn",
