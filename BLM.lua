@@ -140,7 +140,7 @@ function init_gear_sets()
     sets.midcast.Curaga = sets.midcast.Cure
 
     sets.midcast['Enhancing Magic'] = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
+      main="Marin Staff",
       ammo="Kalboron Stone",
       head={ name="Artsieq Hat", augments={'Mag. Acc.+18','Mag. Evasion+7','Magic dmg. taken -2',}},
       body={ name="Telchine Chas.", augments={'"Fast Cast"+2','"Regen" potency+2',}},
@@ -155,7 +155,7 @@ function init_gear_sets()
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash"})
 
     sets.midcast['Enfeebling Magic'] = {
-      main="Marin Staff",
+      main="Lathi",
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
       head={ name="Artsieq Hat", augments={'Mag. Acc.+18','Mag. Evasion+7','Magic dmg. taken -2',}},
@@ -175,7 +175,7 @@ function init_gear_sets()
     sets.midcast.ElementalEnfeeble = sets.midcast['Enfeebling Magic']
 
     sets.midcast['Dark Magic'] = {
-      main="Marin Staff",
+      main="Lathi",
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
       head={ name="Artsieq Hat", augments={'Mag. Acc.+18','Mag. Evasion+7','Magic dmg. taken -2',}},
@@ -193,7 +193,7 @@ function init_gear_sets()
     }
 
     sets.midcast.Drain = {
-      main="Marin Staff",
+      main="Lathi",
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
       head={ name="Artsieq Hat", augments={'Mag. Acc.+18','Mag. Evasion+7','Magic dmg. taken -2',}},
@@ -236,7 +236,7 @@ function init_gear_sets()
     -- Elemental Magic sets
 
     sets.midcast['Elemental Magic'] = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
+      main="Lathi",
       sub="Zuuxowu Grip",
       ammo="Dosis Tathlum",
       head={ name="Hagondes Hat", augments={'Phys. dmg. taken -3%','"Mag.Atk.Bns."+26',}},
@@ -256,7 +256,7 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'].Resistant = sets.midcast['Elemental Magic']
 
     sets.midcast['Elemental Magic'].HighTierNuke = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
+      main="Lathi",
       sub="Zuuxowu Grip",
       ammo="Dosis Tathlum",
       head={ name="Hagondes Hat", augments={'Phys. dmg. taken -3%','"Mag.Atk.Bns."+26',}},
@@ -285,7 +285,7 @@ function init_gear_sets()
 
     -- Resting sets
     sets.resting = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
+      main="Lathi",
       sub="Zuuxowu Grip",
       ammo="Dosis Tathlum",
       head={ name="Wivre Hairpin", augments={'"Refresh"+1','Earth resistance+6','Water resistance+6',}},
@@ -307,7 +307,7 @@ function init_gear_sets()
 
     -- Normal refresh idle set
     sets.idle = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
+      main="Lathi",
       sub="Zuuxowu Grip",
       ammo="Dosis Tathlum",
       head={ name="Wivre Hairpin", augments={'"Refresh"+1','Earth resistance+6','Water resistance+6',}},
@@ -333,7 +333,7 @@ function init_gear_sets()
 
     -- Town gear.
     sets.idle.Town = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+8','"Refresh"+1','INT+8',}},
+      main="Lathi",
       sub="Zuuxowu Grip",
       ammo="Dosis Tathlum",
       head={ name="Hagondes Hat", augments={'Phys. dmg. taken -3%','"Mag.Atk.Bns."+26',}},

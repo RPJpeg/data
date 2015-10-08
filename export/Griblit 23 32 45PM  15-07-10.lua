@@ -1,0 +1,17 @@
+sets.exported={
+    main="Staccato Staff",
+    sub="Zuuxowu Grip",
+    range="Filiae Bell",
+    head={ name="Vanya Hood", augments={'Healing magic skill +15','System: 2 ID: 123 Val: 4','Magic dmg. taken -2',}},
+    body="Ischemia Chasu.",
+    hands={ name="Hagondes Cuffs", augments={'Phys. dmg. taken -4%','Pet: "Mag.Atk.Bns."+21',}},
+    legs={ name="Telchine Braconi", augments={'Mag. Evasion+13','"Cure" spellcasting time -6%','"Regen" potency+1',}},
+    feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
+    neck="Asperity Necklace",
+    waist="Cetl Belt",
+    left_ear="Steelflash Earring",
+    right_ear="Bladeborn Earring",
+    left_ring="Pyrosoul Ring",
+    right_ring="Rajas Ring",
+    back="Toro Cape",
+}

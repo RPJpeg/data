@@ -1,0 +1,17 @@
+sets.exported={
+    main="Staccato Staff",
+    sub="Zuuxowu Grip",
+    range="Filiae Bell",
+    head="Azimuth Hood",
+    body="Azimuth Coat",
+    hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
+    legs="Assiduity Pants",
+    feet="Geomancy Sandals",
+    neck="Twilight Torque",
+    waist="Fucho-no-Obi",
+    left_ear="Friomisi Earring",
+    right_ear="Hecate's Earring",
+    left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+    right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+}
