@@ -137,7 +137,7 @@ function init_gear_sets()
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
       head="Whirlpool Mask",
-      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
+      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
       hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
       legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
@@ -179,10 +179,10 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
       head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
-      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
+      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Taeon Tights", augments={'Accuracy+2','Weapon Skill Acc.+19','STR+5 DEX+5',}},
-      feet={ name="Taeon Boots", augments={'Attack+6','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
+      feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
       neck="Rancor Collar",
       waist="Fotia Belt",
       left_ear="Steelflash Earring",
@@ -196,7 +196,7 @@ function init_gear_sets()
       body="Pillager's Vest",
       hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
       neck="Love Torque",
-      back={ name="Canny Cape", augments={'DEX+2','AGI+4','"Dual Wield"+1',}},
+      back="Canny Cape",
     })
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -244,10 +244,10 @@ function init_gear_sets()
 
     sets.precast.WS['Aeolian Edge'] = {
       head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
-      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
+      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
-      feet={ name="Taeon Boots", augments={'Attack+6','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
+      feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
       neck="Rancor Collar",
       waist="Fotia Belt",
       left_ear="Friomisi Earring",
@@ -321,7 +321,7 @@ function init_gear_sets()
 
     sets.idle = {
       head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
-      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
+      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
       feet="Pillager's Poulaines",
@@ -335,11 +335,11 @@ function init_gear_sets()
     }
 
     sets.idle.Town = {
-      main="Vanir Knife",
+      main="Shijo",
       sub="Jugo Kukri",
       ammo="Honed Tathlum",
       head="Skulker's Bonnet",
-      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
+      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
       feet="Pillager's Poulaines",
@@ -372,7 +372,7 @@ function init_gear_sets()
     sets.engaged = {
       range="Raider's Bmrng.",
       head={ name="Taeon Chapeau", augments={'"Dual Wield"+2','STR+2 VIT+2',}},
-      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
+      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
@@ -382,12 +382,12 @@ function init_gear_sets()
       right_ear="Heartseeker Earring",
       left_ring="Rajas Ring",
       right_ring="Epona's Ring",
-      back={ name="Canny Cape", augments={'DEX+2','AGI+4','"Dual Wield"+1',}},
+      back="Canny Cape",
     }
     sets.engaged.Acc = {
       ammo="Honed Tathlum",
       head="Whirlpool Mask",
-      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
+      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
       hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
       legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
@@ -397,7 +397,7 @@ function init_gear_sets()
       right_ear="Heartseeker Earring",
       left_ring="Rajas Ring",
       right_ring="Epona's Ring",
-      back={ name="Canny Cape", augments={'DEX+2','AGI+4','"Dual Wield"+1',}},
+      back="Canny Cape",
     }
 
     -- Mod set for trivial mobs (Skadi+1)
@@ -417,13 +417,13 @@ function init_gear_sets()
       right_ear="Heartseeker Earring",
       left_ring="Rajas Ring",
       right_ring="Epona's Ring",
-      back={ name="Canny Cape", augments={'DEX+2','AGI+4','"Dual Wield"+1',}},
+      back="Canny Cape",
     }
 
     sets.engaged.Evasion = {
       range="Raider's Bmrng.",
       head={ name="Taeon Chapeau", augments={'"Dual Wield"+2','STR+2 VIT+2',}},
-      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
+      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
@@ -438,7 +438,7 @@ function init_gear_sets()
     sets.engaged.Acc.Evasion = {
       ammo="Honed Tathlum",
       head="Whirlpool Mask",
-      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
+      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
       hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
       legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
@@ -454,7 +454,7 @@ function init_gear_sets()
     sets.engaged.PDT = {
       range="Raider's Bmrng.",
       head={ name="Taeon Chapeau", augments={'"Dual Wield"+2','STR+2 VIT+2',}},
-      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
+      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
@@ -464,12 +464,12 @@ function init_gear_sets()
       right_ear="Heartseeker Earring",
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      back={ name="Canny Cape", augments={'DEX+2','AGI+4','"Dual Wield"+1',}},
+      back="Canny Cape",
     }
     sets.engaged.Acc.PDT = {
       ammo="Honed Tathlum",
       head="Whirlpool Mask",
-      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
+      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
       hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
       legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
@@ -479,7 +479,7 @@ function init_gear_sets()
       right_ear="Heartseeker Earring",
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      back={ name="Canny Cape", augments={'DEX+2','AGI+4','"Dual Wield"+1',}},
+      back="Canny Cape",
     }
 
 end
