@@ -153,7 +153,7 @@ function init_gear_sets()
     sets.midcast.Geomancy ={
       main="Staccato Staff",
       sub="Mephitis Grip",
-      range="Filiae Bell",
+      range="Dunna",
       head="Azimuth Hood",
       body={ name="Bagua Tunic", augments={'Enhances "Bolster" effect',}},
       hands="Geomancy Mitaines",
@@ -311,7 +311,7 @@ function init_gear_sets()
     sets.resting = {
       main="Marin Staff",
       sub="Zuuxowu Grip",
-      range="Filiae Bell",
+      range="Dunna",
       head={ name="Wivre Hairpin", augments={'"Refresh"+1','Earth resistance+6','Water resistance+6',}},
       body="Azimuth Coat",
       hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
@@ -336,7 +336,7 @@ function init_gear_sets()
     sets.idle.Pet = {
       main="Marin Staff",
       sub="Zuuxowu Grip",
-      range="Filiae Bell",
+      range="Dunna",
       head="Azimuth Hood",
       body={ name="Bagua Tunic", augments={'Enhances "Bolster" effect',}},
       hands="Geomancy Mitaines",
@@ -357,7 +357,7 @@ function init_gear_sets()
     sets.idle.Town = {
       main="Staccato Staff",
       sub="Zuuxowu Grip",
-      range="Filiae Bell",
+      range="Dunna",
       head="Azimuth Hood",
       body="Azimuth Coat",
       hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
