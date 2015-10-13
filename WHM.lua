@@ -40,7 +40,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     sets.precast.FC = {
       main="Marin Staff",
-      head="Artsieq Hat",
+      head="Haruspex Hat",
       body="Helios Jacket",
       hands="Gendewitha Gages +1",
       legs="Artsieq Hose",

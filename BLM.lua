@@ -71,7 +71,7 @@ function init_gear_sets()
 
     sets.precast.FC = {
       main="Marin Staff",
-      head="Artsieq Hat",
+      head="Haruspex Hat",
       body="Telchine Chas.",
       hands="Hagondes Cuffs",
       legs="Artsieq Hose",
@@ -216,7 +216,7 @@ function init_gear_sets()
       main={ name="Apamajas II", augments={'Lightning Affinity: Magic Accuracy+6 Lightning Affinity: Recast time-14%','Lightning Affinity: Magic Damage+1',}},
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
-      head="Artsieq Hat",
+      head="Haruspex Hat",
       body="Telchine Chas.",
       hands="Hagondes Cuffs",
       legs="Artsieq Hose",

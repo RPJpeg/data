@@ -178,7 +178,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
 
     sets.precast.FC = {
-      head={ name="Helios Band", augments={'Pet: Mag. Acc.+5','"Blood Pact" ability delay -5',}},
+      head="Haruspex Hat",
       body="Helios Jacket",
       hands={ name="Helios Gloves", augments={'Pet: "Mag.Atk.Bns."+26','Pet: "Dbl. Atk."+5','Summoning magic skill +5',}},
       legs={ name="Artsieq Hose", augments={'MP+22','Mag. Acc.+16','MND+5',}},
