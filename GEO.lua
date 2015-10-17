@@ -45,7 +45,7 @@ function init_gear_sets()
     --------------------------------------
 
     -- Precast sets to enhance JAs
-    sets.precast.JA.Bolster = {body="Bagua Tunic"}
+    sets.precast.JA.Bolster = {body="Bagua Tunic +1"}
     sets.precast.JA['Life cycle'] = {body="Geomancy Tunic",
     head="Azimuth hood"
     }
@@ -155,8 +155,8 @@ function init_gear_sets()
       sub="Mephitis Grip",
       range="Dunna",
       head="Azimuth Hood +1",
-      body={ name="Bagua Tunic", augments={'Enhances "Bolster" effect',}},
-      hands="Geomancy Mitaines",
+      body={ name="Bagua Tunic +1", augments={'Enhances "Bolster" effect',}},
+      hands="Geomancy Mitaines +1",
       legs="Azimuth Tights",
       feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
       neck="Voltsurge Torque",
@@ -255,20 +255,20 @@ function init_gear_sets()
     sets.midcast.Stun = sets.precast.FC
 
 
-    sets.midcast.Bolster = {body="Bagua Tunic"}
+    sets.midcast.Bolster = {body="Bagua Tunic +1"}
     sets.midcast['Life Cycle'] = {
       body="Geomancy Tunic",
       head="Azimuth hood"
 }
     sets.midcast['Mending Halation'] = {legs="Bagua Pants"}
     sets.midcast['Radial Arcana'] = {feet="Bagua Sandals"}
-    sets.midcast.Bolster.Pet = {body="Bagua Tunic"}
+    sets.midcast.Bolster.Pet = {body="Bagua Tunic +1"}
     sets.midcast['Life Cycle'].Pet = {
       body="Geomancy Tunic",
       head="Azimuth hood"
 }
     sets.midcast['Mending Halation'].Pet = {legs="Bagua Pants"}
-    sets.midcast.Bolster.Pet.Indi = {body="Bagua Tunic"}
+    sets.midcast.Bolster.Pet.Indi = {body="Bagua Tunic +1"}
     sets.midcast['Life Cycle'].Pet.Indi = {
       body="Geomancy Tunic",
       head="Azimuth hood"
@@ -338,8 +338,8 @@ function init_gear_sets()
       sub="Zuuxowu Grip",
       range="Dunna",
       head="Azimuth Hood +1",
-      body={ name="Bagua Tunic", augments={'Enhances "Bolster" effect',}},
-      hands="Geomancy Mitaines",
+      body={ name="Bagua Tunic +1", augments={'Enhances "Bolster" effect',}},
+      hands="Geomancy Mitaines +1",
       legs="Assiduity Pants",
       feet={ name="Bagua Sandals", augments={'Enhances "Radial Arcana" effect',}},
       neck="Twilight Torque",

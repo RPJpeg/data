@@ -65,6 +65,7 @@ function init_gear_sets()
     sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {
       main="Ababinili +1",
       legs={ name="Telchine Braconi", augments={'Mag. Evasion+13','"Cure" spellcasting time -6%','"Regen" potency+1',}},
+      feet="Hygieia Clogs",
       right_ear="Nourish. Earring"
     })
     sets.precast.FC.Curaga = sets.precast.FC.Cure
@@ -302,7 +303,7 @@ function init_gear_sets()
       body="Ischemia Chasu.",
       hands="Serpentes Cuffs",
       legs={ name="Piety Pantaloons", augments={'Enhances "Shellra V" effect',}},
-      feet={ name="Piety Duckbills", augments={'Enhances "Protectra V" effect',}},
+      feet="Hygieia Clogs",
       neck="Twilight Torque",
       waist="Fucho-no-Obi",
       left_ear="Roundel Earring",

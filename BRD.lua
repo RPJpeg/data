@@ -163,7 +163,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = sets.precast.FC
 
     -- Gear to enhance certain classes of songs.  No instruments added here since Gjallarhorn is being used.
-    sets.midcast.Ballad = {legs="Aoidos' Rhing. +2"}
+    sets.midcast.Ballad = {legs="Fili Rhingrave"}
     sets.midcast.Lullaby = {}
     sets.midcast.Madrigal = {head="Fili Calot"}
     sets.midcast.March = {hands="Fili Manchettes"}
@@ -173,10 +173,10 @@ function init_gear_sets()
     sets.midcast.Carol = {
       head="Fili Calot",
       body="Aoidos' Hongreline +2",hands="Fili Manchettes",
-      legs="Aoidos' Rhing. +2",feet="Fili Cothurnes"
+      legs="Fili Rhingrave",feet="Fili Cothurnes"
     }
     sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes"}
-    sets.midcast['Magic Finale'] = {legs="Aoidos' Rhing. +2"}
+    sets.midcast['Magic Finale'] = {legs="Fili Rhingrave"}
 
     sets.midcast.Mazurka = {range=info.ExtraSongInstrument}
 
@@ -189,7 +189,7 @@ function init_gear_sets()
       head="Fili Calot",
       body="Aoidos' Hngrln. +2",
       hands="Fili Manchettes",
-      legs="Aoidos' Rhing. +2",
+      legs="Fili Rhingrave",
       feet="Fili Cothurnes",
       neck="Aoidos' Matinee",
       waist="Witful Belt",
@@ -226,7 +226,7 @@ function init_gear_sets()
     sets.midcast.SongRecast = {
         ear2="Loquacious Earring",
         ring1="Prolix Ring",
-        legs="Aoidos' Rhing. +2"
+        legs="Fili Rhingrave"
       }
 
     --sets.midcast.Daurdabla = set_combine(sets.midcast.FastRecast, sets.midcast.SongRecast, {range=info.ExtraSongInstrument})
@@ -519,7 +519,7 @@ function calculate_duration(spellName, spellMap)
     if spellMap == 'Madrigal' and player.equipment.head == "Fili Calot" then mult = mult + 0.1 end
     if spellMap == 'Minuet' and player.equipment.body == "Aoidos' Hngrln. +2" then mult = mult + 0.1 end
     if spellMap == 'March' and player.equipment.hands == 'Fili Manchettes' then mult = mult + 0.1 end
-    if spellMap == 'Ballad' and player.equipment.legs == "Aoidos' Rhing. +2" then mult = mult + 0.1 end
+    if spellMap == 'Ballad' and player.equipment.legs == "Fili Rhingrave" then mult = mult + 0.1 end
     if spellName == "Sentinel's Scherzo" and player.equipment.feet == "Aoidos' Cothrn. +2" then mult = mult + 0.1 end
 
     if buffactive.Troubadour then
