@@ -47,7 +47,7 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
     sets.precast.JA.Bolster = {body="Bagua Tunic +1"}
     sets.precast.JA['Life cycle'] = {body="Geomancy Tunic",
-    head="Azimuth hood"
+    head="Azimuth hood +1"
     }
     sets.precast.JA['Curative Recantation'] = {hands="Bagua Mitaines"}
     sets.precast.JA['Mending Halation'] = {legs="Bagua Pants"}
@@ -157,8 +157,8 @@ function init_gear_sets()
       head="Azimuth Hood +1",
       body={ name="Bagua Tunic +1", augments={'Enhances "Bolster" effect',}},
       hands="Geomancy Mitaines +1",
-      legs="Azimuth Tights",
-      feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
+      legs="Bagua Pants",
+      feet="Azimuth Gaiters",
       neck="Voltsurge Torque",
       waist="Druid's Rope",
       left_ear="Loquac. Earring",
@@ -204,10 +204,10 @@ function init_gear_sets()
       main="Marin Staff",
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
-      head={ name="Artsieq Hat", augments={'Mag. Acc.+18','Mag. Evasion+7','Magic dmg. taken -2',}},
+      head="Befouled Crown",
       body="Ischemia Chasu.",
-      hands={ name="Hagondes Cuffs", augments={'Phys. dmg. taken -4%','Pet: "Mag.Atk.Bns."+21',}},
-      legs={ name="Vanya Slops", augments={'MND+6','System: 2 ID: 126 Val: 6','System: 2 ID: 177 Val: 3',}},
+      hands="Azimuth Gloves",
+      legs="Vanya Slops",
       feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
       neck="Imbodla Necklace",
       waist="Aswang Sash",
@@ -228,7 +228,7 @@ function init_gear_sets()
       main="Marin Staff",
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
-      head={ name="Artsieq Hat", augments={'Mag. Acc.+18','Mag. Evasion+7','Magic dmg. taken -2',}},
+      head="Befouled Crown",
       body="Ischemia Chasu.",
       hands={ name="Hagondes Cuffs", augments={'Phys. dmg. taken -4%','Pet: "Mag.Atk.Bns."+21',}},
       legs="Azimuth Tights",
@@ -256,22 +256,28 @@ function init_gear_sets()
 
 
     sets.midcast.Bolster = {body="Bagua Tunic +1"}
+
     sets.midcast['Life Cycle'] = {
       body="Geomancy Tunic",
-      head="Azimuth hood"
+      head="Azimuth hood +1",
 }
     sets.midcast['Mending Halation'] = {legs="Bagua Pants"}
+
     sets.midcast['Radial Arcana'] = {feet="Bagua Sandals"}
+
     sets.midcast.Bolster.Pet = {body="Bagua Tunic +1"}
+
     sets.midcast['Life Cycle'].Pet = {
       body="Geomancy Tunic",
-      head="Azimuth hood"
+      head="Azimuth hood +1",
 }
     sets.midcast['Mending Halation'].Pet = {legs="Bagua Pants"}
+
     sets.midcast.Bolster.Pet.Indi = {body="Bagua Tunic +1"}
+
     sets.midcast['Life Cycle'].Pet.Indi = {
       body="Geomancy Tunic",
-      head="Azimuth hood"
+      head="Azimuth hood +1",
 }
     sets.midcast['Mending Halation'].Pet.Indi = {legs="Bagua Pants"}
 
@@ -312,7 +318,7 @@ function init_gear_sets()
       main="Marin Staff",
       sub="Zuuxowu Grip",
       range="Dunna",
-      head={ name="Wivre Hairpin", augments={'"Refresh"+1','Earth resistance+6','Water resistance+6',}},
+      head="Befouled Crown",
       body="Azimuth Coat",
       hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
       legs="Assiduity Pants",
@@ -334,13 +340,11 @@ function init_gear_sets()
     -- .Pet sets are for when Luopan is present.
 
     sets.idle.Pet = {
-      main="Marin Staff",
-      sub="Zuuxowu Grip",
       range="Dunna",
       head="Azimuth Hood +1",
       body={ name="Bagua Tunic +1", augments={'Enhances "Bolster" effect',}},
       hands="Geomancy Mitaines +1",
-      legs="Assiduity Pants",
+      legs={ name="Bagua Pants", augments={'Enhances "Mending Halation" effect',}},
       feet={ name="Bagua Sandals", augments={'Enhances "Radial Arcana" effect',}},
       neck="Twilight Torque",
       waist="Fucho-no-Obi",
@@ -349,10 +353,26 @@ function init_gear_sets()
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+
     }
 
     -- .Indi sets are for when an Indi-spell is active.
-    sets.idle.Indi = sets.resting
+    sets.idle.Indi = {
+      range="Dunna",
+      head="Azimuth Hood +1",
+      body={ name="Bagua Tunic +1", augments={'Enhances "Bolster" effect',}},
+      hands="Geo. Mitaines +1",
+      legs={ name="Bagua Pants", augments={'Enhances "Mending Halation" effect',}},
+      feet="Azimuth Gaiters",
+      neck="Twilight Torque",
+      waist="Fucho-no-Obi",
+      left_ear="Friomisi Earring",
+      right_ear="Hecate's Earring",
+      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+
+}
 
     sets.idle.Town = {
       main="Staccato Staff",
