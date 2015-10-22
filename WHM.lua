@@ -184,7 +184,7 @@ function init_gear_sets()
       }
 
     sets.midcast.Regen = {
-      body={ name="Telchine Chas.", augments={'"Fast Cast"+2','"Regen" potency+2',}},
+      body="Cleric's Briault +2",
       hands="Orison Mitts +2",
       legs={ name="Telchine Braconi", augments={'Mag. Evasion+13','"Cure" spellcasting time -6%','"Regen" potency+1',}},
     }
