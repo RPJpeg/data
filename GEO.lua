@@ -115,7 +115,7 @@ function init_gear_sets()
       body={ name="Bokwus Robe", augments={'"Mag.Atk.Bns."+13','INT+10','MND+10',}},
       hands="Yaoyotl Gloves",
       legs={ name="Hagondes Pants", augments={'Phys. dmg. taken -4%','"Mag.Atk.Bns."+19',}},
-      feet="Weath. Souliers +1",
+      feet="Umbani Boots",
       neck="Eddy Necklace",
       waist="Fotia Belt",
       left_ear="Friomisi Earring",
@@ -141,7 +141,7 @@ function init_gear_sets()
     sets.midcast['Enhancing Magic']={
       head={ name="Vanya Hood", augments={'Healing magic skill +15','System: 2 ID: 123 Val: 4','Magic dmg. taken -2',}},
       body={ name="Telchine Chas.", augments={'"Fast Cast"+2','"Regen" potency+2',}},
-      legs={ name="Vanya Slops", augments={'MND+6','System: 2 ID: 126 Val: 6','System: 2 ID: 177 Val: 3',}},
+      legs="Vanya Slops",
 }
 
     sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {
@@ -178,13 +178,13 @@ function init_gear_sets()
       head={ name="Vanya Hood", augments={'Healing magic skill +15','System: 2 ID: 123 Val: 4','Magic dmg. taken -2',}},
       body={ name="Telchine Chas.", augments={'"Fast Cast"+2','"Regen" potency+2',}},
       hands={ name="Bokwus Gloves", augments={'Mag. Acc.+11','MND+9','INT+7',}},
-      legs={ name="Vanya Slops", augments={'MND+6','System: 2 ID: 126 Val: 6','System: 2 ID: 177 Val: 3',}},
+      legs="Vanya Slops",
       feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
       neck="Imbodla Necklace",
       waist="Druid's Rope",
       left_ear="Lifestorm Earring",
       right_ear="Psystorm Earring",
-      left_ring="Prolix Ring",
+      left_ring="Sangoma Ring",
       right_ring="Sirona's Ring",
       back="Tempered Cape",
 }
@@ -213,8 +213,8 @@ function init_gear_sets()
       waist="Aswang Sash",
       left_ear="Lifestorm Earring",
       right_ear="Psystorm Earring",
-      left_ring="Perception Ring",
-      right_ring="Balrahn's Ring",
+      left_ring="Sangoma Ring",
+      right_ring="Perception Ring",
       back="Refraction Cape",
 }
 
@@ -232,13 +232,13 @@ function init_gear_sets()
       body="Ischemia Chasu.",
       hands={ name="Hagondes Cuffs", augments={'Phys. dmg. taken -4%','Pet: "Mag.Atk.Bns."+21',}},
       legs="Azimuth Tights",
-      feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
+      feet="Artsieq Boots",
       neck="Voltsurge Torque",
       waist="Aswang Sash",
       left_ear="Lifestorm Earring",
       right_ear="Psystorm Earring",
-      left_ring="Perception Ring",
-      right_ring="Balrahn's Ring",
+      left_ring="Sangoma Ring",
+      right_ring="Perception Ring",
       back="Refraction Cape",
 }
 
@@ -291,7 +291,7 @@ function init_gear_sets()
       body={ name="Bokwus Robe", augments={'"Mag.Atk.Bns."+13','INT+10','MND+10',}},
       hands="Yaoyotl Gloves",
       legs={ name="Hagondes Pants", augments={'Phys. dmg. taken -4%','"Mag.Atk.Bns."+19',}},
-      feet="Weath. Souliers +1",
+      feet="Umbani Boots",
       neck="Eddy Necklace",
       waist="Aswang Sash",
       left_ear="Friomisi Earring",
@@ -347,7 +347,7 @@ function init_gear_sets()
       legs={ name="Bagua Pants", augments={'Enhances "Mending Halation" effect',}},
       feet={ name="Bagua Sandals", augments={'Enhances "Radial Arcana" effect',}},
       neck="Twilight Torque",
-      waist="Fucho-no-Obi",
+      waist="Isa Belt",
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
