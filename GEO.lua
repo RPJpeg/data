@@ -23,7 +23,7 @@ end
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
     state.OffenseMode:options('None', 'Normal')
-    state.CastingMode:options('Normal')
+    state.CastingMode:options('Normal', 'Accuracy')
     state.IdleMode:options('Normal')
 
     gear.default.obi_waist = "Aswang Sash"
@@ -301,9 +301,24 @@ function init_gear_sets()
       back="Toro Cape",
 }
 
-    sets.midcast['Elemental Magic']['Accuracy']=set_combine(sets.midcast['Elemental Magic'], {
-    waist=gear.ElementalObi,
-})
+    sets.midcast['Elemental Magic']['Accuracy']={
+      main="Marin Staff",
+      sub="Zuuxowu Grip",
+      ammo="Dosis Tathlum",
+      head={ name="Hagondes Hat", augments={'Phys. dmg. taken -3%','"Mag.Atk.Bns."+26',}},
+      body="Count's Garb",
+      hands="Yaoyotl Gloves",
+      legs={ name="Hagondes Pants", augments={'Phys. dmg. taken -4%','"Mag.Atk.Bns."+19',}},
+      feet="Umbani Boots",
+      neck="Eddy Necklace",
+      waist="Aswang Sash",
+      left_ear="Friomisi Earring",
+      right_ear="Hecate's Earring",
+      left_ring="Acumen Ring",
+      right_ring="Fenrir Ring",
+      back="Toro Cape",
+    }
+
     sets.midcast.Impact = {
       head=empty,
       body="Twilight Cloak",
@@ -340,6 +355,8 @@ function init_gear_sets()
     -- .Pet sets are for when Luopan is present.
 
     sets.idle.Pet = {
+      main="Marin Staff",
+      sub="Zuuxowu Grip",
       range="Dunna",
       head="Azimuth Hood +1",
       body="Azimuth Coat",
@@ -354,10 +371,13 @@ function init_gear_sets()
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
 
+
     }
 
     -- .Indi sets are for when an Indi-spell is active.
     sets.idle.Indi = {
+      main="Marin Staff",
+      sub="Zuuxowu Grip",
       range="Dunna",
       head="Befouled Crown",
       body="Azimuth Coat",
@@ -371,6 +391,7 @@ function init_gear_sets()
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+
 
 }
 
@@ -390,6 +411,8 @@ function init_gear_sets()
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+
+
 }
 
     sets.idle.Weak = sets.resting
