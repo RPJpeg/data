@@ -288,7 +288,7 @@ function init_gear_sets()
       sub="Zuuxowu Grip",
       ammo="Dosis Tathlum",
       head={ name="Hagondes Hat", augments={'Phys. dmg. taken -3%','"Mag.Atk.Bns."+26',}},
-      body={ name="Bokwus Robe", augments={'"Mag.Atk.Bns."+13','INT+10','MND+10',}},
+      body="Count's Garb",
       hands="Yaoyotl Gloves",
       legs={ name="Hagondes Pants", augments={'Phys. dmg. taken -4%','"Mag.Atk.Bns."+19',}},
       feet="Umbani Boots",
@@ -342,7 +342,7 @@ function init_gear_sets()
     sets.idle.Pet = {
       range="Dunna",
       head="Azimuth Hood +1",
-      body={ name="Bagua Tunic +1", augments={'Enhances "Bolster" effect',}},
+      body="Azimuth Coat",
       hands="Geomancy Mitaines +1",
       legs={ name="Bagua Pants", augments={'Enhances "Mending Halation" effect',}},
       feet={ name="Bagua Sandals", augments={'Enhances "Radial Arcana" effect',}},
@@ -359,9 +359,9 @@ function init_gear_sets()
     -- .Indi sets are for when an Indi-spell is active.
     sets.idle.Indi = {
       range="Dunna",
-      head="Azimuth Hood +1",
-      body={ name="Bagua Tunic +1", augments={'Enhances "Bolster" effect',}},
-      hands="Geo. Mitaines +1",
+      head="Befouled Crown",
+      body="Azimuth Coat",
+      hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
       legs={ name="Bagua Pants", augments={'Enhances "Mending Halation" effect',}},
       feet="Azimuth Gaiters",
       neck="Twilight Torque",
