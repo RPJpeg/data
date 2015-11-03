@@ -89,7 +89,9 @@ function init_gear_sets()
 
     sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {})
 
-    sets.precast.FC.Cure = set_combine(sets.precast.FC, {})
+    sets.precast.FC.Cure = set_combine(sets.precast.FC, {
+      back="Pahtli Cape",
+    })
 
     sets.precast.FC.Curaga = sets.precast.FC.Cure
 

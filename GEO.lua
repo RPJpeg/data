@@ -77,6 +77,7 @@ function init_gear_sets()
     sets.precast.FC.Cure = set_combine(sets.precast.FC, {
       main="Tefnut Wand",
       sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','Mag. Acc.+5','"Cure" spellcasting time -7%',}},
+      back="Pahtli Cape",
 })
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {

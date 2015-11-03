@@ -66,7 +66,8 @@ function init_gear_sets()
       main="Ababinili +1",
       legs={ name="Telchine Braconi", augments={'Mag. Evasion+13','"Cure" spellcasting time -6%','"Regen" potency+1',}},
       feet="Hygieia Clogs",
-      right_ear="Nourish. Earring"
+      right_ear="Nourish. Earring",
+      back="Pahtli Cape",
     })
     sets.precast.FC.Curaga = sets.precast.FC.Cure
     sets.precast.FC.CureSolace = sets.precast.FC.Cure
