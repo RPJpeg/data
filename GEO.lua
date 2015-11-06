@@ -165,7 +165,7 @@ function init_gear_sets()
       left_ear="Loquac. Earring",
       right_ear="Gifted Earring",
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      right_ring="Renaye Ring",
       back="Swith Cape",
 }
 
@@ -344,7 +344,7 @@ function init_gear_sets()
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      right_ring="Renaye Ring",
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
 }
 
@@ -369,7 +369,7 @@ function init_gear_sets()
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      right_ring="Renaye Ring",
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
 
 
@@ -390,7 +390,7 @@ function init_gear_sets()
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      right_ring="Renaye Ring",
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
 
 
@@ -410,7 +410,7 @@ function init_gear_sets()
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      right_ring="Renaye Ring",
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
 
 
