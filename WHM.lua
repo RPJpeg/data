@@ -289,7 +289,7 @@ function init_gear_sets()
       waist="Fucho-no-Obi",
       left_ear="Roundel Earring",
       right_ear="Nourish. Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      left_ring="Renaye Ring",
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
     }
@@ -309,7 +309,7 @@ function init_gear_sets()
       waist="Fucho-no-Obi",
       left_ear="Roundel Earring",
       right_ear="Nourish. Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      left_ring="Renaye Ring",
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
     }
