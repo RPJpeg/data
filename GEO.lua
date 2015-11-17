@@ -50,7 +50,7 @@ function init_gear_sets()
     head="Azimuth hood +1"
     }
     sets.precast.JA['Curative Recantation'] = {hands="Bagua Mitaines"}
-    sets.precast.JA['Mending Halation'] = {legs="Bagua Pants"}
+    sets.precast.JA['Mending Halation'] = {legs="Bagua Pants +1"}
     sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals"}
     sets.precast.JA['Primal Zeal'] = {head="Bagua galero"}
     sets.precast.JA['Cardinal Chant'] = {head="geomancy galero"}
@@ -158,7 +158,7 @@ function init_gear_sets()
       head="Azimuth Hood +1",
       body={ name="Bagua Tunic +1", augments={'Enhances "Bolster" effect',}},
       hands="Geomancy Mitaines +1",
-      legs="Bagua Pants",
+      legs="Bagua Pants +1",
       feet="Azimuth Gaiters",
       neck="Voltsurge Torque",
       waist="Druid's Rope",
@@ -169,7 +169,7 @@ function init_gear_sets()
       back="Swith Cape",
 }
 
-    sets.midcast.Geomancy.Indi =set_combine(sets.midcast.Geomancy, {legs="Bagua pants"})
+    sets.midcast.Geomancy.Indi =set_combine(sets.midcast.Geomancy, {legs="Bagua Pants +1"})
 
 
     sets.midcast.Cure = {
@@ -262,7 +262,7 @@ function init_gear_sets()
       body="Geomancy Tunic",
       head="Azimuth hood +1",
 }
-    sets.midcast['Mending Halation'] = {legs="Bagua Pants"}
+    sets.midcast['Mending Halation'] = {legs="Bagua Pants +1"}
 
     sets.midcast['Radial Arcana'] = {feet="Bagua Sandals"}
 
@@ -272,7 +272,7 @@ function init_gear_sets()
       body="Geomancy Tunic",
       head="Azimuth hood +1",
 }
-    sets.midcast['Mending Halation'].Pet = {legs="Bagua Pants"}
+    sets.midcast['Mending Halation'].Pet = {legs="Bagua Pants +1"}
 
     sets.midcast.Bolster.Pet.Indi = {body="Bagua Tunic +1"}
 
@@ -280,7 +280,7 @@ function init_gear_sets()
       body="Geomancy Tunic",
       head="Azimuth hood +1",
 }
-    sets.midcast['Mending Halation'].Pet.Indi = {legs="Bagua Pants"}
+    sets.midcast['Mending Halation'].Pet.Indi = {legs="Bagua Pants +1"}
 
 -- Elemental Magic sets
 
