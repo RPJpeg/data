@@ -173,7 +173,7 @@ function init_gear_sets()
       hands={ name="Pitre Dastanas", augments={'Enhances "Fine-Tuning" effect',}},
       legs="Cirq. Pantaloni +2",
       feet="Foire Babouches",
-      neck="Twilight Torque",
+      neck="Empath Necklace",
       waist="Shaolin Belt",
       back="Contriver's Cape",
     }

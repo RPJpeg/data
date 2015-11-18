@@ -59,7 +59,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
 
     sets.precast.FC = {
-      main="Marin Staff",
+      main="Marin Staff +1",
       head="Haruspex Hat",
       body="Shango Robe",
       hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
@@ -158,7 +158,7 @@ function init_gear_sets()
       head="Azimuth Hood +1",
       body={ name="Bagua Tunic +1", augments={'Enhances "Bolster" effect',}},
       hands="Geomancy Mitaines +1",
-      legs="Bagua Pants +1",
+      legs="Azimuth Tights",
       feet="Azimuth Gaiters",
       neck="Voltsurge Torque",
       waist="Druid's Rope",
@@ -202,13 +202,13 @@ function init_gear_sets()
 
         -- Custom Spell Classes
     sets.midcast['Enfeebling Magic'] = {
-      main="Marin Staff",
+      main="Marin Staff +1",
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
       head="Befouled Crown",
       body="Shango Robe",
       hands="Azimuth Gloves",
-      legs="Vanya Slops",
+      legs="Psycloth Lappas",
       feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
       neck="Imbodla Necklace",
       waist="Aswang Sash",
@@ -226,13 +226,13 @@ function init_gear_sets()
     sets.midcast.ElementalEnfeeble = sets.midcast['Enfeebling Magic']
 
     sets.midcast['Dark Magic'] = {
-      main="Marin Staff",
+      main="Marin Staff +1",
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
       head="Befouled Crown",
       body="Shango Robe",
       hands={ name="Hagondes Cuffs", augments={'Phys. dmg. taken -4%','Pet: "Mag.Atk.Bns."+21',}},
-      legs="Azimuth Tights",
+      legs="Psycloth Lappas",
       feet="Artsieq Boots",
       neck="Voltsurge Torque",
       waist="Aswang Sash",
@@ -285,7 +285,7 @@ function init_gear_sets()
 -- Elemental Magic sets
 
     sets.midcast['Elemental Magic']= {
-      main="Marin Staff",
+      main="Marin Staff +1",
       sub="Zuuxowu Grip",
       ammo="Dosis Tathlum",
       head={ name="Hagondes Hat", augments={'Phys. dmg. taken -3%','"Mag.Atk.Bns."+26',}},
@@ -303,7 +303,7 @@ function init_gear_sets()
 }
 
     sets.midcast['Elemental Magic']['Accuracy']={
-      main="Marin Staff",
+      main="Marin Staff +1",
       sub="Zuuxowu Grip",
       ammo="Dosis Tathlum",
       head={ name="Hagondes Hat", augments={'Phys. dmg. taken -3%','"Mag.Atk.Bns."+26',}},
@@ -331,7 +331,7 @@ function init_gear_sets()
 
     -- Resting sets
     sets.resting = {
-      main="Marin Staff",
+      main="Marin Staff +1",
       sub="Zuuxowu Grip",
       range="Dunna",
       head="Befouled Crown",
@@ -356,14 +356,14 @@ function init_gear_sets()
     -- .Pet sets are for when Luopan is present.
 
     sets.idle.Pet = {
-      main="Marin Staff",
+      main="Marin Staff +1",
       sub="Zuuxowu Grip",
       range="Dunna",
       head="Azimuth Hood +1",
       body="Azimuth Coat",
       hands="Geomancy Mitaines +1",
-      legs="Assiduity Pants",
-      feet="Geomancy Sandals",
+      legs="Psycloth Lappas",
+      feet="Bagua Sandals",
       neck="Twilight Torque",
       waist="Isa Belt",
       left_ear="Friomisi Earring",
@@ -377,7 +377,7 @@ function init_gear_sets()
 
     -- .Indi sets are for when an Indi-spell is active.
     sets.idle.Indi = {
-      main="Marin Staff",
+      main="Marin Staff +1",
       sub="Zuuxowu Grip",
       range="Dunna",
       head="Befouled Crown",
@@ -397,7 +397,7 @@ function init_gear_sets()
 }
 
     sets.idle.Town = {
-      main="Staccato Staff",
+      main="Marin Staff +1",
       sub="Zuuxowu Grip",
       range="Dunna",
       head="Azimuth Hood +1",
