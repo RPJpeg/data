@@ -77,7 +77,7 @@ function init_gear_sets()
 
     sets.TreasureHunter = {hands="Plunderer's Armlets +1", feet="Skulker's Poulaines +1"}
     sets.ExtraRegen = {}
-    sets.Kiting = {feet="Pillager's Poulaines"}
+    sets.Kiting = {feet="Jute Boots +1"}
 
     sets.buff['Sneak Attack'] = {
       head="Pillager's Bonnet",
@@ -323,7 +323,7 @@ function init_gear_sets()
       body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
-      feet="Pillager's Poulaines",
+      feet="Jute Boots +1",
       neck="Twilight Torque",
       waist="Fotia Belt",
       left_ear="Dudgeon Earring",
@@ -338,7 +338,7 @@ function init_gear_sets()
       body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
-      feet="Pillager's Poulaines",
+      feet="Jute Boots +1",
       neck="Asperity Necklace",
       waist="Fotia Belt",
       left_ear="Dudgeon Earring",
