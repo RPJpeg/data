@@ -159,7 +159,7 @@ function init_gear_sets()
       body={ name="Bagua Tunic +1", augments={'Enhances "Bolster" effect',}},
       hands="Geomancy Mitaines +1",
       legs="Azimuth Tights",
-      feet="Azimuth Gaiters",
+      feet="Medium's Sabots",
       neck="Voltsurge Torque",
       waist="Druid's Rope",
       left_ear="Loquac. Earring",
@@ -169,7 +169,7 @@ function init_gear_sets()
       back="Swith Cape",
 }
 
-    sets.midcast.Geomancy.Indi =set_combine(sets.midcast.Geomancy, {legs="Bagua Pants +1"})
+    sets.midcast.Geomancy.Indi =set_combine(sets.midcast.Geomancy, {legs="Bagua Pants +1", feet="Azimuth Gaiters"})
 
 
     sets.midcast.Cure = {
@@ -292,7 +292,7 @@ function init_gear_sets()
       body="Count's Garb",
       hands="Yaoyotl Gloves",
       legs={ name="Hagondes Pants", augments={'Phys. dmg. taken -4%','"Mag.Atk.Bns."+19',}},
-      feet="Umbani Boots",
+      feet="Merlinic Crackows",
       neck="Eddy Necklace",
       waist="Aswang Sash",
       left_ear="Friomisi Earring",
@@ -310,7 +310,7 @@ function init_gear_sets()
       body="Count's Garb",
       hands="Yaoyotl Gloves",
       legs={ name="Hagondes Pants", augments={'Phys. dmg. taken -4%','"Mag.Atk.Bns."+19',}},
-      feet="Umbani Boots",
+      feet="Merlinic Crackows",
       neck="Eddy Necklace",
       waist="Aswang Sash",
       left_ear="Friomisi Earring",
@@ -338,7 +338,7 @@ function init_gear_sets()
       body="Azimuth Coat +1",
       hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
       legs="Assiduity Pants",
-      feet="Geomancy Sandals",
+      feet="Geomancy Sandals +1",
       neck="Twilight Torque",
       waist="Fucho-no-Obi",
       left_ear="Handler's Earring +1",
@@ -384,7 +384,7 @@ function init_gear_sets()
       body="Azimuth Coat +1",
       hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
       legs="Assiduity Pants",
-      feet="Geomancy Sandals",
+      feet="Geomancy Sandals +1",
       neck="Twilight Torque",
       waist="Fucho-no-Obi",
       left_ear="Friomisi Earring",
@@ -404,7 +404,7 @@ function init_gear_sets()
       body="Azimuth Coat +1",
       hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
       legs="Assiduity Pants",
-      feet="Geomancy Sandals",
+      feet="Geomancy Sandals +1",
       neck="Twilight Torque",
       waist="Fucho-no-Obi",
       left_ear="Handler's Earring +1",
@@ -420,7 +420,7 @@ function init_gear_sets()
 
     -- Defense sets
 
-    sets.Kiting = {feet="Geomancy Sandals"}
+    sets.Kiting = {feet="Geomancy Sandals +1"}
 
     sets.latent_refresh = {waist="Fucho-no-obi"}
 

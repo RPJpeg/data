@@ -245,7 +245,7 @@ function init_gear_sets()
       body="Spaekona's Coat +1",
       hands="Yaoyotl Gloves",
       legs="Hagondes Pants",
-      feet="Spae. Sabots +1",
+      feet="Merlinic Crackows",
       neck="Eddy Necklace",
       waist="Aswang Sash",
       left_ear="Friomisi Earring",
@@ -265,7 +265,7 @@ function init_gear_sets()
       body={ name="Bokwus Robe", augments={'"Mag.Atk.Bns."+13','INT+10','MND+10',}},
       hands="Yaoyotl Gloves",
       legs="Hagondes Pants",
-      feet="Spae. Sabots +1",
+      feet="Merlinic Crackows",
       neck="Eddy Necklace",
       waist="Aswang Sash",
       left_ear="Friomisi Earring",
@@ -321,8 +321,8 @@ function init_gear_sets()
       waist="Fucho-no-Obi",
       left_ear="Loquac. Earring",
       right_ear="Gifted Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      right_ring="Renaye Ring",
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
     }
 
@@ -347,8 +347,8 @@ function init_gear_sets()
       waist="Fucho-no-Obi",
       left_ear="Loquac. Earring",
       right_ear="Gifted Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      right_ring="Renaye Ring",
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
     }
 
