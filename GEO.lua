@@ -355,12 +355,15 @@ function init_gear_sets()
 
     -- .Pet sets are for when Luopan is present.
 
+    -- .Indi sets are for when an Indi-spell is active.
+    sets.idle.Indi = sets.resting
+
     sets.idle.Pet = {
       main="Marin Staff +1",
       sub="Zuuxowu Grip",
       range="Dunna",
       head="Azimuth Hood +1",
-      body="Azimuth Coat +1",
+      body="Telchine chasuble",
       hands="Geomancy Mitaines +1",
       legs="Psycloth Lappas",
       feet="Bagua Sandals",
@@ -374,27 +377,6 @@ function init_gear_sets()
 
 
     }
-
-    -- .Indi sets are for when an Indi-spell is active.
-    sets.idle.Indi = {
-      main="Marin Staff +1",
-      sub="Zuuxowu Grip",
-      range="Dunna",
-      head="Befouled Crown",
-      body="Azimuth Coat +1",
-      hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
-      legs="Assiduity Pants",
-      feet="Geomancy Sandals +1",
-      neck="Twilight Torque",
-      waist="Fucho-no-Obi",
-      left_ear="Friomisi Earring",
-      right_ear="Hecate's Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      right_ring="Renaye Ring",
-      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
-
-
-}
 
     sets.idle.Town = {
       main="Marin Staff +1",
