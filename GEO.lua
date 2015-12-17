@@ -166,10 +166,10 @@ function init_gear_sets()
       right_ear="Gifted Earring",
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
       right_ring="Renaye Ring",
-      back="Swith Cape",
+      back="Lifestream Cape",
 }
 
-    sets.midcast.Geomancy.Indi =set_combine(sets.midcast.Geomancy, {legs="Bagua Pants +1", feet="Azimuth Gaiters"})
+    sets.midcast.Geomancy.Indi =set_combine(sets.midcast.Geomancy, {legs="Bagua Pants +1", feet="Azimuth Gaiters", back="Lifestream Cape"})
 
 
     sets.midcast.Cure = {
@@ -393,7 +393,7 @@ function init_gear_sets()
       right_ear="Handler's Earring",
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
       right_ring="Renaye Ring",
-      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+      back="Lifestream Cape",
 
 
 }
