@@ -137,7 +137,7 @@ function init_gear_sets()
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
       head="Whirlpool Mask",
-      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
+      body="Taeon Tabard",
       hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
       legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
@@ -179,7 +179,7 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
       head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
-      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
+      body="Taeon Tabard",
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Taeon Tights", augments={'Accuracy+2','Weapon Skill Acc.+19','STR+5 DEX+5',}},
       feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
@@ -243,7 +243,7 @@ function init_gear_sets()
 
     sets.precast.WS['Aeolian Edge'] = {
       head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
-      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
+      body="Taeon Tabard",
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
       feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
@@ -320,7 +320,7 @@ function init_gear_sets()
 
     sets.idle = {
       head="Skulker's Bonnet",
-      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
+      body="Taeon Tabard",
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
       feet="Jute Boots +1",
@@ -335,7 +335,7 @@ function init_gear_sets()
 
     sets.idle.Town = {
       head="Skulker's Bonnet",
-      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
+      body="Taeon Tabard",
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
       feet="Jute Boots +1",
@@ -368,7 +368,7 @@ function init_gear_sets()
     sets.engaged = {
       range="Raider's Bmrng.",
       head="Skulker's Bonnet",
-      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
+      body="Taeon Tabard",
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
@@ -399,7 +399,7 @@ function init_gear_sets()
     sets.engaged.Hybrid = {
       ammo="Honed Tathlum",
       head="Skulker's Bonnet",
-      body={ name="Taeon Tabard", augments={'Attack+3','"Triple Atk."+2',}},
+      body="Taeon Tabard",
       hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
       legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
