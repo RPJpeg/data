@@ -319,7 +319,7 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {
-      head="Skulker's Bonnet",
+      head="Skormoth Mask",
       body="Taeon Tabard",
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
@@ -334,7 +334,7 @@ function init_gear_sets()
     }
 
     sets.idle.Town = {
-      head="Skulker's Bonnet",
+      head="Skormoth Mask",
       body="Taeon Tabard",
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
@@ -367,7 +367,7 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {
       range="Raider's Bmrng.",
-      head="Skulker's Bonnet",
+      head="Skormoth Mask",
       body="Taeon Tabard",
       hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
       legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
@@ -382,7 +382,7 @@ function init_gear_sets()
     }
     sets.engaged.Acc = {
       ammo="Honed Tathlum",
-      head="Whirlpool Mask",
+      head="Skormoth Mask",
       body="Pillager's Vest",
       hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
       legs="Pillager's Culottes",
@@ -398,7 +398,7 @@ function init_gear_sets()
 
     sets.engaged.Hybrid = {
       ammo="Honed Tathlum",
-      head="Skulker's Bonnet",
+      head="Skormoth Mask",
       body="Taeon Tabard",
       hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
       legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
