@@ -59,7 +59,8 @@ function init_gear_sets()
     -- Fast cast sets for spells
 
     sets.precast.FC = {
-      main="Marin Staff +1",
+      main="Solstice",
+      sub="Genmei Shield",
       head="Haruspex Hat",
       body="Shango Robe",
       hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
@@ -75,8 +76,6 @@ function init_gear_sets()
 }
 
     sets.precast.FC.Cure = set_combine(sets.precast.FC, {
-      main="Tefnut Wand",
-      sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','Mag. Acc.+5','"Cure" spellcasting time -7%',}},
       back="Pahtli Cape",
 })
 
@@ -98,7 +97,7 @@ function init_gear_sets()
       head={ name="Vanya Hood", augments={'Healing magic skill +15','System: 2 ID: 123 Val: 4','Magic dmg. taken -2',}},
       body="Ischemia Chasu.",
       hands="Yaoyotl Gloves",
-      legs="Assiduity Pants",
+      legs="Assiduity Pants +1",
       feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
       neck="Asperity Necklace",
       waist="Fotia Belt",
@@ -152,8 +151,8 @@ function init_gear_sets()
     waist="Emphatikos rope"})
 
     sets.midcast.Geomancy ={
-      main="Staccato Staff",
-      sub="Mephitis Grip",
+      main="Solstice",
+      sub="Genmei Shield",
       range="Dunna",
       head="Azimuth Hood +1",
       body={ name="Bagua Tunic +1", augments={'Enhances "Bolster" effect',}},
@@ -169,7 +168,7 @@ function init_gear_sets()
       back="Lifestream Cape",
 }
 
-    sets.midcast.Geomancy.Indi =set_combine(sets.midcast.Geomancy, {legs="Bagua Pants +1", feet="Azimuth Gaiters", back="Lifestream Cape"})
+    sets.midcast.Geomancy.Indi =set_combine(sets.midcast.Geomancy, {main="Solstice", sub="Genmei Shield", legs="Bagua Pants +1", feet="Azimuth Gaiters", back="Lifestream Cape"})
 
 
     sets.midcast.Cure = {
@@ -232,8 +231,8 @@ function init_gear_sets()
       head="Befouled Crown",
       body="Shango Robe",
       hands="Hagondes Cuffs",
-      legs="Psycloth Lappas",
-      feet="Artsieq Boots",
+      legs="Merlinic Shalwar",
+      feet="Merlinic Crackows",
       neck="Voltsurge Torque",
       waist="Aswang Sash",
       left_ear="Lifestorm Earring",
@@ -291,7 +290,7 @@ function init_gear_sets()
       head={ name="Hagondes Hat", augments={'Phys. dmg. taken -3%','"Mag.Atk.Bns."+26',}},
       body="Count's Garb",
       hands="Amalric Gages",
-      legs={ name="Hagondes Pants", augments={'Phys. dmg. taken -4%','"Mag.Atk.Bns."+19',}},
+      legs="Merlinic Shalwar",
       feet="Merlinic Crackows",
       neck="Eddy Necklace",
       waist="Aswang Sash",
@@ -309,7 +308,7 @@ function init_gear_sets()
       head={ name="Hagondes Hat", augments={'Phys. dmg. taken -3%','"Mag.Atk.Bns."+26',}},
       body="Count's Garb",
       hands="Amalric Gages",
-      legs={ name="Hagondes Pants", augments={'Phys. dmg. taken -4%','"Mag.Atk.Bns."+19',}},
+      legs="Merlinic Shalwar",
       feet="Merlinic Crackows",
       neck="Eddy Necklace",
       waist="Aswang Sash",
@@ -331,13 +330,13 @@ function init_gear_sets()
 
     -- Resting sets
     sets.resting = {
-      main="Marin Staff +1",
-      sub="Zuuxowu Grip",
+      main="Solstice",
+      sub="Genmei Shield",
       range="Dunna",
       head="Befouled Crown",
       body="Azimuth Coat +1",
       hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
-      legs="Assiduity Pants",
+      legs="Assiduity Pants +1",
       feet="Geomancy Sandals +1",
       neck="Twilight Torque",
       waist="Fucho-no-Obi",
@@ -359,8 +358,8 @@ function init_gear_sets()
     sets.idle.Indi = sets.resting
 
     sets.idle.Pet = {
-      main="Marin Staff +1",
-      sub="Zuuxowu Grip",
+      main="Solstice",
+      sub="Genmei Shield",
       range="Dunna",
       head="Azimuth Hood +1",
       body="Telchine chasuble",
@@ -379,13 +378,13 @@ function init_gear_sets()
     }
 
     sets.idle.Town = {
-      main="Marin Staff +1",
-      sub="Zuuxowu Grip",
+      main="Solstice",
+      sub="Genmei Shield",
       range="Dunna",
       head="Azimuth Hood +1",
       body="Azimuth Coat +1",
       hands={ name="Bagua Mitaines", augments={'Enhances "Curative Recantation" effect',}},
-      legs="Assiduity Pants",
+      legs="Assiduity Pants +1",
       feet="Geomancy Sandals +1",
       neck="Twilight Torque",
       waist="Fucho-no-Obi",
