@@ -80,33 +80,29 @@ function init_gear_sets()
     sets.Kiting = {feet="Jute Boots +1"}
 
     sets.buff['Sneak Attack'] = {
-      head="Pillager's Bonnet",
-      body="Pillager's Vest",
+      head="Meghanada Visor +1",
+      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands="Skulker's Armlets",
-      legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
-      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
-      neck="Asperity Necklace",
-      waist="Cetl Belt",
-      left_ear="Dudgeon Earring",
-      right_ear="Heartseeker Earring",
-      left_ring="Rajas Ring",
-      right_ring="Epona's Ring",
-      back="Atheling Mantle",
+      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      feet="Meg. Jam. +1",
+      neck="Love Torque",
+      left_ear="Steelflash Earring",
+      right_ear="Bladeborn Earring",
+      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      right_ring="Rajas Ring",
+      back={ name="Toutatis's Cape", augments={'DEX+1','Accuracy+5 Attack+5','Crit.hit rate+9',}},
     }
 
     sets.buff['Trick Attack'] = {
-      head="Pillager's Bonnet",
-      body="Pillager's Vest",
+      head="Meghanada Visor +1",
+      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands="Pillager's Armlets",
-      legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
-      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
-      neck="Asperity Necklace",
-      waist="Cetl Belt",
-      left_ear="Dudgeon Earring",
-      right_ear="Heartseeker Earring",
-      left_ring="Rajas Ring",
-      right_ring="Epona's Ring",
-      back="Atheling Mantle",
+      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      feet="Meg. Jam. +1",
+      neck="Love Torque",
+      left_ear="Steelflash Earring",
+      right_ear="Bladeborn Earring",
+      back={ name="Canny Cape", augments={'DEX+1','AGI+1','"Dual Wield"+3',}},
     }
 
     -- Actions we want to use to tag TH.
@@ -135,13 +131,7 @@ function init_gear_sets()
 
 
     -- Waltz set (chr and vit)
-    sets.precast.Waltz = {
-      head="Whirlpool Mask",
-      body="Taeon Tabard",
-      hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
-      legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
-      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
-    }
+    sets.precast.Waltz = {}
 
     -- Don't need any special gear for Healing Waltz.
     sets.precast.Waltz['Healing Waltz'] = {}
@@ -149,28 +139,33 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
     sets.precast.FC = {
-      head={ name="Anwig Salade", augments={'"Fast Cast"+3','"Blood Pact" ability delay -3','INT+2','"Fast Cast"+2',}},
+      head="Haruspex Hat",
       body={ name="Mirke Wardecors", augments={'"Fast Cast"+5','Mag. Acc.+4',}},
-      hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
-      legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
-      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
+      hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
+      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      feet="Meg. Jam. +1",
       neck="Voltsurge Torque",
       waist="Twilight Belt",
-      left_ear="Loquac. Earring",
+      right_ear="Loquac. Earring",
       left_ring="Prolix Ring",
       right_ring={ name="Diamond Ring", augments={'MND+3','Spell interruption rate down -5%','"Resist Silence"+3',}},
-      back="Mujin Mantle",
+      back="Boxer's Mantle",
     }
 
-    sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads"})
+    sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads", back="Mujin Mantle"})
 
 
     -- Ranged snapshot gear
     sets.precast.RA = {
-      head="Pillager's Bonnet",
-      hands="Iuitl Wristbands",
-      legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
-      feet="Pillager's Poulaines",
+      head="Meghanada Visor +1",
+      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      hands="Meg. Gloves +1",
+      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      feet="Meg. Jam. +1",
+      neck="Asperity Necklace",
+      left_ear="Steelflash Earring",
+      right_ear="Bladeborn Earring",
+      right_ring="Rajas Ring",
     }
 
 
@@ -179,39 +174,37 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
       head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
-      body="Taeon Tabard",
-      hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
+      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      hands="Meg. Gloves +1",
       legs={ name="Taeon Tights", augments={'Accuracy+2','Weapon Skill Acc.+19','STR+5 DEX+5',}},
       feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
       neck="Rancor Collar",
       waist="Fotia Belt",
       left_ear="Steelflash Earring",
       right_ear="Bladeborn Earring",
-      left_ring="Rajas Ring",
-      right_ring="Epona's Ring",
+      left_ring="Pyrosoul Ring",
+      right_ring="Rajas Ring",
       back="Vespid Mantle",
     }
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {
-      head="Whirlpool Mask",
-      body="Pillager's Vest",
-      hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
+      head="Meghanada Visor +1",
       neck="Love Torque",
     })
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {})
-    sets.precast.WS['Exenterator'].Acc = set_combine(sets.precast.WS['Exenterator'], {})
-    sets.precast.WS['Exenterator'].Mod = set_combine(sets.precast.WS['Exenterator'], {})
-    sets.precast.WS['Exenterator'].SA = set_combine(sets.precast.WS['Exenterator'].Mod, {})
-    sets.precast.WS['Exenterator'].TA = set_combine(sets.precast.WS['Exenterator'].Mod, {})
-    sets.precast.WS['Exenterator'].SATA = set_combine(sets.precast.WS['Exenterator'].Mod, {})
+    sets.precast.WS['Exenterator'].Acc = set_combine(sets.precast.WS['Exenterator'], {neck="Breeze Gorget"})
+    sets.precast.WS['Exenterator'].Mod = set_combine(sets.precast.WS['Exenterator'], {neck="Breeze Gorget"})
+    sets.precast.WS['Exenterator'].SA = set_combine(sets.precast.WS['Exenterator'].Mod, {neck="Breeze Gorget"})
+    sets.precast.WS['Exenterator'].TA = set_combine(sets.precast.WS['Exenterator'].Mod, {neck="Breeze Gorget"})
+    sets.precast.WS['Exenterator'].SATA = set_combine(sets.precast.WS['Exenterator'].Mod, {neck="Breeze Gorget"})
 
     sets.precast.WS['Dancing Edge'] = set_combine(sets.precast.WS, {})
-    sets.precast.WS['Dancing Edge'].Acc = set_combine(sets.precast.WS['Dancing Edge'], {})
-    sets.precast.WS['Dancing Edge'].Mod = set_combine(sets.precast.WS['Dancing Edge'], {})
-    sets.precast.WS['Dancing Edge'].SA = set_combine(sets.precast.WS['Dancing Edge'].Mod, {})
-    sets.precast.WS['Dancing Edge'].TA = set_combine(sets.precast.WS['Dancing Edge'].Mod, {})
-    sets.precast.WS['Dancing Edge'].SATA = set_combine(sets.precast.WS['Dancing Edge'].Mod, {})
+    sets.precast.WS['Dancing Edge'].Acc = set_combine(sets.precast.WS['Dancing Edge'], {neck="Breeze Gorget"})
+    sets.precast.WS['Dancing Edge'].Mod = set_combine(sets.precast.WS['Dancing Edge'], {neck="Breeze Gorget"})
+    sets.precast.WS['Dancing Edge'].SA = set_combine(sets.precast.WS['Dancing Edge'].Mod, {neck="Breeze Gorget"})
+    sets.precast.WS['Dancing Edge'].TA = set_combine(sets.precast.WS['Dancing Edge'].Mod, {neck="Breeze Gorget"})
+    sets.precast.WS['Dancing Edge'].SATA = set_combine(sets.precast.WS['Dancing Edge'].Mod, {neck="Breeze Gorget"})
 
     sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {})
     sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS['Evisceration'], {})
@@ -228,11 +221,11 @@ function init_gear_sets()
     sets.precast.WS["Rudra's Storm"].SATA = set_combine(sets.precast.WS["Rudra's Storm"].Mod, {})
 
     sets.precast.WS["Shark Bite"] = set_combine(sets.precast.WS, {})
-    sets.precast.WS['Shark Bite'].Acc = set_combine(sets.precast.WS['Shark Bite'], {})
-    sets.precast.WS['Shark Bite'].Mod = set_combine(sets.precast.WS['Shark Bite'], {})
-    sets.precast.WS['Shark Bite'].SA = set_combine(sets.precast.WS['Shark Bite'].Mod, {})
-    sets.precast.WS['Shark Bite'].TA = set_combine(sets.precast.WS['Shark Bite'].Mod, {})
-    sets.precast.WS['Shark Bite'].SATA = set_combine(sets.precast.WS['Shark Bite'].Mod, {})
+    sets.precast.WS['Shark Bite'].Acc = set_combine(sets.precast.WS['Shark Bite'], {neck="Breeze Gorget"})
+    sets.precast.WS['Shark Bite'].Mod = set_combine(sets.precast.WS['Shark Bite'], {neck="Breeze Gorget"})
+    sets.precast.WS['Shark Bite'].SA = set_combine(sets.precast.WS['Shark Bite'].Mod, {neck="Breeze Gorget"})
+    sets.precast.WS['Shark Bite'].TA = set_combine(sets.precast.WS['Shark Bite'].Mod, {neck="Breeze Gorget"})
+    sets.precast.WS['Shark Bite'].SATA = set_combine(sets.precast.WS['Shark Bite'].Mod, {neck="Breeze Gorget"})
 
     sets.precast.WS['Mandalic Stab'] = set_combine(sets.precast.WS, {})
     sets.precast.WS['Mandalic Stab'].Acc = set_combine(sets.precast.WS['Mandalic Stab'], {})
@@ -243,69 +236,36 @@ function init_gear_sets()
 
     sets.precast.WS['Aeolian Edge'] = {
       head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
-      body="Taeon Tabard",
-      hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
-      legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
+      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      hands="Meg. Gloves +1",
+      legs={ name="Taeon Tights", augments={'Accuracy+2','Weapon Skill Acc.+19','STR+5 DEX+5',}},
       feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
-      neck="Rancor Collar",
+      neck="Love Torque",
       waist="Fotia Belt",
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
       left_ring="Fenrir Ring",
       right_ring="Acumen Ring",
-      back="Atheling Mantle",
+      back="Vespid Mantle",
     }
 
-    sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
+    sets.precast.WS['Cyclone'] = sets.precast.WS['Aeolian Edge']
+    sets.precast.WS['Gust Slash'] = sets.precast.WS['Aeolian Edge']
 
 
     --------------------------------------
     -- Midcast sets
     --------------------------------------
 
-    sets.midcast.FastRecast = {
-      head={ name="Anwig Salade", augments={'"Fast Cast"+3','"Blood Pact" ability delay -3','INT+2','"Fast Cast"+2',}},
-      body={ name="Mirke Wardecors", augments={'"Fast Cast"+5','Mag. Acc.+4',}},
-      hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
-      legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
-      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
-      neck="Voltsurge Torque",
-      waist="Twilight Belt",
-      left_ear="Loquac. Earring",
-      left_ring="Prolix Ring",
-      right_ring={ name="Diamond Ring", augments={'MND+3','Spell interruption rate down -5%','"Resist Silence"+3',}},
-      back="Mujin Mantle",
-    }
+    sets.midcast.FastRecast = sets.precast.FC
 
     -- Specific spells
-    sets.midcast.Utsusemi = {
-      head={ name="Anwig Salade", augments={'"Fast Cast"+3','"Blood Pact" ability delay -3','INT+2','"Fast Cast"+2',}},
-      body={ name="Mirke Wardecors", augments={'"Fast Cast"+5','Mag. Acc.+4',}},
-      hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
-      legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
-      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
-      neck="Magoraga Beads",
-      waist="Twilight Belt",
-      left_ear="Loquac. Earring",
-      left_ring="Prolix Ring",
-      right_ring={ name="Diamond Ring", augments={'MND+3','Spell interruption rate down -5%','"Resist Silence"+3',}},
-      back="Mujin Mantle",
-    }
+    sets.midcast.Utsusemi = sets.precast.FC.Utsusemi
 
     -- Ranged gear
-    sets.midcast.RA = {
-      head="Pillager's Bonnet",
-      hands="Iuitl Wristbands",
-      legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
-      feet="Pillager's Poulaines",
-    }
+    sets.midcast.RA = sets.precast.RA
 
-    sets.midcast.RA.Acc = {
-      head="Pillager's Bonnet",
-      hands="Iuitl Wristbands",
-      legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
-      feet="Pillager's Poulaines",
-    }
+    sets.midcast.RA.Acc = sets.precast.RA
 
 
     --------------------------------------
@@ -313,15 +273,15 @@ function init_gear_sets()
     --------------------------------------
 
     -- Resting sets
-    sets.resting = {}
+    sets.resting = sets.idle
 
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {
       head="Skormoth Mask",
-      body="Taeon Tabard",
-      hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
+      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      hands="Meg. Gloves +1",
       legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
       feet="Jute Boots +1",
       neck="Twilight Torque",
@@ -334,18 +294,21 @@ function init_gear_sets()
     }
 
     sets.idle.Town = {
+      main={ name="Shijo", augments={'DMG:+15','Accuracy+15','Attack+15',}},
+      sub={ name="Shijo", augments={'DMG:+15','Accuracy+15','Attack+15',}},
+      ammo="Honed Tathlum",
       head="Skormoth Mask",
-      body="Taeon Tabard",
-      hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
+      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      hands="Meg. Gloves +1",
       legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
       feet="Jute Boots +1",
-      neck="Asperity Necklace",
+      neck="Subtlety Spec.",
       waist="Fotia Belt",
       left_ear="Dudgeon Earring",
       right_ear="Heartseeker Earring",
-      left_ring="Rajas Ring",
-      right_ring="Epona's Ring",
-      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+      left_ring="Warp Ring",
+      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      back={ name="Toutatis's Cape", augments={'DEX+1','Accuracy+5 Attack+5','Crit.hit rate+9',}},
     }
 
     sets.idle.Weak = sets.idle
@@ -368,47 +331,47 @@ function init_gear_sets()
     sets.engaged = {
       range="Raider's Bmrng.",
       head="Skormoth Mask",
-      body="Taeon Tabard",
-      hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
-      legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
+      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      hands={ name="Floral Gauntlets", augments={'Rng.Acc.+11','Accuracy+5','"Triple Atk."+2',}},
+      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
       neck="Asperity Necklace",
       waist="Cetl Belt",
       left_ear="Dudgeon Earring",
       right_ear="Heartseeker Earring",
-      left_ring="Rajas Ring",
-      right_ring="Epona's Ring",
+      left_ring="Epona's Ring",
+      right_ring="Rajas Ring",
       back={ name="Canny Cape", augments={'DEX+1','AGI+1','"Dual Wield"+3',}},
     }
     sets.engaged.Acc = {
       ammo="Honed Tathlum",
-      head="Skormoth Mask",
-      body="Pillager's Vest",
-      hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
-      legs="Pillager's Culottes",
-      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
+      head="Meghanada Visor +1",
+      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      hands="Meg. Gloves +1",
+      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      feet="Meg. Jam. +1",
       neck="Subtlety Spec.",
       waist="Cetl Belt",
       left_ear="Dudgeon Earring",
       right_ear="Heartseeker Earring",
-      left_ring="Rajas Ring",
-      right_ring="Epona's Ring",
-      back="Canny Cape"
+      left_ring="Epona's Ring",
+      right_ring="Rajas Ring",
+      back={ name="Canny Cape", augments={'DEX+1','AGI+1','"Dual Wield"+3',}},
     }
 
     sets.engaged.Hybrid = {
       ammo="Honed Tathlum",
       head="Skormoth Mask",
-      body="Taeon Tabard",
-      hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
-      legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
+      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      hands={ name="Floral Gauntlets", augments={'Rng.Acc.+11','Accuracy+5','"Triple Atk."+2',}},
+      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
       neck="Subtlety Spec.",
       waist="Cetl Belt",
       left_ear="Dudgeon Earring",
       right_ear="Heartseeker Earring",
-      left_ring="Rajas Ring",
-      right_ring="Epona's Ring",
+      left_ring="Epona's Ring",
+      right_ring="Rajas Ring",
       back={ name="Canny Cape", augments={'DEX+1','AGI+1','"Dual Wield"+3',}},
     }
 

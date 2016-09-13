@@ -41,9 +41,9 @@ end
 
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
-    state.OffenseMode:options('Normal', 'Acc', 'Fodder')
+    state.OffenseMode:options('Normal', 'Acc')
     state.HybridMode:options('Normal', 'DT')
-    state.WeaponskillMode:options('Normal', 'Acc', 'Fodder')
+    state.WeaponskillMode:options('Normal', 'Acc')
     state.PhysicalDefenseMode:options('PDT', 'Evasion')
 
     -- Default maneuvers 1, 2, 3 and 4 for each pet mode.
@@ -68,14 +68,12 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
     sets.precast.FC = {
-      head={ name="Anwig Salade", augments={'"Fast Cast"+3','"Blood Pact" ability delay -3','INT+2','"Fast Cast"+2',}},
+      head="Haruspex Hat",
       body={ name="Mirke Wardecors", augments={'"Fast Cast"+5','Mag. Acc.+4',}},
-      hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
-      legs={ name="Pitre Churidars", augments={'Enhances "Ventriloquy" effect',}},
-      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
-      waist="Twilight Belt",
-      left_ear="Loquac. Earring",
+      neck="Voltsurge Torque",
+      right_ear="Loquac. Earring",
       left_ring="Prolix Ring",
+      right_ring={ name="Diamond Ring", augments={'MND+3','Spell interruption rate down -5%','"Resist Silence"+3',}},
       back="Swith Cape",
     }
 
@@ -105,21 +103,20 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
       head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
-      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
-      hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
+      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      hands="Count's Cuffs",
       legs={ name="Taeon Tights", augments={'Accuracy+2','Weapon Skill Acc.+19','STR+5 DEX+5',}},
-      feet={ name="Taeon Boots", augments={'Attack+6','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
+      feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
       neck="Rancor Collar",
       waist="Fotia Belt",
       left_ear="Steelflash Earring",
       right_ear="Bladeborn Earring",
-      left_ring="Rajas Ring",
-      right_ring="Epona's Ring",
+      left_ring="Pyrosoul Ring",
+      right_ring="Rajas Ring",
       back={ name="Dispersal Mantle", augments={'STR+2','Pet: TP Bonus+140','"Martial Arts"+13',}},
     }
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS['Stringing Pummel'] = sets.precast.WS
     sets.precast.WS['Stringing Pummel'] = sets.precast.WS
     sets.precast.WS['Victory Smite'] = sets.precast.WS
     sets.precast.WS['Shijin Spiral'] = sets.precast.WS
@@ -135,7 +132,7 @@ function init_gear_sets()
 
     sets.midcast.Pet['Elemental Magic'] = {feet="Pitre Babouches"}
 
-    sets.midcast.Pet.WeaponSkill = {head="Cirque Cappello +1", hands="Cirque Guanti +2", legs="Cirque Pantaloni +2"}
+    sets.midcast.Pet.WeaponSkill = {head="Cirque Cappello +1", hands="Cirque Guanti +2", legs="Karagoz Pantaloni"}
 
 
     -- Sets to return to when not performing an action.
@@ -148,16 +145,16 @@ function init_gear_sets()
 
     sets.idle = {
       head={ name="Pitre Taj", augments={'Enhances "Optimization" effect',}},
-      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
-      hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
+      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      hands="Count's Cuffs",
       legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
       neck="Twilight Torque",
-      waist="Fucho-no-Obi",
+      waist="Fotia Belt",
       left_ear="Steelflash Earring",
       right_ear="Bladeborn Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      left_ring="Renaye Ring",
+      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
     }
 
@@ -170,12 +167,16 @@ function init_gear_sets()
     sets.idle.Pet.Engaged = {
       head={ name="Pitre Taj", augments={'Enhances "Optimization" effect',}},
       body={ name="Pitre Tobe", augments={'Enhances "Overdrive" effect',}},
-      hands={ name="Pitre Dastanas", augments={'Enhances "Fine-Tuning" effect',}},
-      legs="Cirq. Pantaloni +2",
+      hands={ name="Taeon Gloves", augments={'Pet: DEF+22','Pet: "Regen"+2','Pet: Damage taken -3%',}},
+      legs="Karagoz Pantaloni",
       feet="Foire Babouches",
       neck="Empath Necklace",
-      waist="Shaolin Belt",
-      back="Contriver's Cape",
+      waist="Isa Belt",
+      left_ear="Handler's Earring",
+      right_ear="Handler's Earring +1",
+      left_ring="Renaye Ring",
+      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      back={ name="Visucius's Mantle", augments={'Pet: Acc.+12 Pet: R.Acc.+12 Pet: Atk.+12 Pet: R.Atk.+12','Pet: "Regen"+10',}},
     }
 
     sets.idle.Pet.Engaged.Ranged = sets.idle.Pet.Engaged
@@ -204,46 +205,32 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {
-      head={ name="Otronif Mask", augments={'Phys. dmg. taken -1%','Attack+4',}},
-      body={ name="Taeon Tabard", augments={'DEF+6','"Triple Atk."+2',}},
-      hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
-      legs={ name="Taeon Tights", augments={'Attack+1','"Triple Atk."+2','Crit. hit damage +2%',}},
-      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
-      neck="Asperity Necklace",
-      waist="Cetl Belt",
-      left_ear="Steelflash Earring",
-      right_ear="Bladeborn Earring",
-      left_ring="Rajas Ring",
-      right_ring="Epona's Ring",
-      back={ name="Dispersal Mantle", augments={'STR+2','Pet: TP Bonus+140','"Martial Arts"+13',}},
-    }
-
-    sets.engaged.Acc = {
       head="Whirlpool Mask",
-      body={ name="Pitre Tobe", augments={'Enhances "Overdrive" effect',}},
-      hands={ name="Otronif Gloves", augments={'Phys. dmg. taken -3%','"Mag.Def.Bns."+2',}},
-      legs={ name="Pitre Churidars", augments={'Enhances "Ventriloquy" effect',}},
-      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
-      neck="Subtlety Spec.",
-      waist="Cetl Belt",
-      left_ear="Steelflash Earring",
-      right_ear="Bladeborn Earring",
-      left_ring="Rajas Ring",
-      right_ring="Epona's Ring",
-      back={ name="Dispersal Mantle", augments={'STR+2','Pet: TP Bonus+140','"Martial Arts"+13',}},
-    }
-    sets.engaged.Fodder = {
-      head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
-      body="Thaumas Coat",
-      hands={ name="Taeon Gloves", augments={'DEF+20','"Triple Atk."+2','Crit. hit damage +2%',}},
-      legs="Cirq. Pantaloni +2",
+      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      hands="Count's Cuffs",
+      legs="Karagoz Pantaloni",
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
       neck="Asperity Necklace",
       waist="Shaolin Belt",
       left_ear="Steelflash Earring",
       right_ear="Bladeborn Earring",
-      left_ring="Rajas Ring",
-      right_ring="Epona's Ring",
+      left_ring="Epona's Ring",
+      right_ring="Rajas Ring",
+      back={ name="Dispersal Mantle", augments={'STR+2','Pet: TP Bonus+140','"Martial Arts"+13',}},
+    }
+
+    sets.engaged.Acc = {
+      head="Whirlpool Mask",
+      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      hands="Count's Cuffs",
+      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
+      neck="Subtlety Spec.",
+      waist="Shaolin Belt",
+      left_ear="Steelflash Earring",
+      right_ear="Bladeborn Earring",
+      left_ring="Epona's Ring",
+      right_ring="Rajas Ring",
       back={ name="Dispersal Mantle", augments={'STR+2','Pet: TP Bonus+140','"Martial Arts"+13',}},
     }
 

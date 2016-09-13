@@ -70,24 +70,25 @@ function init_gear_sets()
     -- Fast cast sets for spells
 
     sets.precast.FC = {
-      main="Marin Staff +1 +1",
+      main="Marin Staff +1",
       head="Haruspex Hat",
       body="Shango Robe",
-      hands="Amalric Gages",
-      legs="Artsieq Hose",
+      legs={ name="Psycloth Lappas", augments={'MP+75','Mag. Acc.+14','"Fast Cast"+7',}},
       feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
       neck="Voltsurge Torque",
       waist="Witful Belt",
-      left_ear="Loquac. Earring",
-      right_ear="Gifted Earring",
+      right_ear="Loquac. Earring",
       left_ring="Prolix Ring",
-      right_ring={ name="Diamond Ring", augments={'MND+3','Spell interruption rate down -5%','"Resist Silence"+3',}},
+      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
       back="Swith Cape",
     }
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 
-    sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {})
+    sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {
+      head="Goetia Petasos +2",
+      feet="Spae. Sabots +1",
+    })
 
     sets.precast.FC.Cure = set_combine(sets.precast.FC, {
       back="Pahtli Cape",
@@ -107,34 +108,22 @@ function init_gear_sets()
 
     ---- Midcast Sets ----
 
-    sets.midcast.FastRecast = {
-      main="Marin Staff +1",
-      head="Befouled Crown",
-      body="Shango Robe",
-      hands="Amalric Gages",
-      legs="Artsieq Hose",
-      feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
-      neck="Voltsurge Torque",
-      waist="Witful Belt",
-      left_ear="Loquac. Earring",
-      right_ear="Gifted Earring",
-      left_ring="Prolix Ring",
-      right_ring={ name="Diamond Ring", augments={'MND+3','Spell interruption rate down -5%','"Resist Silence"+3',}},
-      back="Swith Cape",
-    }
+    sets.midcast.FastRecast = sets.precast.FC
 
     sets.midcast.Cure = {
       main="Tefnut Wand",
       sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','Mag. Acc.+5','"Cure" spellcasting time -7%',}},
       ammo="Kalboron Stone",
-      head="Vanya Hood",
-      body="Telchine Chas.",
-      hands="Bokwus Gloves",
-      legs="Telchine Braconi",
-      feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
+      head={ name="Vanya Hood", augments={'Healing magic skill +16','"Cure" spellcasting time -5%','Magic dmg. taken -2',}},
+      body="Jhakri Robe +1",
+      hands={ name="Bokwus Gloves", augments={'Mag. Acc.+12','MND+10','INT+9',}},
+      legs={ name="Vanya Slops", augments={'MND+8','Spell interruption rate down +11%','"Conserve MP"+5',}},
+      feet={ name="Medium's Sabots", augments={'MP+10',}},
       neck="Imbodla Necklace",
-      left_ear="Roundel Earring",
+      waist="Druid's Rope",
+      left_ear="Lifestorm Earring",
       right_ear="Gifted Earring",
+      left_ring="Perception Ring",
       right_ring="Sirona's Ring",
       back="Tempered Cape",
     }
@@ -142,75 +131,40 @@ function init_gear_sets()
     sets.midcast.Curaga = sets.midcast.Cure
 
     sets.midcast['Enhancing Magic'] = {
-      main="Marin Staff +1",
-      ammo="Kalboron Stone",
       head="Befouled Crown",
-      body="Telchine Chas.",
-      hands="Amalric Gages",
-      legs="Telchine Braconi",
-      feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
-      neck="Imbodla Necklace",
-      right_ear="Gifted Earring",
-      back="Refraction Cape",
+      body={ name="Telchine Chas.", augments={'Pet: "Regen"+3','Pet: Damage taken -4%',}},
+      legs={ name="Vanya Slops", augments={'MND+8','Spell interruption rate down +11%','"Conserve MP"+5',}},
+      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+      waist="Siegel Sash",
+      left_ear="Gifted Earring",
+      right_ear="Gwati Earring",
     }
 
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash"})
 
     sets.midcast['Enfeebling Magic'] = {
-      main="Lathi",
+      main="Marin Staff +1",
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
-      head="Befouled Crown",
-      body="Shango Robe",
-      hands="Hagondes Cuffs",
-      legs="Psycloth Lappas",
-      feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
+      head="Jhakri Coronal +1",
+      body="Jhakri Robe +1",
+      hands="Jhakri Cuffs +1",
+      legs={ name="Psycloth Lappas", augments={'MP+75','Mag. Acc.+14','"Fast Cast"+7',}},
+      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
       neck="Imbodla Necklace",
       waist="Aswang Sash",
       left_ear="Lifestorm Earring",
       right_ear="Psystorm Earring",
-      left_ring="Irrwisch Ring",
-      right_ring="Perception Ring",
-      back="Bane Cape",
+      left_ring="Perception Ring",
+      right_ring="Sangoma Ring",
+      back={ name="Taranus's Cape", augments={'Mag. Acc+12 /Mag. Dmg.+12',}},
     }
 
     sets.midcast.ElementalEnfeeble = sets.midcast['Enfeebling Magic']
 
-    sets.midcast['Dark Magic'] = {
-      main="Lathi",
-      sub="Mephitis Grip",
-      ammo="Kalboron Stone",
-      head="Befouled Crown",
-      body="Ischemia Chasu.",
-      hands="Hagondes Cuffs",
-      legs="Merlinic Shalwar",
-      feet="Merlinic Crackows",
-      neck="Voltsurge Torque",
-      waist="Aswang Sash",
-      left_ear="Lifestorm Earring",
-      right_ear="Psystorm Earring",
-      left_ring="Acumen Ring",
-      right_ring="Perception Ring",
-      back="Bane Cape",
-    }
+    sets.midcast['Dark Magic'] = sets.midcast['Enfeebling Magic']
 
-    sets.midcast.Drain = {
-      main="Lathi",
-      sub="Mephitis Grip",
-      ammo="Kalboron Stone",
-      head="Befouled Crown",
-      body="Helios Jacket",
-      hands="Hagondes Cuffs",
-      legs="Merlinic Shalwar",
-      feet="Merlinic Crackows",
-      neck="Voltsurge Torque",
-      waist="Fucho-no-Obi",
-      left_ear="Lifestorm Earring",
-      right_ear="Psystorm Earring",
-      left_ring="Acumen Ring",
-      right_ring="Perception Ring",
-      back="Bane Cape",
-    }
+    sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {body="Helios Jacket", waist="Fucho-no-obi"})
 
     sets.midcast.Aspir = sets.midcast.Drain
 
@@ -220,15 +174,15 @@ function init_gear_sets()
       ammo="Kalboron Stone",
       head="Haruspex Hat",
       body="Shango Robe",
-      hands="Hagondes Cuffs",
-      legs="Psycloth Lappas",
-      feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
+      hands="Jhakri Cuffs +1",
+      legs={ name="Psycloth Lappas", augments={'MP+75','Mag. Acc.+14','"Fast Cast"+7',}},
+      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
       neck="Voltsurge Torque",
       waist="Witful Belt",
-      left_ear="Loquac. Earring",
-      right_ear="Gifted Earring",
+      left_ear="Gifted Earring",
+      right_ear="Loquac. Earring",
       left_ring="Prolix Ring",
-      right_ring={ name="Diamond Ring", augments={'MND+3','Spell interruption rate down -5%','"Resist Silence"+3',}},
+      right_ring="Sangoma Ring",
       back="Swith Cape",
     }
 
@@ -238,42 +192,42 @@ function init_gear_sets()
     -- Elemental Magic sets
 
     sets.midcast['Elemental Magic'] = {
-      main="Lathi",
+      main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
       sub="Zuuxowu Grip",
       ammo="Dosis Tathlum",
-      head="Hagondes Hat",
-      body="Spaekona's Coat +1",
-      hands="Amalric Gages",
-      legs="Merlinic Shalwar",
-      feet="Merlinic Crackows",
+      head="Jhakri Coronal +1",
+      body="Spae. Coat +1",
+      hands="Jhakri Cuffs +1",
+      legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+14 "Mag.Atk.Bns."+14','Magic Damage +15','MND+10','Mag. Acc.+11','"Mag.Atk.Bns."+1',}},
+      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
       neck="Eddy Necklace",
       waist="Aswang Sash",
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
-      left_ring="Acumen Ring",
-      right_ring="Fenrir Ring",
-      back="Bane Cape",
+      left_ring="Fenrir Ring",
+      right_ring="Acumen Ring",
+      back={ name="Bane Cape", augments={'Elem. magic skill +8','Dark magic skill +6','"Mag.Atk.Bns."+2',}},
     }
-
-    sets.midcast['Elemental Magic'].Resistant = sets.midcast['Elemental Magic']
 
     sets.midcast['Elemental Magic'].HighTierNuke = {
-      main="Lathi",
+      main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
       sub="Zuuxowu Grip",
       ammo="Dosis Tathlum",
-      head="Hagondes Hat",
-      body="Count's Garb",
-      hands="Amalric Gages",
-      legs="Merlinic Shalwar",
-      feet="Merlinic Crackows",
+      head="Jhakri Coronal +1",
+      body="Jhakri Robe +1",
+      hands="Jhakri Cuffs +1",
+      legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+14 "Mag.Atk.Bns."+14','Magic Damage +15','MND+10','Mag. Acc.+11','"Mag.Atk.Bns."+1',}},
+      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
       neck="Eddy Necklace",
       waist="Aswang Sash",
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
-      left_ring="Acumen Ring",
-      right_ring="Fenrir Ring",
+      left_ring="Fenrir Ring",
+      right_ring="Acumen Ring",
       back="Toro Cape",
     }
+
+    sets.midcast['Elemental Magic'].Resistant = sets.midcast['Elemental Magic'].HighTierNuke
 
     sets.midcast['Elemental Magic'].HighTierNuke.Resistant = sets.midcast['Elemental Magic'].HighTierNuke
 
@@ -286,43 +240,27 @@ function init_gear_sets()
     -- Sets to return to when not performing an action.
 
     -- Resting sets
-    sets.resting = {
-      main="Lathi",
-      sub="Zuuxowu Grip",
-      ammo="Dosis Tathlum",
-      head="Befouled Crown",
-      body="Ischemia Chasu.",
-      hands="Serpentes Cuffs",
-      legs="Assiduity Pants +1",
-      feet="Serpentes Sabots",
-      neck="Twilight Torque",
-      waist="Fucho-no-Obi",
-      left_ear="Loquac. Earring",
-      right_ear="Gifted Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      right_ring="Renaye Ring",
-      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
-    }
+    sets.resting = sets.idle
 
 
     -- Idle sets
 
     -- Normal refresh idle set
     sets.idle = {
-      main="Lathi",
+      main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
       sub="Zuuxowu Grip",
       ammo="Dosis Tathlum",
       head="Befouled Crown",
-      body="Ischemia Chasu.",
+      body="Jhakri Robe +1",
       hands="Serpentes Cuffs",
-      legs="Assiduity Pants +1",
+      legs="Assid. Pants +1",
       feet="Serpentes Sabots",
       neck="Twilight Torque",
       waist="Fucho-no-Obi",
-      left_ear="Loquac. Earring",
-      right_ear="Gifted Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      right_ring="Renaye Ring",
+      left_ear="Friomisi Earring",
+      right_ear="Hecate's Earring",
+      left_ring="Renaye Ring",
+      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
     }
 
@@ -335,20 +273,20 @@ function init_gear_sets()
 
     -- Town gear.
     sets.idle.Town = {
-      main="Lathi",
+      main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
       sub="Zuuxowu Grip",
       ammo="Dosis Tathlum",
-      head="Hagondes Hat",
-      body="Supay Weskit",
-      hands="Amalric Gages",
-      legs="Merlinic Shalwar",
-      feet="Merlinic Crackows",
-      neck="Eddy Necklace",
+      head="Jhakri Coronal +1",
+      body="Jhakri Robe +1",
+      hands="Jhakri Cuffs +1",
+      legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+14 "Mag.Atk.Bns."+14','Magic Damage +15','MND+10','Mag. Acc.+11','"Mag.Atk.Bns."+1',}},
+      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+      neck="Twilight Torque",
       waist="Fucho-no-Obi",
-      left_ear="Loquac. Earring",
-      right_ear="Gifted Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      right_ring="Renaye Ring",
+      left_ear="Friomisi Earring",
+      right_ear="Hecate's Earring",
+      left_ring="Renaye Ring",
+      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
     }
 
@@ -364,7 +302,7 @@ function init_gear_sets()
 
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
 
-    sets.buff['Mana Wall'] = {feet="Goetia Sabots +2"}
+    sets.buff['Mana Wall'] = {feet="Goetia Sabots +2", back="Taranus's cape"}
 
     sets.magic_burst = {neck="Mizukage-no-Kubikazari"}
 
