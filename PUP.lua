@@ -71,6 +71,7 @@ function init_gear_sets()
       head="Haruspex Hat",
       body={ name="Mirke Wardecors", augments={'"Fast Cast"+5','Mag. Acc.+4',}},
       neck="Voltsurge Torque",
+      left_ear="Enchntr. Earring +1",
       right_ear="Loquac. Earring",
       left_ring="Prolix Ring",
       right_ring={ name="Diamond Ring", augments={'MND+3','Spell interruption rate down -5%','"Resist Silence"+3',}},
@@ -85,7 +86,7 @@ function init_gear_sets()
 
     sets.precast.JA['Repair'] = {feet="Foire Babouches"}
 
-    sets.precast.JA.Maneuver = {neck="Buffoon's Collar",body="Cirque Farsetto +2",hands="Foire Dastanas",back="Dispersal Mantle"}
+    sets.precast.JA.Maneuver = {neck="Buffoon's Collar",body="Karagoz Farsetto",hands="Foire Dastanas",back="Dispersal Mantle"}
 
 
 
@@ -132,7 +133,7 @@ function init_gear_sets()
 
     sets.midcast.Pet['Elemental Magic'] = {feet="Pitre Babouches"}
 
-    sets.midcast.Pet.WeaponSkill = {head="Cirque Cappello +1", hands="Cirque Guanti +2", legs="Karagoz Pantaloni"}
+    sets.midcast.Pet.WeaponSkill = {head="Cirque Cappello +1", hands="Karagoz Guanti", legs="Karagoz Pantaloni"}
 
 
     -- Sets to return to when not performing an action.

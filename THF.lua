@@ -146,6 +146,7 @@ function init_gear_sets()
       feet="Meg. Jam. +1",
       neck="Voltsurge Torque",
       waist="Twilight Belt",
+      left_ear="Enchntr. Earring +1",
       right_ear="Loquac. Earring",
       left_ring="Prolix Ring",
       right_ring={ name="Diamond Ring", augments={'MND+3','Spell interruption rate down -5%','"Resist Silence"+3',}},

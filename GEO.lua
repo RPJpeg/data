@@ -67,6 +67,7 @@ function init_gear_sets()
       feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
       neck="Voltsurge Torque",
       waist="Witful Belt",
+      left_ear="Enchntr. Earring +1",
       right_ear="Loquac. Earring",
       left_ring="Prolix Ring",
       back={ name="Lifestream Cape", augments={'Geomancy Skill +7','Indi. eff. dur. +19',}},
