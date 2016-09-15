@@ -1,0 +1,17 @@
+sets.exported={
+    main="Marin Staff +1",
+    sub="Niobid Strap",
+    ammo="Dosis Tathlum",
+    head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+    body="Jhakri Robe +1",
+    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    legs="Assid. Pants +1",
+    feet="Geo. Sandals +1",
+    neck="Twilight Torque",
+    waist="Fucho-no-Obi",
+    left_ear="Handler's Earring +1",
+    right_ear="Handler's Earring",
+    left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+    right_ring="Acumen Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+}
