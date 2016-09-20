@@ -90,7 +90,7 @@ function init_gear_sets()
       right_ear="Bladeborn Earring",
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
       right_ring="Rajas Ring",
-      back={ name="Toutatis's Cape", augments={'DEX+1','Accuracy+5 Attack+5','Crit.hit rate+9',}},
+      back="Toutatis's Cape",
     }
 
     sets.buff['Trick Attack'] = {
@@ -309,7 +309,7 @@ function init_gear_sets()
       right_ear="Heartseeker Earring",
       left_ring="Warp Ring",
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      back={ name="Toutatis's Cape", augments={'DEX+1','Accuracy+5 Attack+5','Crit.hit rate+9',}},
+      back="Toutatis's Cape",
     }
 
     sets.idle.Weak = sets.idle
@@ -344,12 +344,13 @@ function init_gear_sets()
       right_ring="Rajas Ring",
       back={ name="Canny Cape", augments={'DEX+1','AGI+1','"Dual Wield"+3',}},
     }
+
     sets.engaged.Acc = {
       ammo="Honed Tathlum",
       head="Meghanada Visor +1",
       body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands="Meg. Gloves +1",
-      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      legs={ name="Herculean Trousers", augments={'Accuracy+22 Attack+22','"Triple Atk."+3','DEX+2','Attack+14',}},
       feet="Meg. Jam. +1",
       neck="Subtlety Spec.",
       waist="Cetl Belt",
@@ -357,7 +358,7 @@ function init_gear_sets()
       right_ear="Heartseeker Earring",
       left_ring="Epona's Ring",
       right_ring="Rajas Ring",
-      back={ name="Canny Cape", augments={'DEX+1','AGI+1','"Dual Wield"+3',}},
+      back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
     }
 
     sets.engaged.Hybrid = {
@@ -365,7 +366,7 @@ function init_gear_sets()
       head="Skormoth Mask",
       body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands={ name="Floral Gauntlets", augments={'Rng.Acc.+11','Accuracy+5','"Triple Atk."+2',}},
-      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      legs={ name="Herculean Trousers", augments={'Accuracy+22 Attack+22','"Triple Atk."+3','DEX+2','Attack+14',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
       neck="Subtlety Spec.",
       waist="Cetl Belt",
@@ -373,7 +374,7 @@ function init_gear_sets()
       right_ear="Heartseeker Earring",
       left_ring="Epona's Ring",
       right_ring="Rajas Ring",
-      back={ name="Canny Cape", augments={'DEX+1','AGI+1','"Dual Wield"+3',}},
+      back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
     }
 
 

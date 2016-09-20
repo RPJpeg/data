@@ -108,7 +108,7 @@ function init_gear_sets()
     sets.midcast.FastRecast =set_combine(sets.midcast.fastcast)
 
     sets.midcast.Regen = set_combine(sets.midcast.fastcast, {
-      head={ name="Vanya Hood", augments={'Healing magic skill +16','"Cure" spellcasting time -5%','Magic dmg. taken -2',}},
+      head="Vanya Hood",
       body={ name="Telchine Chas.", augments={'Pet: "Regen"+3','Pet: Damage taken -4%',}},
       legs={ name="Telchine Braconi", augments={'Mag. Evasion+13','"Cure" spellcasting time -6%','"Regen" potency+1',}},
       feet="Umbani Boots",
@@ -116,9 +116,9 @@ function init_gear_sets()
 })
 
     sets.midcast['Enhancing Magic']={
-      head={ name="Vanya Hood", augments={'Healing magic skill +16','"Cure" spellcasting time -5%','Magic dmg. taken -2',}},
+      head="Vanya Hood",
       body={ name="Telchine Chas.", augments={'Pet: "Regen"+3','Pet: Damage taken -4%',}},
-      legs={ name="Vanya Slops", augments={'MND+8','Spell interruption rate down +11%','"Conserve MP"+5',}},
+      legs="Vanya Slops",
       feet="Umbani Boots",
       left_ear="Gifted Earring",
 }
@@ -147,16 +147,22 @@ function init_gear_sets()
       back="Lifestream Cape",
 }
 
-    sets.midcast.Geomancy.Indi =set_combine(sets.midcast.Geomancy, {main="Solstice", sub="Genmei Shield", legs="Bagua Pants +1", feet="Azimuth Gaiters", back="Nantosuelta's Cape"})
+    sets.midcast.Geomancy.Indi =set_combine(sets.midcast.Geomancy, {
+      main="Solstice",
+      sub="Genmei Shield",
+      legs="Bagua Pants +1",
+      feet="Azimuth Gaiters",
+      back="Nantosuelta's Cape"
+})
 
 
     sets.midcast.Cure = {
       main="Tefnut Wand",
       sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','Mag. Acc.+5','"Cure" spellcasting time -7%',}},
-      head={ name="Vanya Hood", augments={'Healing magic skill +16','"Cure" spellcasting time -5%','Magic dmg. taken -2',}},
+      head="Vanya Hood",
       body={ name="Telchine Chas.", augments={'Pet: "Regen"+3','Pet: Damage taken -4%',}},
-      hands={ name="Bokwus Gloves", augments={'Mag. Acc.+12','MND+10','INT+9',}},
-      legs={ name="Vanya Slops", augments={'MND+8','Spell interruption rate down +11%','"Conserve MP"+5',}},
+      hands="Bokwus Gloves",
+      legs="Vanya Slops",
       neck="Imbodla Necklace",
       left_ear="Gifted Earring",
       right_ear="Lifestorm Earring",
@@ -178,7 +184,7 @@ function init_gear_sets()
       head="Merlinic Hood",
       body="Shango Robe",
       hands="Jhakri Cuffs +1",
-      legs={ name="Psycloth Lappas", augments={'MP+75','Mag. Acc.+14','"Fast Cast"+7',}},
+      legs="Psycloth Lappas",
       feet={ name="Medium's Sabots", augments={'MP+10',}},
       neck="Imbodla Necklace",
       waist="Aswang Sash",

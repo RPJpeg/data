@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Shijo", augments={'DMG:+15','Accuracy+15','Attack+15',}},
+    sub={ name="Shijo", augments={'DMG:+15','Accuracy+15','Attack+15',}},
+    ammo="Honed Tathlum",
+    head="Skormoth Mask",
+    body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+    hands="Meg. Gloves +1",
+    legs={ name="Herculean Trousers", augments={'Accuracy+22 Attack+22','"Triple Atk."+3','DEX+2','Attack+14',}},
+    feet="Jute Boots +1",
+    neck="Subtlety Spec.",
+    waist="Fotia Belt",
+    left_ear="Dudgeon Earring",
+    right_ear="Heartseeker Earring",
+    left_ring="Warp Ring",
+    right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
+}
