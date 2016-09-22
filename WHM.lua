@@ -41,7 +41,7 @@ function init_gear_sets()
     sets.precast.FC = {
       main="Marin Staff",
       head="Haruspex Hat",
-      body="Helios Jacket",
+      body="Shango Robe",
       hands="Gendewitha Gages +1",
       legs="Artsieq Hose",
       feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
@@ -98,7 +98,7 @@ function init_gear_sets()
 
     -- Cure sets
     gear.default.obi_waist = "Witful Belt"
-    gear.default.obi_back = "Tempered Cape"
+    gear.default.obi_back = "Solemnity Cape"
 
     sets.midcast.CureSolace = {
       main="Ababinili +1",
@@ -115,7 +115,7 @@ function init_gear_sets()
       right_ear="Nourish. Earring",
       left_ring="Perception Ring",
       right_ring="Sirona's Ring",
-      back="Tempered Cape",
+      back="Solemnity Cape",
     }
 
     sets.midcast.Cure = set_combine(sets.midcast.CureSolace, {})
@@ -134,7 +134,7 @@ function init_gear_sets()
       right_ear="Nourish. Earring",
       left_ring="Perception Ring",
       right_ring="Sirona's Ring",
-      back="Tempered Cape",
+      back="Solemnity Cape",
     }
 
     sets.midcast.Cursna = {
@@ -143,6 +143,7 @@ function init_gear_sets()
       hands="Orison Mitts +2",
       legs="Orsn. Pantaln. +2",
       feet="Genewitha Galoshes",
+      back="Alaunus's cape",
     }
 
     sets.midcast.StatusRemoval = {
@@ -281,7 +282,7 @@ function init_gear_sets()
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
       head="Befouled Crown",
-      body="Ischemia Chasu.",
+      body="Witching Robe",
       hands="Serpentes Cuffs",
       legs="Assiduity Pants",
       feet="Serpentes Sabots",
@@ -301,7 +302,7 @@ function init_gear_sets()
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
       head="Orison Cap +2",
-      body="Ischemia Chasu.",
+      body="Witching Robe",
       hands="Serpentes Cuffs",
       legs={ name="Piety Pantaloons", augments={'Enhances "Shellra V" effect',}},
       feet="Hygieia Clogs",
@@ -367,7 +368,7 @@ function job_precast(spell, action, spellMap, eventArgs)
     end
 
     if spell.skill == 'Healing Magic' then
-        gear.default.obi_back = "Tempered Cape"
+        gear.default.obi_back = "Solemnity Cape"
     else
         gear.default.obi_back = "Refraction Cape"
     end

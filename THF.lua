@@ -88,7 +88,7 @@ function init_gear_sets()
       neck="Love Torque",
       left_ear="Steelflash Earring",
       right_ear="Bladeborn Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      left_ring="Apate Ring",
       right_ring="Rajas Ring",
       back="Toutatis's Cape",
     }
@@ -102,6 +102,8 @@ function init_gear_sets()
       neck="Love Torque",
       left_ear="Steelflash Earring",
       right_ear="Bladeborn Earring",
+      left_ring="Apate Ring",
+      right_ring="Rajas Ring",
       back={ name="Canny Cape", augments={'DEX+1','AGI+1','"Dual Wield"+3',}},
     }
 
@@ -166,6 +168,7 @@ function init_gear_sets()
       neck="Asperity Necklace",
       left_ear="Steelflash Earring",
       right_ear="Bladeborn Earring",
+      left_ring="Apate Ring",
       right_ring="Rajas Ring",
     }
 
@@ -177,7 +180,7 @@ function init_gear_sets()
       head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
       body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands="Meg. Gloves +1",
-      legs={ name="Taeon Tights", augments={'Accuracy+2','Weapon Skill Acc.+19','STR+5 DEX+5',}},
+      legs="Herculean Trousers",
       feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
       neck="Rancor Collar",
       waist="Fotia Belt",
@@ -350,7 +353,7 @@ function init_gear_sets()
       head="Meghanada Visor +1",
       body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands="Meg. Gloves +1",
-      legs={ name="Herculean Trousers", augments={'Accuracy+22 Attack+22','"Triple Atk."+3','DEX+2','Attack+14',}},
+      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
       feet="Meg. Jam. +1",
       neck="Subtlety Spec.",
       waist="Cetl Belt",
@@ -366,7 +369,7 @@ function init_gear_sets()
       head="Skormoth Mask",
       body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands={ name="Floral Gauntlets", augments={'Rng.Acc.+11','Accuracy+5','"Triple Atk."+2',}},
-      legs={ name="Herculean Trousers", augments={'Accuracy+22 Attack+22','"Triple Atk."+3','DEX+2','Attack+14',}},
+      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
       neck="Subtlety Spec.",
       waist="Cetl Belt",

@@ -44,7 +44,6 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
     sets.precast.JA['Chainspell'] = {body="Vitivation Tabard"}
 
-
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
       right_ear="Roundel Earring",
@@ -184,7 +183,7 @@ function init_gear_sets()
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
       head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
-      body="Jhakri Robe +1",
+      body="Lethargy Sayon",
       hands="Jhakri Cuffs +1",
       legs={ name="Psycloth Lappas", augments={'MP+75','Mag. Acc.+14','"Fast Cast"+7',}},
       feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
@@ -198,10 +197,11 @@ function init_gear_sets()
     }
 
     sets.midcast['Dia III'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Vitivation Chapeau"})
-
     sets.midcast['Slow II'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Vitivation Chapeau"})
-
     sets.midcast['Paralyze II'] = set_combine(sets.midcast['Enfeebling Magic'], {feet="Vitivation Boots"})
+    sets.midcast['Blind II'] = set_combine(sets.midcast['Enfeebling Magic'], {feet="Vitivation Boots"})
+    sets.midcast['Bio III'] = set_combine(sets.midcast['Enfeebling Magic'], {legs="Vitivation Tights"})
+    sets.midcast['Blind II'] = set_combine(sets.midcast['Enfeebling Magic'], {legs="Vitivation Tights"})
 
     sets.midcast['Elemental Magic'] = {
       main="Marin Staff +1",
@@ -260,14 +260,15 @@ function init_gear_sets()
 
     sets.buff.ComposureOther = {
       head="Lethargy Chappel",
-      body="Estoqueur's Sayon +2",
+      body="Lethargy Sayon",
       hands="Lethargy Gantherots",
       legs="Lethargy Fuseau",
       feet="Lethargy Houseaux"
       }
 
     sets.buff.Saboteur = {hands="Lethargy Gantherots"}
-
+    sets.buff['Chainspell'] = {body="Vitivation Tabard"}
+    sets.buff['Spikes'] = {legs="Vitivation Tights"}
 
     -- Sets to return to when not performing an action.
 
@@ -373,6 +374,18 @@ function job_post_midcast(spell, action, spellMap, eventArgs)
         equip(sets.midcast.CureSelf)
     end
 end
+
+function job_aftercast(spell, action, spellMap, eventArgs)
+    -- Lock feet after using Mana Wall.
+    if not spell.interrupted then
+        if spell.english == 'Ice Spikes' or 'Blaze Spikes' or 'Shock Spikes' then
+            enable('legs')
+            equip(sets.buff['Spikes'])
+            disable('feet')
+        end
+    end
+end
+
 
 -------------------------------------------------------------------------------------------------------------------
 -- Job-specific hooks for non-casting events.

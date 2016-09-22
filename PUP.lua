@@ -106,7 +106,7 @@ function init_gear_sets()
       head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
       body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands="Count's Cuffs",
-      legs={ name="Taeon Tights", augments={'Accuracy+2','Weapon Skill Acc.+19','STR+5 DEX+5',}},
+      legs="Herculean Trousers",
       feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
       neck="Rancor Collar",
       waist="Fotia Belt",
@@ -140,7 +140,7 @@ function init_gear_sets()
     sets.midcast.Pet.WeaponSkill = {
       head="Cirque Cappello +1",
       hands="Karagoz Guanti",
-      legs="Karagoz Pantaloni"
+      legs="Karagoz Pantaloni +1"
 }
 
 
@@ -157,7 +157,7 @@ function init_gear_sets()
       body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands="Count's Cuffs",
       legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
-      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
+      feet="Rao sune-ate",
       neck="Twilight Torque",
       waist="Fotia Belt",
       left_ear="Steelflash Earring",
@@ -177,7 +177,7 @@ function init_gear_sets()
       head={ name="Pitre Taj", augments={'Enhances "Optimization" effect',}},
       body={ name="Pitre Tobe", augments={'Enhances "Overdrive" effect',}},
       hands={ name="Taeon Gloves", augments={'Pet: DEF+22','Pet: "Regen"+2','Pet: Damage taken -3%',}},
-      legs="Karagoz Pantaloni",
+      legs="Karagoz Pantaloni +1",
       feet="Foire Babouches",
       neck="Empath Necklace",
       waist="Isa Belt",
@@ -217,8 +217,8 @@ function init_gear_sets()
       head="Whirlpool Mask",
       body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands="Count's Cuffs",
-      legs="Karagoz Pantaloni",
-      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
+      legs="Karagoz Pantaloni +1",
+      feet="Rao sune-ate",
       neck="Asperity Necklace",
       waist="Shaolin Belt",
       left_ear="Steelflash Earring",
@@ -233,7 +233,7 @@ function init_gear_sets()
       body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands="Count's Cuffs",
       legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
-      feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
+      feet="Rao sune-ate",
       neck="Subtlety Spec.",
       waist="Shaolin Belt",
       left_ear="Steelflash Earring",
