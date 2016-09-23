@@ -177,7 +177,7 @@ function init_gear_sets()
 
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-      head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
+      head="Sukeroku Hachimaki",
       body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands="Meg. Gloves +1",
       legs="Herculean Trousers",
@@ -191,7 +191,6 @@ function init_gear_sets()
       back="Vespid Mantle",
     }
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {
-      head="Meghanada Visor +1",
       neck="Love Torque",
     })
 
@@ -239,7 +238,7 @@ function init_gear_sets()
     sets.precast.WS['Mandalic Stab'].SATA = set_combine(sets.precast.WS['Mandalic Stab'].Mod, {})
 
     sets.precast.WS['Aeolian Edge'] = {
-      head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
+      head="Sukeroku Hachimaki",
       body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands="Meg. Gloves +1",
       legs={ name="Taeon Tights", augments={'Accuracy+2','Weapon Skill Acc.+19','STR+5 DEX+5',}},
@@ -365,7 +364,7 @@ function init_gear_sets()
     }
 
     sets.engaged.Hybrid = {
-      ammo="Honed Tathlum",
+      ammo="Ginsen",
       head="Skormoth Mask",
       body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands={ name="Floral Gauntlets", augments={'Rng.Acc.+11','Accuracy+5','"Triple Atk."+2',}},
