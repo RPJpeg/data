@@ -59,7 +59,7 @@ function user_setup()
                        "Stone IV", "Water IV", "Aero IV", "Fire IV", "Blizzard IV", "Thunder IV",}
     info.high_nukes = S{"Stone V", "Water V", "Aero V", "Fire V", "Blizzard V", "Thunder V"}
 
-    gear.macc_hagondes = {name="Hagondes Cuffs", augments={'Phys. dmg. taken -3%','Mag. Acc.+29'}}
+    gear.macc_hagondes = {name="Hagondes Cuffs"}
 
     send_command('bind ^` input /ma Stun <t>')
 
@@ -86,16 +86,28 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
 
-    sets.precast.FC = {ammo="Impatiens",
-        head="Nahtirah Hat",ear2="Loquacious Earring",
-        body="Vanir Cotehardie",hands="Gendewitha Gages",ring1="Prolix Ring",
-        back="Swith Cape +1",waist="Witful Belt",legs="Orvail Pants +1",feet="Academic's Loafers"}
+    sets.precast.FC = {
+      main="Marin Staff +1",
+      sub="Mephitis Grip",
+      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+      body="Shango Robe",
+      hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -1%','Song recast delay -1',}},
+      legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
+      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+      neck="Voltsurge Torque",
+      waist="Witful Belt",
+      left_ear="Enchntr. Earring +1",
+      right_ear="Loquac. Earring",
+      left_ring="Prolix Ring",
+      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      back="Swith Cape",
+    }
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 
-    sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {neck="Stoicheion Medal"})
+    sets.precast.FC['Elemental Magic'] = sets.precast.FC
 
-    sets.precast.FC.Cure = set_combine(sets.precast.FC, {body="Heka's Kalasiris",back="Pahtli Cape"})
+    sets.precast.FC.Cure = set_combine(sets.precast.FC, {back="Pahtli Cape"})
 
     sets.precast.FC.Curaga = sets.precast.FC.Cure
 
@@ -104,153 +116,238 @@ function init_gear_sets()
 
     -- Midcast Sets
 
-    sets.midcast.FastRecast = {ammo="Incantor Stone",
-        head="Nahtirah Hat",ear2="Loquacious Earring",
-        body="Vanir Cotehardie",hands="Gendewitha Gages",ring1="Prolix Ring",
-        back="Swith Cape +1",waist="Goading Belt",legs="",feet="Academic's Loafers"}
+    sets.midcast.FastRecast = sets.precast.FC
 
-    sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield",ammo="Incantor Stone",
-        head="Nahtirah Hat",neck="Colossus's Torque",ear1="Lifestorm Earring",ear2="Loquacious Earring",
-        body="Heka's Kalasiris",hands="Bokwus Gloves",ring1="Prolix Ring",ring2="Sirona's Ring",
-        back="Swith Cape +1",waist="Goading Belt",legs="Orvail Pants +1",feet="Academic's Loafers"}
+    sets.midcast.Cure = {
+      main="Tefnut Wand",
+      sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','Mag. Acc.+5','"Cure" spellcasting time -7%',}},
+      ammo="Kalboron Stone",
+      head={ name="Vanya Hood", augments={'Healing magic skill +16','"Cure" spellcasting time -5%','Magic dmg. taken -2',}},
+      body={ name="Gendewitha Bliaut", augments={'Phys. dmg. taken -1%','"Cure" spellcasting time -2%',}},
+      hands={ name="Bokwus Gloves", augments={'Mag. Acc.+12','MND+10','INT+9',}},
+      legs={ name="Vanya Slops", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
+      feet={ name="Peda. Loafers", augments={'Enhances "Stormsurge" effect',}},
+      neck="Imbodla Necklace",
+      waist="Druid's Rope",
+      left_ear="Gwati Earring",
+      right_ear="Gifted Earring",
+      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      right_ring="Sirona's Ring",
+      back="Solemnity Cape",
+    }
 
-    sets.midcast.CureWithLightWeather = {main="Chatoyant Staff",sub="Achaq Grip",ammo="Incantor Stone",
-        head="Gendewitha Caubeen",neck="Colossus's Torque",ear1="Lifestorm Earring",ear2="Loquacious Earring",
-        body="Heka's Kalasiris",hands="Bokwus Gloves",ring1="Prolix Ring",ring2="Sirona's Ring",
-        back="Twilight Cape",waist="Korin Obi",legs="Nares Trews",feet="Academic's Loafers"}
+    sets.midcast.CureWithLightWeather = sets.midcast.Cure
 
     sets.midcast.Curaga = sets.midcast.Cure
 
-    sets.midcast.Regen = {main="Bolelabunga",head="Savant's Bonnet +2"}
+    sets.midcast.Regen = set_combine(sets.precast.FC, {
+      head="Arbatel Bonnet",
+      body={ name="Telchine Chas.", augments={'Pet: "Regen"+3','Pet: Damage taken -4%',}},
+      legs={ name="Telchine Braconi", augments={'Mag. Evasion+13','"Cure" spellcasting time -6%','"Regen" potency+1',}},
+      back={ name="Bookworm's Cape", augments={'INT+1','MND+3','Helix eff. dur. +14','"Regen" potency+6',}},
+    })
 
-    sets.midcast.Cursna = {
-        neck="Malison Medallion",
-        hands="Hieros Mittens",ring1="Ephedra Ring",
-        feet="Gendewitha Galoshes"}
+    sets.midcast.Cursna = {}
 
-    sets.midcast['Enhancing Magic'] = {ammo="Savant's Treatise",
-        head="Savant's Bonnet +2",neck="Colossus's Torque",
-        body="Manasa Chasuble",hands="Ayao's Gages",
-        waist="Olympus Sash",legs="Portent Pants"}
+    sets.midcast['Enhancing Magic'] = {
+      main="Staccato Staff",
+      sub="Niobid Strap",
+      ammo="Kalboron Stone",
+      head="Befouled Crown",
+      body={ name="Telchine Chas.", augments={'Pet: "Regen"+3','Pet: Damage taken -4%',}},
+      hands="Acad. Bracers",
+      legs={ name="Vanya Slops", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
+      neck="Imbodla Necklace",
+      waist="Siegel Sash",
+      back="Solemnity Cape",
+    }
 
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash"})
 
     sets.midcast.Storm = set_combine(sets.midcast['Enhancing Magic'], {feet="Pedagogy Loafers"})
 
-    sets.midcast.Protect = {ring1="Sheltered Ring"}
+    sets.midcast.Protect = sets.midcast['Enhancing Magic']
     sets.midcast.Protectra = sets.midcast.Protect
 
-    sets.midcast.Shell = {ring1="Sheltered Ring"}
+    sets.midcast.Shell = sets.midcast['Enhancing Magic']
     sets.midcast.Shellra = sets.midcast.Shell
 
 
     -- Custom spell classes
-    sets.midcast.MndEnfeebles = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Sturm's Report",
-        head="Nahtirah Hat",neck="Weike Torque",ear1="Psystorm Earring",ear2="Lifestorm Earring",
-        body="Manasa Chasuble",hands="Yaoyotl Gloves",ring1="Aquasoul Ring",ring2="Sangoma Ring",
-        back="Refraction Cape",waist="Demonry Sash",legs="Bokwus Slops",feet="Bokwus Boots"}
+    sets.midcast.MndEnfeebles = {
+      main="Marin Staff +1",
+      sub="Mephitis Grip",
+      ammo="Kalboron Stone",
+      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+      body="Shango Robe",
+      hands="Jhakri Cuffs +1",
+      legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
+      feet="Jhakri Pigaches +1",
+      neck="Imbodla Necklace",
+      waist="Aswang Sash",
+      left_ear="Enchntr. Earring +1",
+      right_ear="Gwati Earring",
+      left_ring="Perception Ring",
+      right_ring="Sangoma Ring",
+      back="Refraction Cape",
+    }
 
-    sets.midcast.IntEnfeebles = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Sturm's Report",
-        head="Nahtirah Hat",neck="Weike Torque",ear1="Psystorm Earring",ear2="Lifestorm Earring",
-        body="Manasa Chasuble",hands="Yaoyotl Gloves",ring1="Icesoul Ring",ring2="Sangoma Ring",
-        back="Refraction Cape",waist="Demonry Sash",legs="Bokwus Slops",feet="Bokwus Boots"}
+    sets.midcast.IntEnfeebles = {
+      main="Marin Staff +1",
+      sub="Mephitis Grip",
+      ammo="Kalboron Stone",
+      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+      body="Shango Robe",
+      hands="Jhakri Cuffs +1",
+      legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
+      feet="Jhakri Pigaches +1",
+      neck="Imbodla Necklace",
+      waist="Aswang Sash",
+      left_ear="Enchntr. Earring +1",
+      right_ear="Gwati Earring",
+      left_ring="Perception Ring",
+      right_ring="Sangoma Ring",
+      back="Refraction Cape",
+    }
 
     sets.midcast.ElementalEnfeeble = sets.midcast.IntEnfeebles
 
-    sets.midcast['Dark Magic'] = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Incantor Stone",
-        head="Nahtirah Hat",neck="Aesir Torque",ear1="Psystorm Earring",ear2="Lifestorm Earring",
-        body="Vanir Cotehardie",hands="Yaoyotl Gloves",ring1="Strendu Ring",ring2="Sangoma Ring",
-        back="Refraction Cape",waist="Goading Belt",legs="Bokwus Slops",feet="Bokwus Boots"}
+    sets.midcast['Dark Magic'] = {
+      main="Marin Staff +1",
+      sub="Mephitis Grip",
+      ammo="Kalboron Stone",
+      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+      body="Shango Robe",
+      hands="Jhakri Cuffs +1",
+      legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
+      feet="Jhakri Pigaches +1",
+      neck="Imbodla Necklace",
+      waist="Aswang Sash",
+      left_ear="Enchntr. Earring +1",
+      right_ear="Gwati Earring",
+      left_ring="Perception Ring",
+      right_ring="Sangoma Ring",
+      back="Refraction Cape",
+    }
 
-    sets.midcast.Kaustra = {main="Lehbrailg +2",sub="Wizzan Grip",ammo="Witchstone",
-        head="Hagondes Hat",neck="Eddy Necklace",ear1="Hecate's Earring",ear2="Friomisi Earring",
-        body="Hagondes Coat",hands="Yaoyotl Gloves",ring1="Icesoul Ring",ring2="Strendu Ring",
-        back="Toro Cape",waist="Cognition Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
+    sets.midcast.Kaustra = {
+      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+15','"Refresh"+1','INT+8',}},
+      sub="Niobid Strap",
+      ammo="Dosis Tathlum",
+      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+      body="Jhakri Robe +1",
+      hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+      legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Fast Cast"+3','"Mag.Atk.Bns."+14',}},
+      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+      neck="Eddy Necklace",
+      waist="Aswang Sash",
+      left_ear="Friomisi Earring",
+      right_ear="Hecate's Earring",
+      left_ring="Fenrir Ring",
+      right_ring="Acumen Ring",
+      back={ name="Bookworm's Cape", augments={'INT+1','MND+3','Helix eff. dur. +14','"Regen" potency+6',}},
+    }
 
-    sets.midcast.Drain = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Incantor Stone",
-        head="Nahtirah Hat",neck="Aesir Torque",ear1="Psystorm Earring",ear2="Lifestorm Earring",
-        body="Vanir Cotehardie",hands="Gendewitha Gages",ring1="Excelsis Ring",ring2="Sangoma Ring",
-        back="Refraction Cape",waist="Goading Belt",legs="Pedagogy Pants",feet="Academic's Loafers"}
+    sets.midcast.Drain = {
+      body={ name="Helios Jacket", augments={'"Drain" and "Aspir" potency +8',}},
+      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+      waist="Fucho-no-Obi",
+    }
 
     sets.midcast.Aspir = sets.midcast.Drain
 
-    sets.midcast.Stun = {main="Apamajas II",sub="Mephitis Grip",ammo="Incantor Stone",
-        head="Nahtirah Hat",neck="Aesir Torque",ear1="Psystorm Earring",ear2="Lifestorm Earring",
-        body="Vanir Cotehardie",hands="Gendewitha Gages",ring1="Prolix Ring",ring2="Sangoma Ring",
-        back="Refraction Cape",waist="Witful Belt",legs="Pedagogy Pants",feet="Academic's Loafers"}
+    sets.midcast.Stun = set_combine(sets.precast.FC, {
+      main={ name="Apamajas II", augments={'Lightning Affinity: Magic Accuracy+6 Lightning Affinity: Recast time-14%','Lightning Affinity: Magic Damage+1',}},
+})
 
-    sets.midcast.Stun.Resistant = set_combine(sets.midcast.Stun, {main="Lehbrailg +2"})
+    sets.midcast.Stun.Resistant = sets.midcast.Stun
 
 
     -- Elemental Magic sets are default for handling low-tier nukes.
-    sets.midcast['Elemental Magic'] = {main="Lehbrailg +2",sub="Zuuxowu Grip",ammo="Dosis Tathlum",
-        head="Hagondes Hat",neck="Eddy Necklace",ear1="Hecate's Earring",ear2="Friomisi Earring",
-        body="Hagondes Coat",hands="Yaoyotl Gloves",ring1="Icesoul Ring",ring2="Acumen Ring",
-        back="Toro Cape",waist=gear.ElementalObi,legs="Hagondes Pants",feet="Hagondes Sabots"}
+    sets.midcast['Elemental Magic'] = {
+      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+15','"Refresh"+1','INT+8',}},
+      sub="Niobid Strap",
+      ammo="Dosis Tathlum",
+      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+      body="Jhakri Robe +1",
+      hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+      legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Fast Cast"+3','"Mag.Atk.Bns."+14',}},
+      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+      neck="Eddy Necklace",
+      waist="Aswang Sash",
+      left_ear="Friomisi Earring",
+      right_ear="Hecate's Earring",
+      left_ring="Fenrir Ring",
+      right_ring="Acumen Ring",
+      back={ name="Bookworm's Cape", augments={'INT+1','MND+3','Helix eff. dur. +14','"Regen" potency+6',}},
+    }
 
-    sets.midcast['Elemental Magic'].Resistant = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Dosis Tathlum",
-        head="Hagondes Hat",neck="Eddy Necklace",ear1="Hecate's Earring",ear2="Friomisi Earring",
-        body="Vanir Cotehardie",hands=gear.macc_hagondes,ring1="Icesoul Ring",ring2="Acumen Ring",
-        back="Toro Cape",waist=gear.ElementalObi,legs="Hagondes Pants",feet="Bokwus Boots"}
+    sets.midcast['Elemental Magic'].Resistant = sets.midcast['Elemental Magic']
 
     -- Custom refinements for certain nuke tiers
-    sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {sub="Wizzan Grip"})
+    sets.midcast['Elemental Magic'].HighTierNuke = sets.midcast['Elemental Magic']
 
-    sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {sub="Wizzan Grip"})
+    sets.midcast['Elemental Magic'].HighTierNuke.Resistant = sets.midcast['Elemental Magic']
 
-    sets.midcast.Impact = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Dosis Tathlum",
-        head=empty,neck="Eddy Necklace",ear1="Psystorm Earring",ear2="Lifestorm Earring",
-        body="Twilight Cloak",hands=gear.macc_hagondes,ring1="Icesoul Ring",ring2="Sangoma Ring",
-        back="Toro Cape",waist="Demonry Sash",legs="Hagondes Pants",feet="Bokwus Boots"}
-
+    sets.midcast.Impact = set_combine(sets.midcast['Elemental Magic'], {head=empty,body="Twilight Cloak"})
 
     -- Sets to return to when not performing an action.
 
-    -- Resting sets
-    sets.resting = {main="Chatoyant Staff",sub="Mephitis Grip",
-        head="Nefer Khat +1",neck="Wiglen Gorget",
-        body="Heka's Kalasiris",hands="Serpentes Cuffs",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-        waist="Austerity Belt",legs="Nares Trews",feet="Serpentes Sabots"}
-
-
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
-    sets.idle.Town = {main="Bolelabunga",sub="Genbu's Shield",ammo="Incantor Stone",
-        head="Savant's Bonnet +2",neck="Wiglen Gorget",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Savant's Gown +2",hands="Savant's Bracers +2",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-        back="Umbra Cape",waist="Hierarch Belt",legs="Savant's Pants +2",feet="Herald's Gaiters"}
+    sets.idle.Town = {
+      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+15','"Refresh"+1','INT+8',}},
+      sub="Niobid Strap",
+      ammo="Dosis Tathlum",
+      head="Arbatel Bonnet",
+      body="Jhakri Robe +1",
+      hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+      legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Fast Cast"+3','"Mag.Atk.Bns."+14',}},
+      feet="Arbatel Loafers",
+      neck="Twilight Torque",
+      waist="Fucho-no-Obi",
+      left_ear="Enchntr. Earring +1",
+      right_ear="Loquac. Earring",
+      left_ring="Renaye Ring",
+      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+    }
 
-    sets.idle.Field = {main="Bolelabunga",sub="Genbu's Shield",ammo="Incantor Stone",
-        head="Nefer Khat +1",neck="Wiglen Gorget",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Heka's Kalasiris",hands="Serpentes Cuffs",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-        back="Umbra Cape",waist="Hierarch Belt",legs="Nares Trews",feet="Herald's Gaiters"}
+    sets.idle.Field = {
+      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+15','"Refresh"+1','INT+8',}},
+      sub="Niobid Strap",
+      ammo="Dosis Tathlum",
+      head="Befouled Crown",
+      body="Jhakri Robe +1",
+      hands="Serpentes Cuffs",
+      legs="Assid. Pants +1",
+      feet="Serpentes Sabots",
+      neck="Twilight Torque",
+      waist="Fucho-no-Obi",
+      left_ear="Enchntr. Earring +1",
+      right_ear="Loquac. Earring",
+      left_ring="Renaye Ring",
+      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+    }
 
-    sets.idle.Field.PDT = {main=gear.Staff.PDT,sub="Achaq Grip",ammo="Incantor Stone",
-        head="Nahtirah Hat",neck="Wiglen Gorget",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Hagondes Coat",hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="Paguroidea Ring",
-        back="Umbra Cape",waist="Hierarch Belt",legs="Nares Trews",feet="Herald's Gaiters"}
+    sets.resting = sets.idle.Field
 
-    sets.idle.Field.Stun = {main="Apamajas II",sub="Mephitis Grip",ammo="Incantor Stone",
-        head="Nahtirah Hat",neck="Aesir Torque",ear1="Psystorm Earring",ear2="Lifestorm Earring",
-        body="Vanir Cotehardie",hands="Gendewitha Gages",ring1="Prolix Ring",ring2="Sangoma Ring",
-        back="Swith Cape +1",waist="Goading Belt",legs="Bokwus Slops",feet="Academic's Loafers"}
 
-    sets.idle.Weak = {main="Bolelabunga",sub="Genbu's Shield",ammo="Incantor Stone",
-        head="Nahtirah Hat",neck="Wiglen Gorget",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Hagondes Coat",hands="Yaoyotl Gloves",ring1="Sheltered Ring",ring2="Meridian Ring",
-        back="Umbra Cape",waist="Hierarch Belt",legs="Nares Trews",feet="Herald's Gaiters"}
+    sets.idle.Field.PDT = sets.idle.Field
+
+
+    sets.idle.Field.Stun = sets.midcast.Stun
+
+    sets.idle.Weak = sets.idle.Field
+
 
     -- Defense sets
 
-    sets.defense.PDT = {main=gear.Staff.PDT,sub="Achaq Grip",ammo="Incantor Stone",
-        head="Nahtirah Hat",neck="Twilight Torque",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Hagondes Coat",hands="Yaoyotl Gloves",ring1="Defending Ring",ring2=gear.DarkRing.physical,
-        back="Umbra Cape",waist="Hierarch Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
+    sets.defense.PDT = sets.idle.Field
 
-    sets.defense.MDT = {main=gear.Staff.PDT,sub="Achaq Grip",ammo="Incantor Stone",
-        head="Nahtirah Hat",neck="Twilight Torque",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Vanir Cotehardie",hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="Shadow Ring",
-        back="Tuilha Cape",waist="Hierarch Belt",legs="Bokwus Slops",feet="Hagondes Sabots"}
+    sets.defense.MDT = sets.idle.Field
+
 
     sets.Kiting = {feet="Herald's Gaiters"}
 
@@ -264,24 +361,21 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     -- Normal melee group
-    sets.engaged = {
-        head="Zelus Tiara",
-        body="Vanir Cotehardie",hands="Bokwus Gloves",ring1="Rajas Ring",
-        waist="Goading Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
+    sets.engaged = {}
 
 
 
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
-    sets.buff['Ebullience'] = {head="Savant's Bonnet +2"}
-    sets.buff['Rapture'] = {head="Savant's Bonnet +2"}
+    sets.buff['Ebullience'] = {head="Arbatel Bonnet"}
+    sets.buff['Rapture'] = {head="Arbatel Bonnet"}
     sets.buff['Perpetuance'] = {hands="Savant's Bracers +2"}
     sets.buff['Immanence'] = {hands="Savant's Bracers +2"}
-    sets.buff['Penury'] = {legs="Savant's Pants +2"}
-    sets.buff['Parsimony'] = {legs="Savant's Pants +2"}
+    sets.buff['Penury'] = {legs="Arbatel Pants"}
+    sets.buff['Parsimony'] = {legs="Arbatel Pants"}
     sets.buff['Celerity'] = {feet="Pedagogy Loafers"}
     sets.buff['Alacrity'] = {feet="Pedagogy Loafers"}
 
-    sets.buff['Klimaform'] = {feet="Savant's Loafers +2"}
+    sets.buff['Klimaform'] = {feet="Arbatel Loafers"}
 
     sets.buff.FullSublimation = {head="Academic's Mortarboard",ear1="Savant's Earring",body="Pedagogy Gown"}
     sets.buff.PDTSublimation = {head="Academic's Mortarboard",ear1="Savant's Earring"}
@@ -549,6 +643,5 @@ end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
-    set_macro_page(1, 17)
+    set_macro_page(1, 16)
 end
-

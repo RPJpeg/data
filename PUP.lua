@@ -185,7 +185,7 @@ function init_gear_sets()
       right_ear="Handler's Earring +1",
       left_ring="Renaye Ring",
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      back={ name="Visucius's Mantle", augments={'Pet: Acc.+12 Pet: R.Acc.+12 Pet: Atk.+12 Pet: R.Atk.+12','Pet: "Regen"+10',}},
+      back="Visucius's Mantle",
     }
 
     sets.idle.Pet.Engaged.Ranged = sets.idle.Pet.Engaged

@@ -126,7 +126,7 @@ function init_gear_sets()
       right_ear="Gifted Earring",
       left_ring="Perception Ring",
       right_ring="Sirona's Ring",
-      back="Tempered Cape",
+      back="Solemnity Cape",
     }
 
     sets.midcast.Curaga = sets.midcast.Cure

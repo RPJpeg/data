@@ -145,7 +145,7 @@ function init_gear_sets()
       right_ear="Gifted Earring",
       left_ring="Sirona's Ring",
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
-      back="Tempered Cape",
+      back="Solemnity Cape",
     }
 
     sets.midcast.Curaga = sets.midcast.Cure
