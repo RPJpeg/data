@@ -309,9 +309,9 @@ function init_gear_sets()
       waist="Fotia Belt",
       left_ear="Dudgeon Earring",
       right_ear="Heartseeker Earring",
-      left_ring="Warp Ring",
+      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      back="Toutatis's Cape",
+      back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
     }
 
     sets.idle.Weak = sets.idle
@@ -360,7 +360,8 @@ function init_gear_sets()
       right_ear="Heartseeker Earring",
       left_ring="Epona's Ring",
       right_ring="Rajas Ring",
-      back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
+      back={ name={"Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
+ augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
     }
 
     sets.engaged.Hybrid = {
@@ -376,7 +377,8 @@ function init_gear_sets()
       right_ear="Heartseeker Earring",
       left_ring="Epona's Ring",
       right_ring="Rajas Ring",
-      back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
+      back={ name={"Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
+ augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
     }
 
 

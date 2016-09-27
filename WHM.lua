@@ -105,7 +105,7 @@ function init_gear_sets()
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
       head="Vanya Hood",
-      body="Orison Bliaud +2",
+      body="Ebers Bliaud",
       hands="Bokwus Gloves",
       legs="Orsn. Pantaln. +2",
       feet={ name="Piety Duckbills", augments={'Enhances "Protectra V" effect',}},
@@ -124,7 +124,7 @@ function init_gear_sets()
 
     sets.midcast.CureMelee = {
       head="Vanya Hood",
-      body="Orison Bliaud +2",
+      body="Ebers Bliaud",
       hands="Bokwus Gloves",
       legs="Orsn. Pantaln. +2",
       feet={ name="Piety Duckbills", augments={'Enhances "Protectra V" effect',}},
@@ -139,7 +139,7 @@ function init_gear_sets()
 
     sets.midcast.Cursna = {
       head="Orison Cap +2",
-      body="Orison Bliaud +2",
+      body="Ebers Bliaud",
       hands="Orison Mitts +2",
       legs="Orsn. Pantaln. +2",
       feet="Genewitha Galoshes",
@@ -148,7 +148,7 @@ function init_gear_sets()
 
     sets.midcast.StatusRemoval = {
       head="Orison Cap +2",
-      body="Orison Bliaud +2",
+      body="Ebers Bliaud",
       hands="Orison Mitts +2",
       legs="Orsn. Pantaln. +2",
       feet="Orsn. Duckbills +2",
@@ -179,7 +179,7 @@ function init_gear_sets()
 
     sets.midcast.BarElement = {
         head="Orison Cap +2",
-        body="Orison Bliaud +2",
+        body="Ebers Bliaud",
         hands="Orison Mitts +2",
         legs="Piety Pantaloons",
         feet="Orison Duckbills +2"
