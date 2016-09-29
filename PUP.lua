@@ -92,7 +92,7 @@ function init_gear_sets()
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
-      head="Whirlpool Mask",
+      head="Herculean Helm",
       ear1="Roundel Earring",
     }
 
@@ -214,7 +214,7 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {
-      head="Whirlpool Mask",
+      head="Herculean Helm",
       body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands="Count's Cuffs",
       legs="Karagoz Pantaloni +1",
@@ -229,7 +229,7 @@ function init_gear_sets()
     }
 
     sets.engaged.Acc = {
-      head="Whirlpool Mask",
+      head="Herculean Helm",
       body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands="Count's Cuffs",
       legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},

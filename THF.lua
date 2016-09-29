@@ -366,12 +366,12 @@ function init_gear_sets()
 
     sets.engaged.Hybrid = {
       ammo="Ginsen",
-      head="Skormoth Mask",
+      head="Herculean Helm",
       body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
       hands={ name="Floral Gauntlets", augments={'Rng.Acc.+11','Accuracy+5','"Triple Atk."+2',}},
       legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
-      neck="Subtlety Spec.",
+      neck="Clotharius Torque",
       waist="Cetl Belt",
       left_ear="Dudgeon Earring",
       right_ear="Heartseeker Earring",

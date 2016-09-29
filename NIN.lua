@@ -87,7 +87,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
 
     sets.precast.FC = {
-      head={ name="Anwig Salade", augments={'"Fast Cast"+3','"Blood Pact" ability delay -3','INT+2','"Fast Cast"+2',}},
+      head="Herculean Helm",
       body={ name="Mirke Wardecors", augments={'"Fast Cast"+5','Mag. Acc.+4',}},
       hands={ name="Mochizuki Tekko", augments={'Enh. "Ninja Tool Expertise" effect',}},
       legs="Iga Hakama +2",
@@ -207,7 +207,7 @@ function init_gear_sets()
 
     -- Idle sets
     sets.idle = {
-      head={ name="Uk'uxkaj Cap", augments={'Haste+2','"Snapshot"+2','STR+8',}},
+      head="Herculean Helm",
       body="Hachi. Chain. +1",
       hands={ name="Mochizuki Tekko", augments={'Enh. "Ninja Tool Expertise" effect',}},
       legs="Hachi. Hakama +1",
