@@ -69,7 +69,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     sets.precast.FC = {
       head="Haruspex Hat",
-      body={ name="Mirke Wardecors", augments={'"Fast Cast"+5','Mag. Acc.+4',}},
+      body="Mirke Wardecors",
       neck="Voltsurge Torque",
       left_ear="Enchntr. Earring +1",
       right_ear="Loquac. Earring",
@@ -92,7 +92,7 @@ function init_gear_sets()
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
-      head="Herculean Helm",
+      head="Hizamaru Somen +1",
       ear1="Roundel Earring",
     }
 
@@ -104,7 +104,7 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
       head="Sukeroku Hachimaki",
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      body="Taeon Tabard",
       hands="Count's Cuffs",
       legs="Herculean Trousers",
       feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
@@ -114,7 +114,7 @@ function init_gear_sets()
       right_ear="Bladeborn Earring",
       left_ring="Pyrosoul Ring",
       right_ring="Rajas Ring",
-      back={ name="Dispersal Mantle", augments={'STR+2','Pet: TP Bonus+140','"Martial Arts"+13',}},
+      back="Dispersal Mantle",
     }
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -153,10 +153,10 @@ function init_gear_sets()
     -- Idle sets
 
     sets.idle = {
-      head={ name="Pitre Taj", augments={'Enhances "Optimization" effect',}},
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      head="Pitre Taj",
+      body="Taeon Tabard",
       hands="Count's Cuffs",
-      legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
+      legs="Desultor Tassets",
       feet="Rao sune-ate",
       neck="Twilight Torque",
       waist="Fotia Belt",
@@ -164,7 +164,7 @@ function init_gear_sets()
       right_ear="Bladeborn Earring",
       left_ring="Renaye Ring",
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+      back="Mecisto. Mantle",
     }
 
     sets.idle.Town = sets.idle
@@ -174,8 +174,8 @@ function init_gear_sets()
 
     -- Idle sets to wear while pet is engaged
     sets.idle.Pet.Engaged = {
-      head={ name="Pitre Taj", augments={'Enhances "Optimization" effect',}},
-      body={ name="Pitre Tobe", augments={'Enhances "Overdrive" effect',}},
+      head="Pitre Taj",
+      body="Pitre Tobe",
       hands={ name="Taeon Gloves", augments={'Pet: DEF+22','Pet: "Regen"+2','Pet: Damage taken -3%',}},
       legs="Karagoz Pantaloni +1",
       feet="Foire Babouches",
@@ -214,8 +214,8 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {
-      head="Herculean Helm",
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      head="Hizamaru Somen +1",
+      body="Taeon Tabard",
       hands="Count's Cuffs",
       legs="Karagoz Pantaloni +1",
       feet="Rao sune-ate",
@@ -225,14 +225,14 @@ function init_gear_sets()
       right_ear="Bladeborn Earring",
       left_ring="Epona's Ring",
       right_ring="Rajas Ring",
-      back={ name="Dispersal Mantle", augments={'STR+2','Pet: TP Bonus+140','"Martial Arts"+13',}},
+      back="Dispersal Mantle",
     }
 
     sets.engaged.Acc = {
-      head="Herculean Helm",
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      head="Hizamaru Somen +1",
+      body="Taeon Tabard",
       hands="Count's Cuffs",
-      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      legs="Samnuha Tights",
       feet="Rao sune-ate",
       neck="Subtlety Spec.",
       waist="Shaolin Belt",
@@ -240,7 +240,7 @@ function init_gear_sets()
       right_ear="Bladeborn Earring",
       left_ring="Epona's Ring",
       right_ring="Rajas Ring",
-      back={ name="Dispersal Mantle", augments={'STR+2','Pet: TP Bonus+140','"Martial Arts"+13',}},
+      back="Dispersal Mantle",
     }
 
 end

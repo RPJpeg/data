@@ -74,7 +74,7 @@ function init_gear_sets()
       head="Merlinic Hood",
       body="Shango Robe",
       legs="Psycloth Lappas",
-      feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
+      feet="Telchine Pigaches",
       neck="Voltsurge Torque",
       waist="Witful Belt",
       left_ear="Enchntr. Earring +1",
@@ -113,13 +113,13 @@ function init_gear_sets()
 
     sets.midcast.Cure = {
       main="Tefnut Wand",
-      sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','Mag. Acc.+5','"Cure" spellcasting time -7%',}},
+      sub="Genbu's Shield",
       ammo="Kalboron Stone",
-      head={ name="Vanya Hood", augments={'Healing magic skill +16','"Cure" spellcasting time -5%','Magic dmg. taken -2',}},
+      head="Vanya Hood",
       body="Jhakri Robe +1",
-      hands={ name="Bokwus Gloves", augments={'Mag. Acc.+12','MND+10','INT+9',}},
-      legs={ name="Vanya Slops", augments={'MND+8','Spell interruption rate down +11%','"Conserve MP"+5',}},
-      feet={ name="Medium's Sabots", augments={'MP+10',}},
+      hands="Bokwus Gloves",
+      legs="Vanya Slops",
+      feet="Medium's Sabots",
       neck="Imbodla Necklace",
       waist="Druid's Rope",
       left_ear="Lifestorm Earring",
@@ -133,8 +133,8 @@ function init_gear_sets()
 
     sets.midcast['Enhancing Magic'] = {
       head="Befouled Crown",
-      body={ name="Telchine Chas.", augments={'Pet: "Regen"+3','Pet: Damage taken -4%',}},
-      legs={ name="Vanya Slops", augments={'MND+8','Spell interruption rate down +11%','"Conserve MP"+5',}},
+      body="Telchine Chas.",
+      legs="Vanya Slops",
       feet="Merlinic Crackows",
       waist="Siegel Sash",
       left_ear="Gifted Earring",
@@ -170,7 +170,7 @@ function init_gear_sets()
     sets.midcast.Aspir = sets.midcast.Drain
 
     sets.midcast.Stun = {
-      main={ name="Apamajas II", augments={'Lightning Affinity: Magic Accuracy+6 Lightning Affinity: Recast time-14%','Lightning Affinity: Magic Damage+1',}},
+      main="Apamajas II",
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
       head="Merlinic Hood",
@@ -193,12 +193,12 @@ function init_gear_sets()
     -- Elemental Magic sets
 
     sets.midcast['Elemental Magic'] = {
-      main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
+      main="Lathi",
       sub="Zuuxowu Grip",
       ammo="Dosis Tathlum",
       head="Merlinic Hood",
       body="Spae. Coat +1",
-      hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+      hands="Amalric Gages",
       legs="Merlinic Shalwar",
       feet="Merlinic Crackows",
       neck="Eddy Necklace",
@@ -211,12 +211,12 @@ function init_gear_sets()
     }
 
     sets.midcast['Elemental Magic'].HighTierNuke = {
-      main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
+      main="Lathi",
       sub="Niobid Strap",
       ammo="Dosis Tathlum",
       head="Merlinic Hood",
       body="Jhakri Robe +1",
-      hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+      hands="Amalric Gages",
       legs="Merlinic Shalwar",
       feet="Merlinic Crackows",
       neck="Eddy Necklace",
@@ -248,7 +248,7 @@ function init_gear_sets()
 
     -- Normal refresh idle set
     sets.idle = {
-      main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
+      main="Lathi",
       sub="Niobid Strap",
       ammo="Dosis Tathlum",
       head="Befouled Crown",
@@ -262,7 +262,7 @@ function init_gear_sets()
       right_ear="Hecate's Earring",
       left_ring="Renaye Ring",
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+      back="Mecisto. Mantle",
     }
 
     -- Idle mode that keeps PDT gear on, but doesn't prevent normal gear swaps for precast/etc.
@@ -274,7 +274,7 @@ function init_gear_sets()
 
     -- Town gear.
     sets.idle.Town = {
-      main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
+      main="Lathi",
       sub="Niobid Strap",
       ammo="Dosis Tathlum",
       head="Merlinic Hood",
@@ -288,7 +288,7 @@ function init_gear_sets()
       right_ear="Hecate's Earring",
       left_ring="Renaye Ring",
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+      back="Mecisto. Mantle",
     }
 
     -- Defense sets
@@ -330,7 +330,7 @@ function init_gear_sets()
       right_ear="Bladeborn Earring",
       left_ring="Pyrosoul Ring",
       right_ring="Rajas Ring",
-      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+      back="Mecisto. Mantle",
     }
 end
 

@@ -60,9 +60,9 @@ function init_gear_sets()
       main="Marin Staff +1",
       head="Atrophy Chapeau",
       body="Shango Robe",
-      hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -1%','Song recast delay -1',}},
-      legs={ name="Psycloth Lappas", augments={'MP+75','Mag. Acc.+14','"Fast Cast"+7',}},
-      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+      hands="Gende. Gages +1",
+      legs="Psycloth Lappas",
+      feet="Merlinic Crackows",
       neck="Voltsurge Torque",
       waist="Witful Belt",
       left_ear="Enchntr. Earring +1",
@@ -74,7 +74,7 @@ function init_gear_sets()
 
     sets.precast.FC.Cure = set_combine(sets.precast.FC, {
       main="Tefnut Wand",
-      sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','Mag. Acc.+5','"Cure" spellcasting time -7%',}},
+      sub="Genbu's Shield",
       back="Pahtli Cape",
 })
 
@@ -84,7 +84,7 @@ function init_gear_sets()
 
     sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {
       main="Pukulatmuj",
-      sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','Mag. Acc.+5','"Cure" spellcasting time -7%',}},
+      sub="Genbu's Shield",
       waist="Siegel Sash",
 })
 
@@ -94,7 +94,7 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
       head="Jhakri Coronal +1",
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      body="Taeon Tabard",
       hands="Jhakri Cuffs +1",
       legs={ name="Taeon Tights", augments={'Accuracy+2','Weapon Skill Acc.+19','STR+5 DEX+5',}},
       feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
@@ -111,8 +111,8 @@ function init_gear_sets()
     sets.precast.WS['Requiescat'] = sets.precast.WS
 
     sets.precast.WS['Sanguine Blade'] = {
-      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      head="Merlinic Hood",
+      body="Taeon Tabard",
       hands="Jhakri Cuffs +1",
       legs={ name="Taeon Tights", augments={'Accuracy+2','Weapon Skill Acc.+19','STR+5 DEX+5',}},
       feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
@@ -132,13 +132,13 @@ function init_gear_sets()
 
     sets.midcast.Cure = {
       main="Tefnut Wand",
-      sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','Mag. Acc.+5','"Cure" spellcasting time -7%',}},
+      sub="Genbu's Shield",
       ammo="Kalboron Stone",
-      head={ name="Vanya Hood", augments={'Healing magic skill +16','"Cure" spellcasting time -5%','Magic dmg. taken -2',}},
-      body={ name="Gendewitha Bliaut", augments={'Phys. dmg. taken -1%','"Cure" spellcasting time -2%',}},
-      hands={ name="Bokwus Gloves", augments={'Mag. Acc.+12','MND+10','INT+9',}},
+      head="Vanya Hood",
+      body="Gendewitha Bliaut",
+      hands="Bokwus Gloves",
       legs="Atrophy Tights",
-      feet={ name="Medium's Sabots", augments={'MP+10',}},
+      feet="Medium's Sabots",
       neck="Imbodla Necklace",
       waist="Druid's Rope",
       left_ear="Gwati Earring",
@@ -160,7 +160,7 @@ function init_gear_sets()
       main="Pukulatmuj",
       sub="Genmei Shield",
       head="Befouled Crown",
-      body={ name="Telchine Chas.", augments={'Pet: "Regen"+3','Pet: Damage taken -4%',}},
+      body="Telchine Chas.",
       hands="Atrophy Gloves",
       legs="Atrophy Tights",
       feet="Leth. Houseaux",
@@ -182,18 +182,18 @@ function init_gear_sets()
       main="Marin Staff +1",
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
-      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+      head="Merlinic Hood",
       body="Lethargy Sayon",
       hands="Jhakri Cuffs +1",
       legs="Chironic hose",
-      feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
+      feet="Uk'uxkaj Boots",
       neck="Imbodla Necklace",
       waist="Aswang Sash",
       left_ear="Enchntr. Earring +1",
       right_ear="Gwati Earring",
       left_ring="Perception Ring",
       right_ring="Sangoma Ring",
-      back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +10','Mag. Acc.+3','Enh. Mag. eff. dur. +14',}},
+      back="Ghostfyre Cape",
     }
 
     sets.midcast['Dia III'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Vitivation Chapeau"})
@@ -207,11 +207,11 @@ function init_gear_sets()
       main="Marin Staff +1",
       sub="Niobid Strap",
       ammo="Dosis Tathlum",
-      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+      head="Merlinic Hood",
       body="Jhakri Robe +1",
-      hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-      legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Fast Cast"+3','"Mag.Atk.Bns."+14',}},
-      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+      hands="Amalric Gages",
+      legs="Merlinic Shalwar",
+      feet="Merlinic Crackows",
       neck="Eddy Necklace",
       waist="Aswang Sash",
       left_ear="Friomisi Earring",
@@ -227,27 +227,27 @@ function init_gear_sets()
       main="Marin Staff +1",
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
-      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+      head="Merlinic Hood",
       body="Jhakri Robe +1",
       hands="Jhakri Cuffs +1",
-      legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Fast Cast"+3','"Mag.Atk.Bns."+14',}},
-      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+      legs="Merlinic Shalwar",
+      feet="Merlinic Crackows",
       neck="Voltsurge Torque",
       waist="Aswang Sash",
       left_ear="Enchntr. Earring +1",
       right_ear="Gwati Earring",
       left_ring="Perception Ring",
       right_ring="Sangoma Ring",
-      back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +10','Mag. Acc.+3','Enh. Mag. eff. dur. +14',}},
+      back="Ghostfyre Cape",
     }
 
     sets.midcast.Stun = set_combine(sets.precast.FC, {
-      main={ name="Apamajas II", augments={'Lightning Affinity: Magic Accuracy+6 Lightning Affinity: Recast time-14%','Lightning Affinity: Magic Damage+1',}},
+      main="Apamajas II",
 })
 
     sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {
-      body={ name="Helios Jacket", augments={'"Drain" and "Aspir" potency +8',}},
-      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+      body="Helios Jacket",
+      feet="Merlinic Crackows",
       waist="Fucho-no-Obi",
 })
 
@@ -281,7 +281,7 @@ function init_gear_sets()
       main="Pukulatmuj",
       sub="Genmei Shield",
       ammo="Dosis Tathlum",
-      head={ name="Vitivation Chapeau", augments={'Enhances "Dia III" effect','Enhances "Slow II" effect',}},
+      head="Vitivation Chapeau",
       body="Jhakri Robe +1",
       hands="Serpentes Cuffs",
       legs="Jhakri Slops +1",
@@ -292,14 +292,14 @@ function init_gear_sets()
       right_ear="Loquac. Earring",
       left_ring="Renaye Ring",
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+      back="Mecisto. Mantle",
     }
 
     sets.idle.Town = {
       main="Pukulatmuj",
       sub="Genmei Shield",
       ammo="Dosis Tathlum",
-      head={ name="Vitivation Chapeau", augments={'Enhances "Dia III" effect','Enhances "Slow II" effect',}},
+      head="Vitivation Chapeau",
       body="Jhakri Robe +1",
       hands="Serpentes Cuffs",
       legs="Chironic hose",
@@ -310,7 +310,7 @@ function init_gear_sets()
       right_ear="Loquac. Earring",
       left_ring="Renaye Ring",
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+      back="Mecisto. Mantle",
     }
 
     sets.idle.Weak = sets.idle
@@ -338,8 +338,8 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {
-      head={ name="Taeon Chapeau", augments={'"Dual Wield"+2','STR+2 VIT+2',}},
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      head="Taeon Chapeau",
+      body="Taeon Tabard",
       hands="Jhakri Cuffs +1",
       legs="Jhakri Slops +1",
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
@@ -349,7 +349,7 @@ function init_gear_sets()
       right_ear="Bladeborn Earring",
       left_ring="Pyrosoul Ring",
       right_ring="Rajas Ring",
-      back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +10','Mag. Acc.+3','Enh. Mag. eff. dur. +14',}},
+      back="Ghostfyre Cape",
     }
 
     sets.engaged.Defense = sets.engaged

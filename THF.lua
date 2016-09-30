@@ -81,9 +81,9 @@ function init_gear_sets()
 
     sets.buff['Sneak Attack'] = {
       head="Meghanada Visor +1",
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      body="Taeon Tabard",
       hands="Skulker's Armlets",
-      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      legs="Samnuha Tights",
       feet="Meg. Jam. +1",
       neck="Love Torque",
       left_ear="Steelflash Earring",
@@ -95,16 +95,16 @@ function init_gear_sets()
 
     sets.buff['Trick Attack'] = {
       head="Meghanada Visor +1",
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      body="Taeon Tabard",
       hands="Pillager's Armlets",
-      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      legs="Samnuha Tights",
       feet="Meg. Jam. +1",
       neck="Love Torque",
       left_ear="Steelflash Earring",
       right_ear="Bladeborn Earring",
       left_ring="Apate Ring",
       right_ring="Rajas Ring",
-      back={ name="Canny Cape", augments={'DEX+1','AGI+1','"Dual Wield"+3',}},
+      back="Canny Cape",
     }
 
     -- Actions we want to use to tag TH.
@@ -142,9 +142,9 @@ function init_gear_sets()
     -- Fast cast sets for spells
     sets.precast.FC = {
       head="Haruspex Hat",
-      body={ name="Mirke Wardecors", augments={'"Fast Cast"+5','Mag. Acc.+4',}},
-      hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
-      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      body="Mirke Wardecors",
+      hands="Leyline Gloves",
+      legs="Samnuha Tights",
       feet="Meg. Jam. +1",
       neck="Voltsurge Torque",
       waist="Twilight Belt",
@@ -161,9 +161,9 @@ function init_gear_sets()
     -- Ranged snapshot gear
     sets.precast.RA = {
       head="Meghanada Visor +1",
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      body="Taeon Tabard",
       hands="Meg. Gloves +1",
-      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      legs="Samnuha Tights",
       feet="Meg. Jam. +1",
       neck="Asperity Necklace",
       left_ear="Steelflash Earring",
@@ -178,7 +178,7 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
       head="Sukeroku Hachimaki",
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      body="Taeon Tabard",
       hands="Meg. Gloves +1",
       legs="Herculean Trousers",
       feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
@@ -239,7 +239,7 @@ function init_gear_sets()
 
     sets.precast.WS['Aeolian Edge'] = {
       head="Sukeroku Hachimaki",
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      body="Taeon Tabard",
       hands="Meg. Gloves +1",
       legs={ name="Taeon Tights", augments={'Accuracy+2','Weapon Skill Acc.+19','STR+5 DEX+5',}},
       feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
@@ -283,9 +283,9 @@ function init_gear_sets()
 
     sets.idle = {
       head="Skormoth Mask",
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      body="Taeon Tabard",
       hands="Meg. Gloves +1",
-      legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
+      legs="Desultor Tassets",
       feet="Jute Boots +1",
       neck="Twilight Torque",
       waist="Fotia Belt",
@@ -293,7 +293,7 @@ function init_gear_sets()
       right_ear="Heartseeker Earring",
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+      back="Mecisto. Mantle",
     }
 
     sets.idle.Town = {
@@ -301,9 +301,9 @@ function init_gear_sets()
       sub={ name="Shijo", augments={'DMG:+15','Accuracy+15','Attack+15',}},
       ammo="Honed Tathlum",
       head="Skormoth Mask",
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      body="Taeon Tabard",
       hands="Meg. Gloves +1",
-      legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
+      legs="Desultor Tassets",
       feet="Jute Boots +1",
       neck="Subtlety Spec.",
       waist="Fotia Belt",
@@ -311,7 +311,7 @@ function init_gear_sets()
       right_ear="Heartseeker Earring",
       left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
+      back="Toutatis's Cape",
     }
 
     sets.idle.Weak = sets.idle
@@ -332,11 +332,10 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {
-      range="Raider's Bmrng.",
       head="Skormoth Mask",
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
-      hands={ name="Floral Gauntlets", augments={'Rng.Acc.+11','Accuracy+5','"Triple Atk."+2',}},
-      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      body="Taeon Tabard",
+      hands="Floral Gauntlets",
+      legs="Samnuha Tights",
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
       neck="Asperity Necklace",
       waist="Cetl Belt",
@@ -344,15 +343,15 @@ function init_gear_sets()
       right_ear="Heartseeker Earring",
       left_ring="Epona's Ring",
       right_ring="Rajas Ring",
-      back={ name="Canny Cape", augments={'DEX+1','AGI+1','"Dual Wield"+3',}},
+      back="Canny Cape",
     }
 
     sets.engaged.Acc = {
       ammo="Honed Tathlum",
       head="Meghanada Visor +1",
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+      body="Taeon Tabard",
       hands="Meg. Gloves +1",
-      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      legs="Samnuha Tights",
       feet="Meg. Jam. +1",
       neck="Subtlety Spec.",
       waist="Cetl Belt",
@@ -360,16 +359,15 @@ function init_gear_sets()
       right_ear="Heartseeker Earring",
       left_ring="Epona's Ring",
       right_ring="Rajas Ring",
-      back={ name={"Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
- augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
+      back="Toutatis's Cape",
     }
 
     sets.engaged.Hybrid = {
       ammo="Ginsen",
       head="Herculean Helm",
-      body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
-      hands={ name="Floral Gauntlets", augments={'Rng.Acc.+11','Accuracy+5','"Triple Atk."+2',}},
-      legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+      body="Taeon Tabard",
+      hands="Floral Gauntlets",
+      legs="Samnuha Tights",
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
       neck="Clotharius Torque",
       waist="Cetl Belt",
@@ -377,8 +375,7 @@ function init_gear_sets()
       right_ear="Heartseeker Earring",
       left_ring="Epona's Ring",
       right_ring="Rajas Ring",
-      back={ name={"Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
- augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},
+      back="Toutatis's Cape",
     }
 
 

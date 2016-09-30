@@ -89,11 +89,11 @@ function init_gear_sets()
     sets.precast.FC = {
       main="Marin Staff +1",
       sub="Mephitis Grip",
-      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+      head="Merlinic Hood",
       body="Shango Robe",
-      hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -1%','Song recast delay -1',}},
-      legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
-      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+      hands="Gende. Gages +1",
+      legs="Psycloth Lappas",
+      feet="Merlinic Crackows",
       neck="Voltsurge Torque",
       waist="Witful Belt",
       left_ear="Enchntr. Earring +1",
@@ -120,13 +120,13 @@ function init_gear_sets()
 
     sets.midcast.Cure = {
       main="Tefnut Wand",
-      sub={ name="Genbu's Shield", augments={'"Cure" potency +4%','Mag. Acc.+5','"Cure" spellcasting time -7%',}},
+      sub="Genbu's Shield",
       ammo="Kalboron Stone",
-      head={ name="Vanya Hood", augments={'Healing magic skill +16','"Cure" spellcasting time -5%','Magic dmg. taken -2',}},
-      body={ name="Gendewitha Bliaut", augments={'Phys. dmg. taken -1%','"Cure" spellcasting time -2%',}},
-      hands={ name="Bokwus Gloves", augments={'Mag. Acc.+12','MND+10','INT+9',}},
-      legs={ name="Vanya Slops", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
-      feet={ name="Peda. Loafers", augments={'Enhances "Stormsurge" effect',}},
+      head="Vanya Hood",
+      body="Gendewitha Bliaut",
+      hands="Bokwus Gloves",
+      legs="Vanya Slops",
+      feet="Peda. Loafers",
       neck="Imbodla Necklace",
       waist="Druid's Rope",
       left_ear="Gwati Earring",
@@ -142,9 +142,9 @@ function init_gear_sets()
 
     sets.midcast.Regen = set_combine(sets.precast.FC, {
       head="Arbatel Bonnet",
-      body={ name="Telchine Chas.", augments={'Pet: "Regen"+3','Pet: Damage taken -4%',}},
-      legs={ name="Telchine Braconi", augments={'Mag. Evasion+13','"Cure" spellcasting time -6%','"Regen" potency+1',}},
-      back={ name="Bookworm's Cape", augments={'INT+1','MND+3','Helix eff. dur. +14','"Regen" potency+6',}},
+      body="Telchine Chas.",
+      legs="Telchine Braconi",
+      back="Bookworm's Cape",
     })
 
     sets.midcast.Cursna = {}
@@ -154,9 +154,9 @@ function init_gear_sets()
       sub="Niobid Strap",
       ammo="Kalboron Stone",
       head="Befouled Crown",
-      body={ name="Telchine Chas.", augments={'Pet: "Regen"+3','Pet: Damage taken -4%',}},
+      body="Telchine Chas.",
       hands="Acad. Bracers",
-      legs={ name="Vanya Slops", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
+      legs="Vanya Slops",
       neck="Imbodla Necklace",
       waist="Siegel Sash",
       back="Solemnity Cape",
@@ -178,7 +178,7 @@ function init_gear_sets()
       main="Marin Staff +1",
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
-      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+      head="Merlinic Hood",
       body="Shango Robe",
       hands="Jhakri Cuffs +1",
       legs="Chironic hose",
@@ -196,7 +196,7 @@ function init_gear_sets()
       main="Marin Staff +1",
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
-      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+      head="Merlinic Hood",
       body="Shango Robe",
       hands="Jhakri Cuffs +1",
       legs="Chironic hose",
@@ -216,10 +216,10 @@ function init_gear_sets()
       main="Marin Staff +1",
       sub="Mephitis Grip",
       ammo="Kalboron Stone",
-      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+      head="Merlinic Hood",
       body="Shango Robe",
       hands="Jhakri Cuffs +1",
-      legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
+      legs="Psycloth Lappas",
       feet="Jhakri Pigaches +1",
       neck="Imbodla Necklace",
       waist="Aswang Sash",
@@ -231,33 +231,33 @@ function init_gear_sets()
     }
 
     sets.midcast.Kaustra = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+15','"Refresh"+1','INT+8',}},
+      main="Keraunos",
       sub="Niobid Strap",
       ammo="Dosis Tathlum",
-      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+      head="Merlinic Hood",
       body="Jhakri Robe +1",
-      hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-      legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Fast Cast"+3','"Mag.Atk.Bns."+14',}},
-      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+      hands="Amalric Gages",
+      legs="Merlinic Shalwar",
+      feet="Merlinic Crackows",
       neck="Eddy Necklace",
       waist="Aswang Sash",
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
       left_ring="Fenrir Ring",
       right_ring="Acumen Ring",
-      back={ name="Bookworm's Cape", augments={'INT+1','MND+3','Helix eff. dur. +14','"Regen" potency+6',}},
+      back="Bookworm's Cape",
     }
 
     sets.midcast.Drain = {
       body={ name="Helios Jacket", augments={'"Drain" and "Aspir" potency +8',}},
-      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+      feet="Merlinic Crackows",
       waist="Fucho-no-Obi",
     }
 
     sets.midcast.Aspir = sets.midcast.Drain
 
     sets.midcast.Stun = set_combine(sets.precast.FC, {
-      main={ name="Apamajas II", augments={'Lightning Affinity: Magic Accuracy+6 Lightning Affinity: Recast time-14%','Lightning Affinity: Magic Damage+1',}},
+      main="Apamajas II",
 })
 
     sets.midcast.Stun.Resistant = sets.midcast.Stun
@@ -265,21 +265,21 @@ function init_gear_sets()
 
     -- Elemental Magic sets are default for handling low-tier nukes.
     sets.midcast['Elemental Magic'] = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+15','"Refresh"+1','INT+8',}},
+      main="Keraunos",
       sub="Niobid Strap",
       ammo="Dosis Tathlum",
-      head={ name="Merlinic Hood", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Occult Acumen"+1','INT+9','Mag. Acc.+10',}},
+      head="Merlinic Hood",
       body="Jhakri Robe +1",
-      hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-      legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Fast Cast"+3','"Mag.Atk.Bns."+14',}},
-      feet={ name="Merlinic Crackows", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst mdg.+3%','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+      hands="Amalric Gages",
+      legs="Merlinic Shalwar",
+      feet="Merlinic Crackows",
       neck="Eddy Necklace",
       waist="Aswang Sash",
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
       left_ring="Fenrir Ring",
       right_ring="Acumen Ring",
-      back={ name="Bookworm's Cape", augments={'INT+1','MND+3','Helix eff. dur. +14','"Regen" potency+6',}},
+      back="Bookworm's Cape",
     }
 
     sets.midcast['Elemental Magic'].Resistant = sets.midcast['Elemental Magic']
@@ -296,12 +296,12 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle.Town = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+15','"Refresh"+1','INT+8',}},
+      main="Keraunos",
       sub="Niobid Strap",
       ammo="Dosis Tathlum",
       head="Arbatel Bonnet",
       body="Jhakri Robe +1",
-      hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+      hands="Amalric Gages",
       legs="Chironic hose",
       feet="Arbatel Loafers",
       neck="Twilight Torque",
@@ -310,11 +310,11 @@ function init_gear_sets()
       right_ear="Loquac. Earring",
       left_ring="Renaye Ring",
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+      back="Mecisto. Mantle",
     }
 
     sets.idle.Field = {
-      main={ name="Keraunos", augments={'"Mag.Atk.Bns."+15','"Refresh"+1','INT+8',}},
+      main="Keraunos",
       sub="Niobid Strap",
       ammo="Dosis Tathlum",
       head="Befouled Crown",
@@ -328,7 +328,7 @@ function init_gear_sets()
       right_ear="Loquac. Earring",
       left_ring="Renaye Ring",
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-      back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
+      back="Mecisto. Mantle",
     }
 
     sets.resting = sets.idle.Field
