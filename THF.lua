@@ -297,9 +297,6 @@ function init_gear_sets()
     }
 
     sets.idle.Town = {
-      main={ name="Shijo", augments={'DMG:+15','Accuracy+15','Attack+15',}},
-      sub={ name="Shijo", augments={'DMG:+15','Accuracy+15','Attack+15',}},
-      ammo="Honed Tathlum",
       head="Skormoth Mask",
       body="Taeon Tabard",
       hands="Meg. Gloves +1",
@@ -351,7 +348,7 @@ function init_gear_sets()
       head="Meghanada Visor +1",
       body="Taeon Tabard",
       hands="Meg. Gloves +1",
-      legs="Samnuha Tights",
+      legs="Meg. Chausses +1",
       feet="Meg. Jam. +1",
       neck="Subtlety Spec.",
       waist="Cetl Belt",
@@ -367,7 +364,7 @@ function init_gear_sets()
       head="Herculean Helm",
       body="Taeon Tabard",
       hands="Floral Gauntlets",
-      legs="Samnuha Tights",
+      legs="Meg. Chausses +1",
       feet={ name="Taeon Boots", augments={'Accuracy+24','"Triple Atk."+2','Crit. hit damage +2%',}},
       neck="Clotharius Torque",
       waist="Cetl Belt",
