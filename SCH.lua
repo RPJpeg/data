@@ -103,7 +103,7 @@ function init_gear_sets()
       back="Swith Cape",
     }
 
-    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
+    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash", neck="Nodens Gorget"})
 
     sets.precast.FC['Elemental Magic'] = sets.precast.FC
 
@@ -121,7 +121,7 @@ function init_gear_sets()
     sets.midcast.Cure = {
       main="Tefnut Wand",
       sub="Genbu's Shield",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Vanya Hood",
       body="Gendewitha Bliaut",
       hands="Bokwus Gloves",
@@ -152,7 +152,7 @@ function init_gear_sets()
     sets.midcast['Enhancing Magic'] = {
       main="Staccato Staff",
       sub="Niobid Strap",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Befouled Crown",
       body="Telchine Chas.",
       hands="Acad. Bracers",
@@ -162,7 +162,7 @@ function init_gear_sets()
       back="Solemnity Cape",
     }
 
-    sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash"})
+    sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash", neck="Nodens Gorget"})
 
     sets.midcast.Storm = set_combine(sets.midcast['Enhancing Magic'], {feet="Pedagogy Loafers"})
 
@@ -177,7 +177,7 @@ function init_gear_sets()
     sets.midcast.MndEnfeebles = {
       main="Marin Staff +1",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Merlinic Hood",
       body="Shango Robe",
       hands="Jhakri Cuffs +1",
@@ -195,7 +195,7 @@ function init_gear_sets()
     sets.midcast.IntEnfeebles = {
       main="Marin Staff +1",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Merlinic Hood",
       body="Shango Robe",
       hands="Jhakri Cuffs +1",
@@ -215,7 +215,7 @@ function init_gear_sets()
     sets.midcast['Dark Magic'] = {
       main="Marin Staff +1",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Merlinic Hood",
       body="Shango Robe",
       hands="Jhakri Cuffs +1",

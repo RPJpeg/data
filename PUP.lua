@@ -110,7 +110,7 @@ function init_gear_sets()
       feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
       neck="Rancor Collar",
       waist="Fotia Belt",
-      left_ear="Steelflash Earring",
+      left_ear="Ishvara Earring",
       right_ear="Bladeborn Earring",
       left_ring="Pyrosoul Ring",
       right_ring="Rajas Ring",
@@ -131,6 +131,7 @@ function init_gear_sets()
     -- Midcast sets for pet actions
     sets.midcast.Pet.Cure = {
       legs="Foire Churidars"
+      body="Naga Samue"
 }
 
     sets.midcast.Pet['Elemental Magic'] = {
@@ -218,7 +219,7 @@ function init_gear_sets()
       body="Taeon Tabard",
       hands="Count's Cuffs",
       legs="Karagoz Pantaloni +1",
-      feet="Rao sune-ate",
+      feet="Ryuo Sune-Ate",
       neck="Asperity Necklace",
       waist="Shaolin Belt",
       left_ear="Steelflash Earring",

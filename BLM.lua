@@ -84,7 +84,7 @@ function init_gear_sets()
       back="Swith Cape",
     }
 
-    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
+    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash", neck="Nodens Gorget"})
 
     sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {
       head="Goetia Petasos +2",
@@ -114,7 +114,7 @@ function init_gear_sets()
     sets.midcast.Cure = {
       main="Tefnut Wand",
       sub="Genbu's Shield",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Vanya Hood",
       body="Jhakri Robe +1",
       hands="Bokwus Gloves",
@@ -141,12 +141,12 @@ function init_gear_sets()
       right_ear="Gwati Earring",
     }
 
-    sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash"})
+    sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash", neck="Nodens Gorget"})
 
     sets.midcast['Enfeebling Magic'] = {
       main="Marin Staff +1",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Merlinic Hood",
       body="Jhakri Robe +1",
       hands="Jhakri Cuffs +1",
@@ -172,7 +172,7 @@ function init_gear_sets()
     sets.midcast.Stun = {
       main="Apamajas II",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Merlinic Hood",
       body="Shango Robe",
       hands="Jhakri Cuffs +1",
@@ -318,7 +318,7 @@ function init_gear_sets()
     sets.engaged = {
       main="Eminent Sickle",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Hagondes Hat",
       body="Ischemia Chasu.",
       hands="Amalric Gages",

@@ -59,8 +59,8 @@ function init_gear_sets()
     -- Fast cast sets for spells
 
     sets.precast.FC = {
-      main="Solstice",
-      sub="Genmei Shield",
+      main="Marin Staff +1",
+      sub="Mephitis Grip",
       head="Merlinic Hood",
       body="Shango Robe",
       legs="Geo. Pants +1",
@@ -78,7 +78,7 @@ function init_gear_sets()
 })
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {
-    waist="Siegel Sash",
+    waist="Siegel Sash", neck="Nodens Gorget"
 })
 
 
@@ -126,8 +126,7 @@ function init_gear_sets()
     sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {
     back="grapevine cape"})
 
-    sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {
-    waist="Siegel Sash"})
+    sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash", neck="Nodens Gorget"})
 
     sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {
     waist="Emphatikos rope"})
@@ -180,7 +179,7 @@ function init_gear_sets()
     sets.midcast['Enfeebling Magic'] = {
       main="Marin Staff +1",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Merlinic Hood",
       body="Shango Robe",
       hands="Jhakri Cuffs +1",
@@ -246,7 +245,6 @@ function init_gear_sets()
 
     sets.midcast['Elemental Magic']= {
       main="Marin Staff +1",
-      sub="Niobid Strap",
       ammo="Dosis Tathlum",
       head="Merlinic Hood",
       body="Jhakri Robe +1",
@@ -260,6 +258,7 @@ function init_gear_sets()
       left_ring="Fenrir Ring",
       right_ring="Acumen Ring",
       back="Nantosuelta's Cape",
+      sub="Niobid Strap",
 }
 
     sets.midcast['Elemental Magic']['Accuracy']={

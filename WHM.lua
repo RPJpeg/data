@@ -56,7 +56,7 @@ function init_gear_sets()
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 
-    sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {})
+    sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {waist="Siegel Sash", neck="Nodens Gorget"})
 
     sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {legs="Orison Pantaloons +2"})
 
@@ -103,7 +103,7 @@ function init_gear_sets()
     sets.midcast.CureSolace = {
       main="Ababinili +1",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Vanya Hood",
       body="Ebers Bliaud",
       hands="Bokwus Gloves",
@@ -158,7 +158,7 @@ function init_gear_sets()
     sets.midcast['Enhancing Magic'] = {
       main="Marin Staff",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Befouled Crown",
       body={ name="Telchine Chas.", augments={'"Fast Cast"+2','"Regen" potency+2',}},
       hands="Gendewitha Gages +1",
@@ -173,7 +173,7 @@ function init_gear_sets()
       back="Swith Cape",
     }
 
-    sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {})
+    sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash", neck="Nodens Gorget"})
 
     sets.midcast.Auspice = {feet="Orison Duckbills +2"}
 
@@ -199,7 +199,7 @@ function init_gear_sets()
     sets.midcast['Divine Magic'] = {
       main="Marin Staff",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Befouled Crown",
       body="Ischemia Chasu.",
       hands={ name="Piety Mitts", augments={'Enhances "Martyr" effect',}},
@@ -217,7 +217,7 @@ function init_gear_sets()
     sets.midcast['Dark Magic'] = {
       main="Marin Staff",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Befouled Crown",
       body="Ischemia Chasu.",
       hands="Gendewitha Gages +1",
@@ -236,7 +236,7 @@ function init_gear_sets()
     sets.midcast.MndEnfeebles = {
       main="Marin Staff",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Befouled Crown",
       body="Ischemia Chasu.",
       hands="Gendewitha Gages +1",
@@ -254,7 +254,7 @@ function init_gear_sets()
     sets.midcast.IntEnfeebles = {
       main="Marin Staff",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Befouled Crown",
       body="Ischemia Chasu.",
       hands="Gendewitha Gages +1",
@@ -280,7 +280,7 @@ function init_gear_sets()
     sets.idle = {
       main="Ababinili +1",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Befouled Crown",
       body="Witching Robe",
       hands="Serpentes Cuffs",
@@ -300,7 +300,7 @@ function init_gear_sets()
     sets.idle.Town = {
       main="Ababinili +1",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Orison Cap +2",
       body="Witching Robe",
       hands="Serpentes Cuffs",

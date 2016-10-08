@@ -86,6 +86,7 @@ function init_gear_sets()
       main="Pukulatmuj",
       sub="Genbu's Shield",
       waist="Siegel Sash",
+      neck="Nodens Gorget",
 })
 
     sets.precast.FC.Impact = set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
@@ -100,7 +101,7 @@ function init_gear_sets()
       feet={ name="Taeon Boots", augments={'Attack+21','Weapon Skill Acc.+17','Weapon skill damage +3%',}},
       neck="Rancor Collar",
       waist="Fotia Belt",
-      left_ear="Steelflash Earring",
+      left_ear="Ishvara Earring",
       right_ear="Bladeborn Earring",
       left_ring="Pyrosoul Ring",
       right_ring="Rajas Ring",
@@ -133,7 +134,7 @@ function init_gear_sets()
     sets.midcast.Cure = {
       main="Tefnut Wand",
       sub="Genbu's Shield",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Vanya Hood",
       body="Gendewitha Bliaut",
       hands="Bokwus Gloves",
@@ -176,12 +177,13 @@ function init_gear_sets()
       main="Pukulatmuj",
       sub="Genmei Shield",
       waist="Siegel Sash",
+      neck="Nodens Gorget",
     }
 
     sets.midcast['Enfeebling Magic'] = {
       main="Marin Staff +1",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Merlinic Hood",
       body="Lethargy Sayon",
       hands="Jhakri Cuffs +1",
@@ -226,7 +228,7 @@ function init_gear_sets()
     sets.midcast['Dark Magic'] = {
       main="Marin Staff +1",
       sub="Mephitis Grip",
-      ammo="Kalboron Stone",
+      ammo="Hydrocera",
       head="Merlinic Hood",
       body="Jhakri Robe +1",
       hands="Jhakri Cuffs +1",
