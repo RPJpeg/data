@@ -130,7 +130,7 @@ function init_gear_sets()
 
     -- Midcast sets for pet actions
     sets.midcast.Pet.Cure = {
-      legs="Foire Churidars"
+      legs="Foire Churidars",
       body="Naga Samue"
 }
 
