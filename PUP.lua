@@ -234,7 +234,7 @@ function init_gear_sets()
       body="Taeon Tabard",
       hands="Count's Cuffs",
       legs="Samnuha Tights",
-      feet="Rao sune-ate",
+      feet="Herculean Boots",
       neck="Subtlety Spec.",
       waist="Shaolin Belt",
       left_ear="Steelflash Earring",
