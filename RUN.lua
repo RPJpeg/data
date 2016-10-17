@@ -48,8 +48,8 @@ end
 }
 
 	sets.JA['Embolden'] = {back="Evasionist's Cape"}
-
 	sets.JA['Vivacious Pulse'] = {legs="Runeist Trousers"}
+	sets.JA['Provoke'] = {left_Ear="Friomisi Earring"}
 
 
 	-- TP/Engaged sets --
@@ -108,7 +108,7 @@ end
 	sets.TP.Tank = {
     ammo="Honed Tathlum",
     head="Meghanada Visor +1",
-    body="Taeon Tabard",
+    body="Futhark Coat",
     hands="Meg. Gloves +1",
     legs="Meg. Chausses +1",
     feet="Herculean Boots",
@@ -124,7 +124,7 @@ end
 	sets.TP.TankAcc ={
     ammo="Honed Tathlum",
     head="Meghanada Visor +1",
-    body="Taeon Tabard",
+		body="Futhark Coat",
     hands="Meg. Gloves +1",
     feet="Meg. Jam. +1",
     feet="Herculean Boots",
@@ -140,7 +140,7 @@ end
   sets.TP.TankMag ={
     ammo="Honed Tathlum",
     head="Skormoth Mask",
-    body="Taeon Tabard",
+		body="Futhark Coat",
     hands="Meg. Gloves +1",
     legs="Meg. Chausses +1",
     feet="Herculean Boots",
@@ -161,7 +161,7 @@ end
 
 	sets.Idle.Regen = {
     head={ name="Herculean Helm", augments={'Accuracy+20 Attack+20','"Store TP"+1','Accuracy+15',}},
-    body={ name="Taeon Tabard", augments={'Accuracy+20 Attack+20','"Triple Atk."+2','Weapon skill damage +2%',}},
+		body="Futhark Coat",
     hands="Meg. Gloves +1",
     legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
     feet={ name="Herculean Boots", augments={'Accuracy+21 Attack+21','"Triple Atk."+3','Attack+10',}},
