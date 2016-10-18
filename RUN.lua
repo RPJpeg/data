@@ -126,7 +126,7 @@ end
     head="Meghanada Visor +1",
 		body="Futhark Coat",
     hands="Meg. Gloves +1",
-    feet="Meg. Jam. +1",
+		legs="Meg. Chausses +1",
     feet="Herculean Boots",
     neck="Twilight Torque",
     waist="Cetl Belt",
