@@ -124,7 +124,7 @@ end
 	sets.TP.TankAcc ={
     ammo="Honed Tathlum",
     head="Meghanada Visor +1",
-		body="Futhark Coat",
+		body="Erilaz Surcoat",
     hands="Meg. Gloves +1",
 		legs="Meg. Chausses +1",
     feet="Herculean Boots",
@@ -140,7 +140,7 @@ end
   sets.TP.TankMag ={
     ammo="Honed Tathlum",
     head="Skormoth Mask",
-		body="Futhark Coat",
+		body="Erilaz Surcoat",
     hands="Meg. Gloves +1",
     legs="Meg. Chausses +1",
     feet="Herculean Boots",
@@ -382,7 +382,7 @@ function midcast(spell,act)
 	end
 
 	if spell.english == 'Flash' then
-		equip(sets.precast.FC.Divine)
+		equip(sets.precast.FC.Provoke)
 	end
 
 	if spell.english == 'Regen IV' then
