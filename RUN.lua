@@ -48,7 +48,7 @@ end
 }
 
 	sets.JA['Embolden'] = {back="Evasionist's Cape"}
-	sets.JA['Vivacious Pulse'] = {legs="Runeist Trousers"}
+	sets.JA['Vivacious Pulse'] = {legs="Runeist Trousers", head="Erilaz Galea"}
 	sets.JA['Provoke'] = {left_Ear="Friomisi Earring"}
 
 
@@ -160,7 +160,7 @@ end
 
 
 	sets.Idle.Regen = {
-    head={ name="Herculean Helm", augments={'Accuracy+20 Attack+20','"Store TP"+1','Accuracy+15',}},
+    head="Erilaz Galea",
 		body="Futhark Coat",
     hands="Meg. Gloves +1",
     legs={ name="Desultor Tassets", augments={'Phys. dmg. taken -4%','Movement speed +8%+2',}},
@@ -262,7 +262,7 @@ end
     right_ring="Prolix Ring",
   }
 
-	sets.precast.FC.Enhancing = set_combine(sets.precast.FC,{hands="Runeist Mitons",legs="Futhark Trousers",waist="Siegel Sash",})
+	sets.precast.FC.Enhancing = set_combine(sets.precast.FC,{head="Erilaz Galea",hands="Runeist Mitons",legs="Futhark Trousers",waist="Siegel Sash",})
 
 
 	sets.precast.FC.Divine = set_combine(sets.precast.FC,{legs="Runeist Trousers"})
@@ -387,6 +387,10 @@ function midcast(spell,act)
 
 	if spell.english == 'Regen IV' then
 		equip(sets.precast.FC.Enhancing,{head="Runeist Bandeau"})
+	end
+
+	if spell.english == 'Refresh' then
+		equip(sets.precast.FC.Enhancing,{head="Erilaz Galea"})
 	end
 
 	if spell.type == 'JobAbility' then
