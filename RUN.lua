@@ -49,7 +49,7 @@ end
 
 	sets.JA['Embolden'] = {back="Evasionist's Cape"}
 	sets.JA['Vivacious Pulse'] = {legs="Runeist Trousers", head="Erilaz Galea"}
-	sets.JA['Provoke'] = {left_Ear="Friomisi Earring"}
+	sets.JA['Provoke'] = {left_Ear="Friomisi Earring", legs="Erilaz Leg Guards", feet="Erilaz Greaves",back="Evasionist's cape"}
 
 
 	-- TP/Engaged sets --
@@ -70,7 +70,7 @@ end
     right_ear="Steelflash Earring",
     left_ring="Epona's Ring",
     right_ring="Rajas Ring",
-    back="Atheling Mantle",
+    back="Evasionist's Cape",
   }
 
 	sets.TP.ACC = {
@@ -86,7 +86,7 @@ end
     right_ear="Steelflash Earring",
     left_ring="Epona's Ring",
     right_ring="Rajas Ring",
-    back="Xucau Mantle",
+		back="Evasionist's Cape",
   }
 
 	sets.TP.Hybrid = {
@@ -102,7 +102,7 @@ end
     right_ear="Steelflash Earring",
     left_ring="Epona's Ring",
     right_ring="Rajas Ring",
-    back="Atheling Mantle",
+		back="Evasionist's Cape",
   }
 
 	sets.TP.Tank = {
@@ -110,15 +110,15 @@ end
     head="Meghanada Visor +1",
     body="Futhark Coat",
     hands="Meg. Gloves +1",
-    legs="Meg. Chausses +1",
-    feet="Herculean Boots",
+    legs="Erilaz Leg Guards",
+		feet="Erilaz Greaves",
     neck="Twilight Torque",
     waist="Cetl Belt",
     left_ear="Bladeborn Earring",
     right_ear="Steelflash Earring",
     left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
     right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-    back="Xucau Mantle",
+		back="Evasionist's Cape",
   }
 
 	sets.TP.TankAcc ={
@@ -134,7 +134,7 @@ end
     right_ear="Steelflash Earring",
     left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
     right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-    back="Xucau Mantle",
+		back="Evasionist's Cape",
   }
 
   sets.TP.TankMag ={
@@ -143,14 +143,14 @@ end
 		body="Erilaz Surcoat",
     hands="Meg. Gloves +1",
     legs="Meg. Chausses +1",
-    feet="Herculean Boots",
+    feet="Erilaz Greaves",
     neck="Twilight Torque",
     waist="Cetl Belt",
     left_ear="Bladeborn Earring",
     right_ear="Steelflash Earring",
     left_ring="Meridian Ring",
     right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
-    back="Xucau Mantle",
+		back="Evasionist's Cape",
   }
 
 	-- Idle Sets --
@@ -267,6 +267,15 @@ end
 
 	sets.precast.FC.Divine = set_combine(sets.precast.FC,{legs="Runeist Trousers"})
 
+	sets.precast.FC.Provoke = {
+		left_Ear="Friomisi Earring",
+		legs="Erilaz Leg Guards",
+		feet="Erilaz Greaves",
+		back="Evasionist's Cape",
+	}
+
+	sets.precast.FC.Flash = sets.precast.FC.Provoke
+
 	--Phalanx Utility--
 	sets.Utility = {}
 
@@ -382,7 +391,7 @@ function midcast(spell,act)
 	end
 
 	if spell.english == 'Flash' then
-		equip(sets.precast.FC.Provoke)
+		equip(sets.precast.FC.Flash)
 	end
 
 	if spell.english == 'Regen IV' then
