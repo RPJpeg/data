@@ -243,7 +243,7 @@ function init_gear_sets()
       legs="Chironic hose",
       feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
       neck="Imbodla Necklace",
-      waist="Aswang Sash",
+      waist="Rumination Sash",
       left_ear="Lifestorm Earring",
       right_ear="Psystorm Earring",
       left_ring="Perception Ring",
@@ -261,7 +261,7 @@ function init_gear_sets()
       legs="Chironic hose",
       feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
       neck="Imbodla Necklace",
-      waist="Aswang Sash",
+      waist="Rumination Sash",
       left_ear="Lifestorm Earring",
       right_ear="Psystorm Earring",
       left_ring="Perception Ring",
@@ -291,7 +291,7 @@ function init_gear_sets()
       left_ear="Roundel Earring",
       right_ear="Nourish. Earring",
       left_ring="Renaye Ring",
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      right_ring="Defending Ring",
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
     }
 
@@ -311,7 +311,7 @@ function init_gear_sets()
       left_ear="Roundel Earring",
       right_ear="Nourish. Earring",
       left_ring="Renaye Ring",
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      right_ring="Defending Ring",
       back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
     }
 

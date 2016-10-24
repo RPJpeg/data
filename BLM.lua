@@ -80,7 +80,7 @@ function init_gear_sets()
       left_ear="Enchntr. Earring +1",
       right_ear="Loquac. Earring",
       left_ring="Prolix Ring",
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      right_ring="Defending Ring",
       back="Swith Cape",
     }
 
@@ -153,7 +153,7 @@ function init_gear_sets()
       legs="Psycloth Lappas",
       feet="Merlinic Crackows",
       neck="Imbodla Necklace",
-      waist="Aswang Sash",
+      waist="Rumination Sash",
       left_ear="Lifestorm Earring",
       right_ear="Psystorm Earring",
       left_ring="Perception Ring",
@@ -261,7 +261,7 @@ function init_gear_sets()
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
       left_ring="Renaye Ring",
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      right_ring="Defending Ring",
       back="Mecisto. Mantle",
     }
 
@@ -287,7 +287,7 @@ function init_gear_sets()
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
       left_ring="Renaye Ring",
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      right_ring="Defending Ring",
       back="Mecisto. Mantle",
     }
 

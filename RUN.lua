@@ -49,7 +49,15 @@ end
 
 	sets.JA['Embolden'] = {back="Evasionist's Cape"}
 	sets.JA['Vivacious Pulse'] = {legs="Runeist Trousers", head="Erilaz Galea"}
-	sets.JA['Provoke'] = {left_Ear="Friomisi Earring", legs="Erilaz Leg Guards", feet="Erilaz Greaves",back="Evasionist's cape"}
+	sets.JA['Provoke'] = {
+		head="Rabid Visor",
+		left_ear="Friomisi Earring",
+		right_ear="Cryptic Earring",
+		left_ring="Vengeful Ring",
+		legs="Erilaz Leg Guards",
+		feet="Erilaz Greaves",
+		back="Evasionist's Cape",
+	}
 
 
 	-- TP/Engaged sets --
@@ -116,7 +124,7 @@ end
     waist="Cetl Belt",
     left_ear="Bladeborn Earring",
     right_ear="Steelflash Earring",
-    left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+    left_ring="Defending Ring",
     right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
 		back="Evasionist's Cape",
   }
@@ -132,7 +140,7 @@ end
     waist="Cetl Belt",
     left_ear="Bladeborn Earring",
     right_ear="Steelflash Earring",
-    left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+    left_ring="Defending Ring",
     right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
 		back="Evasionist's Cape",
   }
@@ -148,7 +156,7 @@ end
     waist="Cetl Belt",
     left_ear="Bladeborn Earring",
     right_ear="Steelflash Earring",
-    left_ring="Meridian Ring",
+    left_ring="Defending Ring",
     right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
 		back="Evasionist's Cape",
   }
@@ -169,8 +177,8 @@ end
     waist="Fucho-no-Obi",
     left_ear="Steelflash Earring",
     right_ear="Bladeborn Earring",
-    left_ring="Renaye Ring",
-    right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+    left_ring="Defending Ring",
+    right_ring="Renaye Ring",
     back={ name="Mecisto. Mantle", augments={'Cap. Point+42%','HP+13','DEF+6',}},
   }
 
@@ -258,7 +266,7 @@ end
     waist="Twilight Belt",
     left_ear="Enchntr. Earring +1",
     right_ear="Loquac. Earring",
-    left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+    left_ring="Defending Ring",
     right_ring="Prolix Ring",
   }
 
@@ -268,7 +276,10 @@ end
 	sets.precast.FC.Divine = set_combine(sets.precast.FC,{legs="Runeist Trousers"})
 
 	sets.precast.FC.Provoke = {
-		left_Ear="Friomisi Earring",
+		head="Rabid Visor",
+		left_ear="Friomisi Earring",
+		right_ear="Cryptic Earring",
+		left_ring="Vengeful Ring",
 		legs="Erilaz Leg Guards",
 		feet="Erilaz Greaves",
 		back="Evasionist's Cape",

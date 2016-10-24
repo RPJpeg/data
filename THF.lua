@@ -291,7 +291,7 @@ function init_gear_sets()
       waist="Fotia Belt",
       left_ear="Dudgeon Earring",
       right_ear="Heartseeker Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      left_ring="Defending Ring",
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
       back="Mecisto. Mantle",
     }
@@ -306,7 +306,7 @@ function init_gear_sets()
       waist="Fotia Belt",
       left_ear="Dudgeon Earring",
       right_ear="Heartseeker Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      left_ring="Defending Ring",
       right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
       back="Toutatis's Cape",
     }

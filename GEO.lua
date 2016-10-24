@@ -186,7 +186,7 @@ function init_gear_sets()
       legs="Psycloth Lappas",
       feet="Medium's Sabots",
       neck="Imbodla Necklace",
-      waist="Aswang Sash",
+      waist="Rumination Sash",
       left_ear="Psystorm Earring",
       right_ear="Lifestorm Earring",
       left_ring="Sangoma Ring",
@@ -302,7 +302,7 @@ function init_gear_sets()
       waist="Fucho-no-Obi",
       left_ear="Handler's Earring +1",
       right_ear="Handler's Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      left_ring="Defending Ring",
       right_ring="Renaye Ring",
       back="Mecisto. Mantle",
 }
@@ -330,7 +330,7 @@ function init_gear_sets()
       waist="Isa Belt",
       left_ear="Handler's Earring +1",
       right_ear="Handler's Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      left_ring="Defending Ring",
       right_ring="Renaye Ring",
       back="Nantosuelta's Cape",
 
@@ -350,7 +350,7 @@ function init_gear_sets()
       waist="Fucho-no-Obi",
       left_ear="Handler's Earring +1",
       right_ear="Handler's Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      left_ring="Defending Ring",
       right_ring="Renaye Ring",
       back="Nantosuelta's Cape",
 

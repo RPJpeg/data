@@ -99,7 +99,7 @@ function init_gear_sets()
       left_ear="Enchntr. Earring +1",
       right_ear="Loquac. Earring",
       left_ring="Prolix Ring",
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      right_ring="Defending Ring",
       back="Swith Cape",
     }
 
@@ -131,7 +131,7 @@ function init_gear_sets()
       waist="Druid's Rope",
       left_ear="Gwati Earring",
       right_ear="Gifted Earring",
-      left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Spell interruption rate down -5%',}},
+      left_ring="Defending Ring",
       right_ring="Sirona's Ring",
       back="Solemnity Cape",
     }
@@ -184,7 +184,7 @@ function init_gear_sets()
       legs="Chironic hose",
       feet="Jhakri Pigaches +1",
       neck="Imbodla Necklace",
-      waist="Aswang Sash",
+      waist="Rumination Sash",
       left_ear="Enchntr. Earring +1",
       right_ear="Gwati Earring",
       left_ring="Perception Ring",
@@ -202,7 +202,7 @@ function init_gear_sets()
       legs="Chironic hose",
       feet="Jhakri Pigaches +1",
       neck="Imbodla Necklace",
-      waist="Aswang Sash",
+      waist="Rumination Sash",
       left_ear="Enchntr. Earring +1",
       right_ear="Gwati Earring",
       left_ring="Perception Ring",
@@ -309,7 +309,7 @@ function init_gear_sets()
       left_ear="Enchntr. Earring +1",
       right_ear="Loquac. Earring",
       left_ring="Renaye Ring",
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      right_ring="Defending Ring",
       back="Mecisto. Mantle",
     }
 
@@ -327,7 +327,7 @@ function init_gear_sets()
       left_ear="Enchntr. Earring +1",
       right_ear="Loquac. Earring",
       left_ring="Renaye Ring",
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      right_ring="Defending Ring",
       back="Mecisto. Mantle",
     }
 

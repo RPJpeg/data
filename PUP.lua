@@ -164,7 +164,7 @@ function init_gear_sets()
       left_ear="Steelflash Earring",
       right_ear="Bladeborn Earring",
       left_ring="Renaye Ring",
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      right_ring="Defending Ring",
       back="Mecisto. Mantle",
     }
 
@@ -185,7 +185,7 @@ function init_gear_sets()
       left_ear="Handler's Earring",
       right_ear="Handler's Earring +1",
       left_ring="Renaye Ring",
-      right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -3%','Breath dmg. taken -4%','Magic dmg. taken -4%',}},
+      right_ring="Defending Ring",
       back="Visucius's Mantle",
     }
 
