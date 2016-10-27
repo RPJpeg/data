@@ -56,6 +56,7 @@ end
 		left_ring="Vengeful Ring",
 		legs="Erilaz Leg Guards",
 		feet="Erilaz Greaves",
+		neck="Unmoving Collar +1",
 		back="Evasionist's Cape",
 	}
 
@@ -132,7 +133,7 @@ end
 	sets.TP.TankAcc ={
     ammo="Honed Tathlum",
     head="Meghanada Visor +1",
-		body="Erilaz Surcoat",
+		body="Erilaz Surcoat +1",
     hands="Meg. Gloves +1",
 		legs="Meg. Chausses +1",
     feet="Herculean Boots",
@@ -148,7 +149,7 @@ end
   sets.TP.TankMag ={
     ammo="Honed Tathlum",
     head="Skormoth Mask",
-		body="Erilaz Surcoat",
+		body="Erilaz Surcoat +1",
     hands="Meg. Gloves +1",
     legs="Meg. Chausses +1",
     feet="Erilaz Greaves",
@@ -282,6 +283,7 @@ end
 		left_ring="Vengeful Ring",
 		legs="Erilaz Leg Guards",
 		feet="Erilaz Greaves",
+		neck="Unmoving Collar +1",
 		back="Evasionist's Cape",
 	}
 
