@@ -29,7 +29,7 @@ end
 	sets.JA['Elemental Sforzo'] = {body="Futhark Coat"}
 	sets.JA['Vallation'] = {body="Runeist Coat",legs="Futhark Trousers"}
 	sets.JA['Valiance'] = {body="Runeist Coat",legs="Futhark Trousers"}
-	sets.JA['Pflug'] = {feet="Runeist Bottes"}
+	sets.JA['Pflug'] = {feet="Runeist Bottes +1"}
 	sets.JA['Swordplay'] = {hands="Futhark Mitons"}
 	sets.JA['Gambit'] = {hands="Runeist Mitons"}
 	sets.JA['Liement'] = {body="Futhark Coat"}
