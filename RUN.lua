@@ -53,7 +53,7 @@ end
 		head="Rabid Visor",
 		left_ear="Friomisi Earring",
 		right_ear="Cryptic Earring",
-		left_ring="Vengeful Ring",
+		right_ring="Vengeful Ring",
 		legs="Erilaz Leg Guards",
 		feet="Erilaz Greaves",
 		neck="Unmoving Collar +1",

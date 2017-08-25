@@ -81,7 +81,7 @@ function init_gear_sets()
 
     sets.buff['Sneak Attack'] = {
       head="Meghanada Visor +1",
-      body="Taeon Tabard",
+      body="Meghanada Cuirie",
       hands="Skulker's Armlets",
       legs="Samnuha Tights",
       feet="Meg. Jam. +1",
@@ -95,7 +95,7 @@ function init_gear_sets()
 
     sets.buff['Trick Attack'] = {
       head="Meghanada Visor +1",
-      body="Taeon Tabard",
+      body="Meghanada Cuirie",
       hands="Pillager's Armlets",
       legs="Samnuha Tights",
       feet="Meg. Jam. +1",
@@ -161,7 +161,7 @@ function init_gear_sets()
     -- Ranged snapshot gear
     sets.precast.RA = {
       head="Meghanada Visor +1",
-      body="Taeon Tabard",
+      body="Meghanada Cuirie",
       hands="Meg. Gloves +1",
       legs="Samnuha Tights",
       feet="Meg. Jam. +1",
@@ -283,7 +283,7 @@ function init_gear_sets()
 
     sets.idle = {
       head="Skormoth Mask",
-      body="Taeon Tabard",
+      body="Meghanada Cuirie",
       hands="Meg. Gloves +1",
       legs="Desultor Tassets",
       feet="Jute Boots +1",
@@ -298,7 +298,7 @@ function init_gear_sets()
 
     sets.idle.Town = {
       head="Skormoth Mask",
-      body="Taeon Tabard",
+      body="Meghanada Cuirie",
       hands="Meg. Gloves +1",
       legs="Desultor Tassets",
       feet="Jute Boots +1",
@@ -330,7 +330,7 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {
       head="Skormoth Mask",
-      body="Taeon Tabard",
+      body="Meghanada Cuirie",
       hands="Floral Gauntlets",
       legs="Samnuha Tights",
       feet="Herculean Boots",
@@ -346,7 +346,7 @@ function init_gear_sets()
     sets.engaged.Acc = {
       ammo="Honed Tathlum",
       head="Meghanada Visor +1",
-      body="Taeon Tabard",
+      body="Meghanada Cuirie",
       hands="Meg. Gloves +1",
       legs="Meg. Chausses +1",
       feet="Meg. Jam. +1",
@@ -362,7 +362,7 @@ function init_gear_sets()
     sets.engaged.Hybrid = {
       ammo="Ginsen",
       head="Herculean Helm",
-      body="Taeon Tabard",
+      body="Meghanada Cuirie",
       hands="Floral Gauntlets",
       legs="Meg. Chausses +1",
       feet="Herculean Boots",

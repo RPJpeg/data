@@ -194,10 +194,10 @@ function init_gear_sets()
 
     sets.midcast['Elemental Magic'] = {
       main="Lathi",
-      sub="Zuuxowu Grip",
+      sub="Niobid Strap",
       ammo="Dosis Tathlum",
       head="Merlinic Hood",
-      body="Spae. Coat +1",
+      body="Jhakri Robe +1",
       hands="Amalric Gages",
       legs="Merlinic Shalwar",
       feet="Merlinic Crackows",
@@ -205,9 +205,9 @@ function init_gear_sets()
       waist="Aswang Sash",
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
-      left_ring="Fenrir Ring",
+      left_ring="Jhakri Ring",
       right_ring="Acumen Ring",
-      back="Bane Cape",
+      back="Toro Cape",
     }
 
     sets.midcast['Elemental Magic'].HighTierNuke = {
@@ -223,7 +223,7 @@ function init_gear_sets()
       waist="Aswang Sash",
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
-      left_ring="Fenrir Ring",
+      left_ring="Jhakri Ring",
       right_ring="Acumen Ring",
       back="Toro Cape",
     }

@@ -243,7 +243,7 @@ function init_gear_sets()
       waist="Aswang Sash",
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
-      left_ring="Fenrir Ring",
+      left_ring="Jhakri Ring",
       right_ring="Acumen Ring",
       back="Bookworm's Cape",
     }
@@ -277,7 +277,7 @@ function init_gear_sets()
       waist="Aswang Sash",
       left_ear="Friomisi Earring",
       right_ear="Hecate's Earring",
-      left_ring="Fenrir Ring",
+      left_ring="Jhakri Ring",
       right_ring="Acumen Ring",
       back="Bookworm's Cape",
     }
