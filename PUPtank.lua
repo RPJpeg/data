@@ -83,7 +83,8 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
     sets.precast.JA['Tactical Switch'] = {feet="Cirque Scarpe +1"}
 
-    sets.precast.JA['Repair'] = {feet="Foire Babouches +1"}
+    sets.precast.JA['Repair'] = {legs={ name="Taeon Tights", augments={'Attack+1','"Repair" potency +4%','Crit. hit damage +2%',}},
+feet="Foire Babouches +1"}
 
     sets.precast.JA.Maneuver = {neck="Buffoon's Collar",body="Karagoz Farsetto",hands="Foire Dastanas +1",back="Dispersal Mantle"}
 
@@ -111,7 +112,7 @@ function init_gear_sets()
       waist="Fotia Belt",
       left_ear="Ishvara Earring",
       right_ear="Bladeborn Earring",
-      left_ring="Pyrosoul Ring",
+      left_ring="Rufescent Ring",
       right_ring="Rajas Ring",
       back="Dispersal Mantle",
     }
@@ -153,11 +154,11 @@ function init_gear_sets()
     -- Idle sets
 
     sets.idle = {
-      head="Pitre Taj",
+      head="Pitre Taj +1",
       body="Pitre Tobe +1",
-      hands="Tali'ah Gages",
+      hands="Rao Kote",
       legs="Desultor Tassets",
-      feet="Naga Kyahan",
+      feet="Rao Sune-Ate",
       neck="Twilight Torque",
       waist="Fotia Belt",
       left_ear="Mache Earring",
@@ -178,7 +179,7 @@ function init_gear_sets()
       body="Pitre Tobe +1",
       hands={ name="Taeon Gloves", augments={'Pet: DEF+22','Pet: "Regen"+2','Pet: Damage taken -3%',}},
       legs="Karagoz Pantaloni +1",
-      feet="Naga Kyahan",
+      feet="Rao Sune-Ate",
       neck="Empath Necklace",
       waist="Isa Belt",
       left_ear="Handler's Earring",
@@ -207,7 +208,7 @@ function init_gear_sets()
       body="Pitre Tobe +1",
       hands={ name="Taeon Gloves", augments={'Pet: DEF+22','Pet: "Regen"+2','Pet: Damage taken -3%',}},
       legs="Karagoz Pantaloni +1",
-      feet="Naga Kyahan",
+      feet="Rao Sune-Ate",
       neck="Empath Necklace",
       waist="Isa Belt",
       left_ear="Handler's Earring",

@@ -186,7 +186,7 @@ function init_gear_sets()
       waist="Fotia Belt",
       left_ear="Ishvara Earring",
       right_ear="Bladeborn Earring",
-      left_ring="Pyrosoul Ring",
+      left_ring="Rufescent Ring",
       right_ring="Rajas Ring",
       back="Vespid Mantle",
     }

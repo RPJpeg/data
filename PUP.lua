@@ -83,7 +83,8 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
     sets.precast.JA['Tactical Switch'] = {feet="Cirque Scarpe +1"}
 
-    sets.precast.JA['Repair'] = {feet="Foire Babouches +1"}
+    sets.precast.JA['Repair'] = {legs={ name="Taeon Tights", augments={'Attack+1','"Repair" potency +4%','Crit. hit damage +2%',}},
+    feet="Foire Babouches +1"}
 
     sets.precast.JA.Maneuver = {neck="Buffoon's Collar",body="Karagoz Farsetto",hands="Foire Dastanas +1",back="Dispersal Mantle"}
 
@@ -111,7 +112,7 @@ function init_gear_sets()
       waist="Fotia Belt",
       left_ear="Ishvara Earring",
       right_ear="Bladeborn Earring",
-      left_ring="Pyrosoul Ring",
+      left_ring="Rufescent Ring",
       right_ring="Rajas Ring",
       back="Dispersal Mantle",
     }
@@ -153,11 +154,11 @@ function init_gear_sets()
     -- Idle sets
 
     sets.idle = {
-      head="Pitre Taj",
+      head="Pitre Taj +1",
       body="Pitre Tobe +1",
-      hands="Tali'ah Gages",
+      hands="Rao Kote",
       legs="Desultor Tassets",
-      feet="Naga Kyahan",
+      feet="Rao Sune-Ate",
       neck="Empath Necklace",
       waist="Isa Belt",
       left_ear="Mache Earring",
@@ -174,15 +175,15 @@ function init_gear_sets()
 
     -- Idle sets to wear while pet is engaged
     sets.idle.Pet.Engaged = {
-      head="Tali'ah Turban",
+      head="Tali'ah Turban +1",
       body="Pitre Tobe +1",
       hands="Tali'ah Gages",
       legs="Karagoz Pantaloni +1",
       feet="Naga Kyahan",
       neck="Empath Necklace",
-      waist="Isa Belt",
-      left_ear="Mache Earring",
-      right_ear="Mache Earring",
+      waist="Klouskap Sash",
+      left_ear="Handler's Earring",
+      right_ear="Handler's Earring +1",
       left_ring="Varar Ring",
       right_ring="Varar Ring",
       back="Visucius's Mantle",
@@ -203,13 +204,13 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {
-      head="Tali'ah Turban",
+      head="Tali'ah Turban +1",
       body="Pitre Tobe +1",
       hands="Tali'ah Gages",
       legs="Karagoz Pantaloni +1",
       feet="Naga Kyahan",
       neck="Empath Necklace",
-      waist="Shaolin Belt",
+      waist="Klouskap Sash",
       left_ear="Mache Earring",
       right_ear="Mache Earring",
       left_ring="Varar Ring",

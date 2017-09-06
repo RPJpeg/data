@@ -200,7 +200,7 @@ end
     waist="Fotia Belt",
     left_ear="Ishvara Earring",
     right_ear="Steelflash Earring",
-    left_ring="Apate Ring",
+		left_ring="Rufescent Ring",
     right_ring="Rajas Ring",
     back="Vespid Mantle",
   }
@@ -249,7 +249,7 @@ end
     waist="Fotia Belt",
     left_ear="Friomisi Earring",
     right_ear="Hecate's Earring",
-    left_ring="Fenrir Ring",
+		left_ring="Rufescent Ring",
     right_ring="Acumen Ring",
     back="Vespid Mantle",
   }

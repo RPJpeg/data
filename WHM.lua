@@ -58,13 +58,13 @@ function init_gear_sets()
 
     sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {waist="Siegel Sash", neck="Nodens Gorget"})
 
-    sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {legs="Orison Pantaloons +2"})
+    sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {legs="Ebers Pantaloons"})
 
     sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
 
     sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {
       main="Ababinili +1",
-      legs={ name="Telchine Braconi", augments={'Mag. Evasion+13','"Cure" spellcasting time -6%','"Regen" potency+1',}},
+      legs="Ebers Pantaloons",
       feet="Hygieia Clogs",
       right_ear="Nourish. Earring",
       back="Pahtli Cape",
@@ -106,14 +106,14 @@ function init_gear_sets()
       ammo="Hydrocera",
       head="Vanya Hood",
       body="Ebers Bliaud",
-      hands="Bokwus Gloves",
-      legs="Orsn. Pantaln. +2",
-      feet={ name="Piety Duckbills", augments={'Enhances "Protectra V" effect',}},
-      neck="Imbodla Necklace",
-      waist="Witful Belt",
+      hands="Inyan. Dastanas +1",
+      legs="Ebers Pantaloons",
+      feet="Hygieia Clogs",
+      neck="Nodens Gorget",
+      waist="Rumination Sash",
       left_ear="Roundel Earring",
       right_ear="Nourish. Earring",
-      left_ring="Perception Ring",
+      left_ring={ name="Diamond Ring", augments={'MND+3','Spell interruption rate down -5%','"Resist Silence"+3',}},
       right_ring="Sirona's Ring",
       back="Solemnity Cape",
     }
@@ -125,32 +125,32 @@ function init_gear_sets()
     sets.midcast.CureMelee = {
       head="Vanya Hood",
       body="Ebers Bliaud",
-      hands="Bokwus Gloves",
-      legs="Orsn. Pantaln. +2",
-      feet={ name="Piety Duckbills", augments={'Enhances "Protectra V" effect',}},
-      neck="Imbodla Necklace",
-      waist="Witful Belt",
+      hands="Inyan. Dastanas +1",
+      legs="Ebers Pantaloons",
+      feet="Hygieia Clogs",
+      neck="Nodens Gorget",
+      waist="Rumination Sash",
       left_ear="Roundel Earring",
       right_ear="Nourish. Earring",
-      left_ring="Perception Ring",
+      left_ring={ name="Diamond Ring", augments={'MND+3','Spell interruption rate down -5%','"Resist Silence"+3',}},
       right_ring="Sirona's Ring",
       back="Solemnity Cape",
     }
 
     sets.midcast.Cursna = {
-      head="Orison Cap +2",
+      head="Ebers Cap",
       body="Ebers Bliaud",
       hands="Orison Mitts +2",
-      legs="Orsn. Pantaln. +2",
+      legs="Ebers Pantaloons",
       feet="Genewitha Galoshes",
       back="Alaunus's cape",
     }
 
     sets.midcast.StatusRemoval = {
-      head="Orison Cap +2",
+      head="Ebers Cap",
       body="Ebers Bliaud",
       hands="Orison Mitts +2",
-      legs="Orsn. Pantaln. +2",
+      legs="Ebers Pantaloons",
       feet="Orsn. Duckbills +2",
     }
 
@@ -161,7 +161,7 @@ function init_gear_sets()
       ammo="Hydrocera",
       head="Befouled Crown",
       body={ name="Telchine Chas.", augments={'"Fast Cast"+2','"Regen" potency+2',}},
-      hands="Gendewitha Gages +1",
+      hands="Inyanga Dastanas +1",
       legs={ name="Piety Pantaloons", augments={'Enhances "Shellra V" effect',}},
       feet="Orsn. Duckbills +2",
       neck="Orison Locket",
@@ -178,7 +178,7 @@ function init_gear_sets()
     sets.midcast.Auspice = {feet="Orison Duckbills +2"}
 
     sets.midcast.BarElement = {
-        head="Orison Cap +2",
+        head="Ebers Cap",
         body="Ebers Bliaud",
         hands="Orison Mitts +2",
         legs="Piety Pantaloons",
@@ -186,6 +186,7 @@ function init_gear_sets()
       }
 
     sets.midcast.Regen = {
+      head="Inyanga Tiara +1",
       body="Cleric's Briault +2",
       hands="Orison Mitts +2",
       legs={ name="Telchine Braconi", augments={'Mag. Evasion+13','"Cure" spellcasting time -6%','"Regen" potency+1',}},
@@ -220,7 +221,7 @@ function init_gear_sets()
       ammo="Hydrocera",
       head="Befouled Crown",
       body="Ischemia Chasu.",
-      hands="Gendewitha Gages +1",
+      hands="Inyanga Dastanas +1",
       legs="Vanya Slops",
       feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
       neck="Voltsurge Torque",
@@ -239,7 +240,7 @@ function init_gear_sets()
       ammo="Hydrocera",
       head="Befouled Crown",
       body="Ischemia Chasu.",
-      hands="Gendewitha Gages +1",
+      hands="Inyanga Dastanas +1",
       legs="Chironic hose",
       feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
       neck="Imbodla Necklace",
@@ -257,7 +258,7 @@ function init_gear_sets()
       ammo="Hydrocera",
       head="Befouled Crown",
       body="Ischemia Chasu.",
-      hands="Gendewitha Gages +1",
+      hands="Inyanga Dastanas +1",
       legs="Chironic hose",
       feet={ name="Uk'uxkaj Boots", augments={'Haste+2','"Snapshot"+2','MND+8',}},
       neck="Imbodla Necklace",
@@ -284,7 +285,7 @@ function init_gear_sets()
       head="Befouled Crown",
       body="Witching Robe",
       hands="Serpentes Cuffs",
-      legs="Assiduity Pants",
+      legs="Assiduity Pants +1",
       feet="Serpentes Sabots",
       neck="Twilight Torque",
       waist="Fucho-no-Obi",
@@ -301,9 +302,9 @@ function init_gear_sets()
       main="Ababinili +1",
       sub="Mephitis Grip",
       ammo="Hydrocera",
-      head="Orison Cap +2",
+      head="Ebers Cap",
       body="Witching Robe",
-      hands="Serpentes Cuffs",
+      hands="Inyanga Dastanas +1",
       legs={ name="Piety Pantaloons", augments={'Enhances "Shellra V" effect',}},
       feet="Hygieia Clogs",
       neck="Twilight Torque",
@@ -338,7 +339,7 @@ function init_gear_sets()
     sets.engaged = {
       head="Vanya Hood",
       body="Ischemia Chasu.",
-      hands="Gendewitha Gages +1",
+      hands="Inyanga Dastanas +1",
       legs={ name="Telchine Braconi", augments={'Mag. Evasion+13','"Cure" spellcasting time -6%','"Regen" potency+1',}},
       feet={ name="Telchine Pigaches", augments={'"Fast Cast"+2',}},
       neck="Asperity Necklace",
