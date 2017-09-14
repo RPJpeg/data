@@ -145,7 +145,7 @@ function init_gear_sets()
 
     sets.midcast['Enfeebling Magic'] = {
       main="Marin Staff +1",
-      sub="Mephitis Grip",
+      sub="Enki Strap",
       ammo="Hydrocera",
       head="Merlinic Hood",
       body="Jhakri Robe +1",
@@ -171,7 +171,7 @@ function init_gear_sets()
 
     sets.midcast.Stun = {
       main="Apamajas II",
-      sub="Mephitis Grip",
+      sub="Enki Strap",
       ammo="Hydrocera",
       head="Merlinic Hood",
       body="Shango Robe",
@@ -194,7 +194,7 @@ function init_gear_sets()
 
     sets.midcast['Elemental Magic'] = {
       main="Lathi",
-      sub="Niobid Strap",
+      sub="Enki Strap",
       ammo="Dosis Tathlum",
       head="Merlinic Hood",
       body="Jhakri Robe +1",
@@ -212,7 +212,7 @@ function init_gear_sets()
 
     sets.midcast['Elemental Magic'].HighTierNuke = {
       main="Lathi",
-      sub="Niobid Strap",
+      sub="Enki Strap",
       ammo="Dosis Tathlum",
       head="Merlinic Hood",
       body="Jhakri Robe +1",
@@ -249,7 +249,7 @@ function init_gear_sets()
     -- Normal refresh idle set
     sets.idle = {
       main="Lathi",
-      sub="Niobid Strap",
+      sub="Enki Strap",
       ammo="Dosis Tathlum",
       head="Befouled Crown",
       body="Jhakri Robe +1",
@@ -275,7 +275,7 @@ function init_gear_sets()
     -- Town gear.
     sets.idle.Town = {
       main="Lathi",
-      sub="Niobid Strap",
+      sub="Enki Strap",
       ammo="Dosis Tathlum",
       head="Merlinic Hood",
       body="Jhakri Robe +1",
@@ -317,7 +317,7 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {
       main="Eminent Sickle",
-      sub="Mephitis Grip",
+      sub="Enki Strap",
       ammo="Hydrocera",
       head="Hagondes Hat",
       body="Ischemia Chasu.",

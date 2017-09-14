@@ -102,7 +102,7 @@ function init_gear_sets()
 
     sets.midcast.CureSolace = {
       main="Ababinili +1",
-      sub="Mephitis Grip",
+      sub="Enki Strap",
       ammo="Hydrocera",
       head="Vanya Hood",
       body="Ebers Bliaud",
@@ -157,7 +157,7 @@ function init_gear_sets()
     -- 110 total Enhancing Magic Skill; caps even without Light Arts
     sets.midcast['Enhancing Magic'] = {
       main="Marin Staff",
-      sub="Mephitis Grip",
+      sub="Enki Strap",
       ammo="Hydrocera",
       head="Befouled Crown",
       body={ name="Telchine Chas.", augments={'"Fast Cast"+2','"Regen" potency+2',}},
@@ -199,7 +199,7 @@ function init_gear_sets()
 
     sets.midcast['Divine Magic'] = {
       main="Marin Staff",
-      sub="Mephitis Grip",
+      sub="Enki Strap",
       ammo="Hydrocera",
       head="Befouled Crown",
       body="Ischemia Chasu.",
@@ -217,7 +217,7 @@ function init_gear_sets()
 
     sets.midcast['Dark Magic'] = {
       main="Marin Staff",
-      sub="Mephitis Grip",
+      sub="Enki Strap",
       ammo="Hydrocera",
       head="Befouled Crown",
       body="Ischemia Chasu.",
@@ -236,7 +236,7 @@ function init_gear_sets()
     -- Custom spell classes
     sets.midcast.MndEnfeebles = {
       main="Marin Staff",
-      sub="Mephitis Grip",
+      sub="Enki Strap",
       ammo="Hydrocera",
       head="Befouled Crown",
       body="Ischemia Chasu.",
@@ -254,7 +254,7 @@ function init_gear_sets()
 
     sets.midcast.IntEnfeebles = {
       main="Marin Staff",
-      sub="Mephitis Grip",
+      sub="Enki Strap",
       ammo="Hydrocera",
       head="Befouled Crown",
       body="Ischemia Chasu.",
@@ -280,7 +280,7 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
     sets.idle = {
       main="Ababinili +1",
-      sub="Mephitis Grip",
+      sub="Enki Strap",
       ammo="Hydrocera",
       head="Befouled Crown",
       body="Witching Robe",
@@ -300,7 +300,7 @@ function init_gear_sets()
 
     sets.idle.Town = {
       main="Ababinili +1",
-      sub="Mephitis Grip",
+      sub="Enki Strap",
       ammo="Hydrocera",
       head="Ebers Cap",
       body="Witching Robe",
